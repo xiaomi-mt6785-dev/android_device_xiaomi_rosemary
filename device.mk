@@ -357,11 +357,7 @@ PRODUCT_PACKAGES += \
 
 # USB
 PRODUCT_PACKAGES += \
-    android.hardware.usb@1.0-service.basic
-
-PRODUCT_DEFAULT_PROPERTY_OVERRIDES += \
-    ro.adb.nonblocking_ffs=0 \
-    persist.adb.nonblocking_ffs=0
+    android.hardware.usb@1.1-service.rosemary
 
 # Vibrator
 PRODUCT_PACKAGES += \

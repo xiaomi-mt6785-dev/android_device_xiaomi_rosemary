@@ -28,13 +28,10 @@ vendor/lib64/vendor.mediatek.hardware.apuware.utils@1.0.so
 vendor/lib64/vendor.mediatek.hardware.apuware.xrp@1.0.so
 
 # Audio
-vendor/bin/hw/android.hardware.audio.service.mediatek
 vendor/bin/audiocmdservice_atci
-vendor/etc/init/android.hardware.audio.service.mediatek.rc
 vendor/etc/init/audiocmdservice_atci.rc
 vendor/etc/smartpa_param/AW_DSP.bin
 vendor/etc/FV-SAM-MTK2.dat
-vendor/lib/hw/android.hardware.audio@6.0-impl-mediatek.so
 vendor/lib/hw/audio.primary.mt6785.so
 vendor/lib/hw/audio.r_submix.mt6785.so
 vendor/lib/hw/audio.usb.mt6785.so

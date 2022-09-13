@@ -94,6 +94,17 @@ PRODUCT_ENFORCE_RRO_TARGETS := *
 PRODUCT_PACKAGES += \
     android.hardware.power-service-mediatek
 
+# Rootdir
+PRODUCT_PACKAGES += \
+    fstab.mt6785 \
+    init.ago.rc \
+    init.connectivity.rc \
+    init.modem.rc \
+    init.mt6785.rc \
+    init.mt6785.usb.rc \
+    init.sensor_1_0.rc \
+    ueventd.mtk.rc
+
 # Shipping API level
 PRODUCT_SHIPPING_API_LEVEL := 30
 

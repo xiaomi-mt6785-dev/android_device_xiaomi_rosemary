@@ -129,6 +129,10 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     libshim_beanpod
 
+# Lights
+PRODUCT_PACKAGES += \
+    android.hardware.light-service.rosemary
+
 # Overlays
 PRODUCT_ENFORCE_RRO_TARGETS := *
 

@@ -23,6 +23,7 @@
         <data cmd="PERF_RES_DRAM_OPP_MIN" param1="0"></data>
         <data cmd="PERF_RES_POWERHAL_TOUCH_BOOST_DURATION" param1="100000"></data>
         <data cmd="PERF_RES_POWERHAL_TOUCH_BOOST_EAS_BOOST" param1="50"></data>
+        <data cmd="PERF_RES_POWERHAL_TOUCH_BOOST_NOTIFY_FBC" param1="1"></data>
         <data cmd="PERF_RES_CPUFREQ_CCI_FREQ" param1="1"></data>
         <data cmd="PERF_RES_FPS_FBT_BHR_OPP" param1="15"></data>
     </scenario>

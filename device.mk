@@ -91,6 +91,9 @@ PRODUCT_PACKAGES += \
     android.hardware.camera.provider@2.5.vendor \
     android.hardware.camera.provider@2.6.vendor \
 
+PRODUCT_PACKAGES += \
+    libdng_sdk.vendor
+
 # Display
 TARGET_SCREEN_DENSITY := 440
 TARGET_SCREEN_HEIGHT := 2400

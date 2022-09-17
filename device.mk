@@ -94,6 +94,10 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     libdng_sdk.vendor
 
+# Charger
+PRODUCT_PACKAGES += \
+    libsuspend
+
 # Display
 TARGET_SCREEN_DENSITY := 440
 TARGET_SCREEN_HEIGHT := 2400

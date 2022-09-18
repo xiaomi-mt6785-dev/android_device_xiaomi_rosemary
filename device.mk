@@ -234,7 +234,8 @@ DEVICE_PACKAGE_OVERLAYS += \
 
 PRODUCT_PACKAGES += \
     WifiOverlay \
-    TetheringConfigOverlay
+    TetheringConfigOverlay \
+    CarrierConfigOverlayRosemary
 
 PRODUCT_ENFORCE_RRO_TARGETS := *
 

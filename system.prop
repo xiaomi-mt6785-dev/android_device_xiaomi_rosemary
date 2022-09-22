@@ -19,6 +19,9 @@ Build.BRAND=MTK
 # Camera
 ro.camera.sound.forced=0
 
+# Dalvik
+dalvik.vm.dex2oat64.enabled=true
+
 # Display
 persist.vendor.dc_backlight.enable=false
 ro.display.type=oled

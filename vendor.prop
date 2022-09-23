@@ -73,6 +73,9 @@ ro.vendor.mtk_ultra_dimming_support=1
 persist.vendor.max.brightness=500
 ro.vendor.colorpick_adjust=true
 ro.vendor.cabc.enable=true
+debug.hwui.renderer=skiagl
+debug.renderengine.backend=skiaglthreaded
+renderthread.skia.reduceopstasksplitting=true
 
 # FM Radio
 persist.vendor.connsys.fm_chipid=mt6631

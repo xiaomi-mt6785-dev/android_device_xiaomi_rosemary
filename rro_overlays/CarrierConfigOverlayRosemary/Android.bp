@@ -1,5 +1,5 @@
 runtime_resource_overlay {
-    name: "CarrierConfigOverlayRosemary,
+    name: "CarrierConfigOverlayRosemary",
     theme: "CarrierConfigOverlay",
     certificate: "platform",
     sdk_version: "current",

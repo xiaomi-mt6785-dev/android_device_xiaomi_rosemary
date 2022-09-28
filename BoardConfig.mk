@@ -62,5 +62,9 @@ BOARD_KERNEL_IMAGE_NAME := Image.gz
 # Platform
 TARGET_BOARD_PLATFORM := mt6785
 
+# Verified Boot
+BOARD_AVB_ENABLE := true
+BOARD_AVB_MAKE_VBMETA_IMAGE_ARGS += --flags 3
+
 # Inherit the proprietary files
 include vendor/xiaomi/rosemary/BoardConfigVendor.mk

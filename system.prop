@@ -4,10 +4,6 @@
 
 # Audio
 ro.audio.silent=0
-ro.vendor.audio.soundfx.type=mi
-ro.vendor.audio.soundfx.usb=true
-ro.vendor.audio.sos=true
-ro.vendor.audio.game.effect=true
 
 # Bluetooth
 ro.bluetooth.emb_wp_mode=false

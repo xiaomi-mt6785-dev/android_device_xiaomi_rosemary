@@ -29,5 +29,8 @@ vendor.fps_hal.                                         u:object_r:vendor_finger
 # IR
 ro.lirc.dev                 				u:object_r:vendor_lirc_prop:s0
 
+# Power
+vendor.mediatek.powerhal.                               u:object_r:vendor_power_prop:s0
+
 # Thermal
 vendor.sys.thermal.     				u:object_r:thermal_engine_prop:s0

@@ -122,7 +122,6 @@ TARGET_BOARD_PLATFORM := mt6785
 BOARD_HAS_MTK_HARDWARE := true
 
 # Power
-TARGET_POWERHAL_AIDL_VERSION := 1
 TARGET_TAP_TO_WAKE_NODE := "/sys/touchpanel/double_tap"
 
 # Properties

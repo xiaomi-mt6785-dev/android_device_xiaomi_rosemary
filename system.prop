@@ -4,6 +4,7 @@
 
 # Audio
 ro.audio.silent=0
+ro.config.vc_call_vol_steps=9
 
 # Bluetooth
 ro.bluetooth.emb_wp_mode=false

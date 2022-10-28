@@ -75,6 +75,11 @@ PRODUCT_PACKAGES += \
     android.hardware.camera.provider@2.5.vendor \
     android.hardware.camera.provider@2.6.vendor \
 
+# Display
+TARGET_SCREEN_DENSITY := 440
+TARGET_SCREEN_HEIGHT := 2400
+TARGET_SCREEN_WIDTH := 1080
+
 # DRM
 PRODUCT_PACKAGES += \
     android.hardware.drm@1.0.vendor \

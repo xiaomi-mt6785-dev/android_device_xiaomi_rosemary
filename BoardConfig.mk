@@ -8,6 +8,7 @@ DEVICE_PATH := device/xiaomi/rosemary
 
 # A/B
 AB_OTA_UPDATER := true
+BOARD_USES_RECOVERY_AS_BOOT := true
 
 AB_OTA_PARTITIONS += \
     system \

@@ -53,6 +53,14 @@ if [ -z "${SRC}" ]; then
     SRC="adb"
 fi
 
+function blob_fixup {
+    case "$1" in
+        vendor/lib*/hw/audio.primary.mt6785.so)
+            "${PATCHELF}" --add-needed "libshim_audio.so" "${2}"
+            ;;
+    esac
+}
+
 # Initialize the helper
 setup_vendor "${DEVICE}" "${VENDOR}" "${ANDROID_ROOT}" false "${CLEAN_VENDOR}"
 

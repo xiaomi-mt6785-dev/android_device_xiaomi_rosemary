@@ -115,6 +115,9 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     android.hardware.keymaster@4.0.vendor
 
+PRODUCT_PACKAGES += \
+    libshim_beanpod
+
 # Overlays
 PRODUCT_ENFORCE_RRO_TARGETS := *
 

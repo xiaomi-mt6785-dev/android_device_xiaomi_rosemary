@@ -7,7 +7,6 @@ product                                              /product              ext4 
 /dev/block/platform/bootdevice/by-name/vbmeta_vendor /vbmeta_vendor        emmc            defaults                                                                first_stage_mount,nofail,slotselect
 /dev/block/platform/bootdevice/by-name/vbmeta_system /vbmeta_system        emmc            defaults                                                                first_stage_mount,nofail,slotselect,avb=vbmeta
 
-/dev/block/platform/bootdevice/by-name/recovery      /recovery             emmc            defaults                                                                first_stage_mount,nofail,slotselect
 /dev/block/platform/bootdevice/by-name/boot          /boot                 emmc            defaults                                                                first_stage_mount,nofail,slotselect
 /dev/block/platform/bootdevice/by-name/dtbo          /dtbo                 emmc            defaults                                                                defaults
 

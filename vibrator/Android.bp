@@ -1,0 +1,37 @@
+// Copyright (C) 2022 StatiX
+// SPDX-License-Identifer: Apache-2.0
+
+cc_library_static {
+    name: "android.hardware.vibrator-impl.rosemary",
+    vendor: true,
+    shared_libs: [
+        "libbase",
+        "libbinder_ndk",
+        "android.hardware.vibrator-V2-ndk_platform",
+    ],
+    export_include_dirs: ["include"],
+    srcs: [
+        "Vibrator.cpp",
+    ],
+    visibility: [
+        ":__subpackages__",
+        "//hardware/interfaces/tests/extension/vibrator:__subpackages__",
+    ],
+}
+
+cc_binary {
+    name: "android.hardware.vibrator-service.rosemary",
+    relative_install_path: "hw",
+    init_rc: ["vibrator-rosemary.rc"],
+    vintf_fragments: ["vibrator-rosemary.xml"],
+    vendor: true,
+    shared_libs: [
+        "libbase",
+        "libbinder_ndk",
+        "android.hardware.vibrator-V2-ndk_platform",
+    ],
+    static_libs: [
+        "android.hardware.vibrator-impl.rosemary",
+    ],
+    srcs: ["main.cpp"],
+}

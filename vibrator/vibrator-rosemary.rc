@@ -1,0 +1,9 @@
+service vendor.vibrator-rosemary /vendor/bin/hw/android.hardware.vibrator-service.rosemary
+    class hal
+    user system
+    group system input
+
+on post-fs
+    chown system system /sys/devices/platform/haptic_pwm/activate
+    chown system system /sys/devices/platform/haptic_pwm/duration
+    chown system system /sys/devices/platform/haptic_pwm/index

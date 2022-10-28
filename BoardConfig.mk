@@ -6,6 +6,19 @@
 
 DEVICE_PATH := device/xiaomi/rosemary
 
+# A/B
+AB_OTA_UPDATER := true
+
+AB_OTA_PARTITIONS += \
+    system \
+    product \
+    vendor \
+    boot \
+    vbmeta \
+    vbmeta_system \
+    vbmeta_vendor \
+    dtbo
+
 # APEX
 DEXPREOPT_GENERATE_APEX_IMAGE := true
 

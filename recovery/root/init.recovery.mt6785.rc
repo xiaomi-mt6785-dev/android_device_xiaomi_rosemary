@@ -22,3 +22,8 @@ on post-fs
     symlink /dev/block/mapper/pl_b /dev/block/platform/bootdevice/by-name/preloader_raw_b
 
     exec u:r:update_engine:s0 root root -- /system/bin/mtk_plpath_utils
+
+service init-recovery-mt6785-sh /init.recovery.mt6785.sh
+    user root
+    group root
+    seclabel u:r:recovery:s0

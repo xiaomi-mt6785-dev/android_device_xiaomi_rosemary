@@ -148,7 +148,8 @@ PRODUCT_PACKAGES += \
     ueventd.mtk.rc
 
 PRODUCT_PACKAGES += \
-    init.recovery.mt6785.rc
+    init.recovery.mt6785.rc \
+    init.recovery.mt6785.sh
 
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/rootdir/etc/fstab.mt6785:$(TARGET_COPY_OUT_RECOVERY)/root/first_stage_ramdisk/fstab.mt6785

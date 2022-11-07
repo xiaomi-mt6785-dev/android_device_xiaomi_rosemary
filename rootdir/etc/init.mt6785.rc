@@ -1022,6 +1022,10 @@ on boot
     chown system system /sys/bus/platform/devices/aw8622/pwm_ctrl
     chown system system /sys/bus/platform/devices/aw8622/test_cnt
 
+    # DT2W
+    chown system system /sys/touchpanel/double_tap
+    chmod 0660 /sys/touchpanel/double_tap
+
 # Stop bootprof
 on property:sys.boot_completed=1
     write /proc/bootprof "0"

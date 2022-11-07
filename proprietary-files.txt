@@ -1572,8 +1572,6 @@ vendor/etc/dsi_panel_k7_38_0c_0a_fhdp_video_mi.xml
 vendor/etc/dsi_panel_k7_44_06_0b_fhdp_video_mi.xml
 vendor/etc/dsi_panel_k7_44_0e_0b_fhdp_video_mi.xml
 vendor/etc/screen_light.xml
-vendor/lib/hw/android.hardware.graphics.allocator@4.0-impl-mediatek.so
-vendor/lib/hw/android.hardware.graphics.mapper@4.0-impl-mediatek.so
 vendor/lib/hw/displayfeature.default.so
 vendor/lib/hw/memtrack.mt6785.so
 vendor/lib/hw/vendor.xiaomi.hardware.displayfeature@1.0-impl.so
@@ -1582,8 +1580,6 @@ vendor/lib/libgralloc_metadata.so
 vendor/lib/libgralloctypes_mtk.so
 vendor/lib/libscltm.so
 vendor/lib/vendor.xiaomi.hardware.displayfeature@1.0.so
-vendor/lib64/hw/android.hardware.graphics.allocator@4.0-impl-mediatek.so
-vendor/lib64/hw/android.hardware.graphics.mapper@4.0-impl-mediatek.so
 vendor/lib64/hw/displayfeature.default.so
 vendor/lib64/hw/hwcomposer.mt6785.so
 vendor/lib64/hw/memtrack.mt6785.so
@@ -1982,6 +1978,14 @@ vendor/lib64/libion_mtk.so
 vendor/lib64/libion_ulit.so
 vendor/lib64/vendor.mediatek.hardware.dfps@1.0.so
 vendor/lib64/vendor.mediatek.hardware.gpu@1.0.so
+
+# Graphics (Allocator) - from rosemary-user 12 SP1A.210812.016 V13.0.2.0.SFFRUXM release-keys
+vendor/lib/hw/android.hardware.graphics.allocator@4.0-impl-mediatek.so|9f896ca7b981834be9e1a1116c971394f95ece07
+vendor/lib64/hw/android.hardware.graphics.allocator@4.0-impl-mediatek.so|20290857ee049b423dd1a8e493bf85a8653c4fea
+
+# Graphics (Mapper) - from rosemary-user 12 SP1A.210812.016 V13.0.2.0.SFFRUXM release-keys
+vendor/lib/hw/android.hardware.graphics.mapper@4.0-impl-mediatek.so|30bc6b9fd5abe37f1c0b265b7448441776ee8f13
+vendor/lib64/hw/android.hardware.graphics.mapper@4.0-impl-mediatek.so|54b3be407037e4ac1f64c51ba4d0b96aba75d393
 
 # IMS
 vendor/bin/hw/vtservice_hidl

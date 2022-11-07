@@ -1532,7 +1532,7 @@ vendor/xbin/cameratest
 vendor/xbin/dc_cal
 
 # Camera Utils - from rosemary-user 12 SP1A.210812.016 V13.0.2.0.SFFRUXM release-keys
-vendor/lib64/libmtkcam_stdutils.so|81c34e3e711728010104cab05cc189f2a4742adc
+vendor/lib64/libmtkcam_stdutils.so|81c34e3e711728010104cab05cc189f2a4742adc|10dfa91898c92a0ca90d1e77621f60f20091fd5a 
 
 # Charger
 bin/kpoc_charger
@@ -2018,7 +2018,6 @@ vendor/lib64/vendor.mediatek.hardware.videotelephony@1.0.so
 
 # IMS-System
 bin/vtservice
-etc/apns-conf.xml:product/etc/apns-conf.xml
 etc/init/init.vtservice.rc
 -framework/mediatek-common.jar
 -framework/mediatek-framework.jar
@@ -2052,8 +2051,6 @@ lib64/libvcodec_capenc.so
 -priv-app/ImsService/ImsService.apk|ea80b2f938de56017ac9fca17dddd3b3abff79fe
 system_ext/lib/vendor.mediatek.hardware.mtkradioex@1.0.so
 system_ext/lib/vendor.mediatek.hardware.videotelephony@1.0.so
-system_ext/lib64/vendor.mediatek.hardware.dmc@1.1.so
-system_ext/lib64/vendor.mediatek.hardware.dmc@1.2.so
 system_ext/lib64/vendor.mediatek.hardware.mtkradioex@1.0.so
 system_ext/lib64/vendor.mediatek.hardware.videotelephony@1.0.so
 
@@ -2197,7 +2194,6 @@ vendor/bin/atcid
 vendor/bin/fuelgauged
 vendor/bin/fuelgauged_nvram
 vendor/bin/lc_nvram_prinfo
-vendor/bin/misc_writer
 vendor/bin/nv_routing
 vendor/bin/nvram_daemon
 vendor/etc/init/atcid.rc
@@ -2694,7 +2690,6 @@ vendor/lib/libudf.so|7cdbb5c5c616dbbec6afcd75d5cc41f915ff82d6
 vendor/lib64/libudf.so|66324571c3f69057b250bce3b0d58c386da0c25b
 
 # WiFi
-bin/iwpriv
 vendor/bin/hw/hostapd
 vendor/bin/hw/wpa_supplicant
 vendor/bin/wlan_assistant

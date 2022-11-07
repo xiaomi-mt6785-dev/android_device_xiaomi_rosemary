@@ -2640,9 +2640,9 @@ vendor/lib/libthermalalgo.so
 vendor/lib64/hw/android.hardware.thermal@2.0-impl.so
 vendor/lib64/hw/thermal.mt6785.so
 
-# UDF
-vendor/lib/libudf.so
-vendor/lib64/libudf.so
+# UDF - from rosemary-user 12 SP1A.210812.016 V13.0.2.0.SFFRUXM release-keys
+vendor/lib/libudf.so|7cdbb5c5c616dbbec6afcd75d5cc41f915ff82d6
+vendor/lib64/libudf.so|66324571c3f69057b250bce3b0d58c386da0c25b
 
 # WiFi
 bin/iwpriv

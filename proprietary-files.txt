@@ -1537,6 +1537,10 @@ vendor/xbin/dc_cal
 vendor/lib64/libmtkcam_stdutils.so|81c34e3e711728010104cab05cc189f2a4742adc
 
 # Charger
+bin/kpoc_charger
+etc/init/kpoc_charger.rc
+lib/libshowlogo.so
+lib/libsysenv_system.so
 vendor/bin/batterysecret
 
 # DRM

@@ -1490,7 +1490,6 @@ vendor/lib64/libmtkcam_pipelinepolicy_factory.so
 vendor/lib64/libmtkcam_prerelease.so
 vendor/lib64/libmtkcam_rsc.so
 vendor/lib64/libmtkcam_scenariorecorder.so
-vendor/lib64/libmtkcam_stdutils.so
 vendor/lib64/libmtkcam_streamutils.so
 vendor/lib64/libmtkcam_synchelper.so
 vendor/lib64/libmtkcam_sysutils.so
@@ -1533,6 +1532,9 @@ vendor/lib64/vendor.mediatek.hardware.camera.postproc@1.0.so
 vendor/lib64/vendor.mediatek.hardware.camera.security@1.0.so
 vendor/xbin/cameratest
 vendor/xbin/dc_cal
+
+# Camera Utils - from rosemary-user 12 SP1A.210812.016 V13.0.2.0.SFFRUXM release-keys
+vendor/lib64/libmtkcam_stdutils.so|81c34e3e711728010104cab05cc189f2a4742adc
 
 # Charger
 vendor/bin/batterysecret

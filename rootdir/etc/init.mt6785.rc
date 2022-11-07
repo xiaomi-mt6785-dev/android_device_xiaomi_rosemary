@@ -23,15 +23,12 @@ on early-init
 
 on init
     write /proc/bootprof "INIT:init"
-    # Support legacy paths
-    symlink /sdcard /mnt/sdcard
 
     # if primary storage is physical, set ro.vold.primary_physical to 1
     # setprop ro.vold.primary_physical 1
 
     # M306 Add for sensor calibration command in 20201124 start
     mkdir /mnt/vendor/persist 0771 system system
-    mkdir /mnt/cd-rom 0000 system system
     mkdir /mnt/vendor/rescue 0771 system system
 
 # change lk_env permission
@@ -151,9 +148,6 @@ on fs
     mkdir /data/vendor/thermal 0771 root system
     mkdir /data/vendor/thermal/config 0771 root system
 
-on fs
-   mount iso9660 loop@/vendor/etc/iAmCdRom.iso /mnt/cd-rom ro
-
 on late-fs
     write /proc/bootprof "INIT:late-fs"
     wait_for_prop hwservicemanager.ready "true"
@@ -178,9 +172,6 @@ on post-fs
     write /proc/perfmgr/boost_ctrl/eas_ctrl/boot_boost "2 100"
     write /proc/perfmgr/boost_ctrl/eas_ctrl/boot_boost "3 100"
     write /proc/sys/kernel/sched_stune_task_threshold 0
-
-    # Support legacy paths
-    symlink /sdcard /storage/sdcard0
 
     #change permissions for mediaserver
     chown root media /proc/clkmgr/mipi_test

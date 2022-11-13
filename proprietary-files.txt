@@ -2549,7 +2549,6 @@ vendor/lib64/libmtkshifter_vendor.so
 vendor/lib64/libmtksysutils.so
 vendor/lib64/libmtkutils.so
 vendor/lib64/libnwk_opt_halwrap_vendor.so
-vendor/lib64/libpcap.so
 vendor/lib64/libratconfig.so
 vendor/lib64/librilfusion.so
 vendor/lib64/libsimaka.so

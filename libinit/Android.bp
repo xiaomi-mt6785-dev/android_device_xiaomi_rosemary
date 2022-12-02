@@ -1,0 +1,25 @@
+//
+// Copyright (C) 2021 The LineageOS Project
+//
+// SPDX-License-Identifier: Apache-2.0
+//
+
+cc_library_static {
+    name: "libinit_rosemary",
+    srcs: [
+        "libinit_dalvik_heap.cpp",
+        "libinit_variant.cpp",
+        "libinit_utils.cpp",
+    ],
+    whole_static_libs: ["libbase"],
+    export_include_dirs: ["include"],
+    recovery_available: true,
+}
+
+cc_library_static {
+    name: "init_rosemary",
+    srcs: ["init_rosemary.cpp"],
+    whole_static_libs: ["libinit_rosemary"],
+    include_dirs: ["system/core/init"],
+    recovery_available: true,
+}

@@ -121,6 +121,7 @@ ro.lmk.kill_timeout_ms=100
 persist.miui.extm.enable=1
 
 # Media
+media.stagefright.thumbnail.prefer_hw_codecs=true
 ro.vendor.mtk_config_max_dram_size=0x800000000
 ro.vendor.smvr.p2batch.vga=16
 ro.vendor.smvr.p2batch.hd=8

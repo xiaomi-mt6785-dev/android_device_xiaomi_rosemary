@@ -1190,20 +1190,6 @@ on  property:vendor.elliptic.sensor.test=1
 on  property:vendor.elliptic.sensor.test=0
     stop ellipticSensorTest
 
-service displayfeature /system/bin/displayfeature
-    class late_start
-    user root
-    group root
-
-on property:init.svc.surfaceflinger=stopped
-    stop displayfeature
-
-on property:init.svc.surfaceflinger=running
-    start displayfeature
-
-on property:init.svc.surfaceflinger=restarting
-    stop displayfeature
-
 on property:sys.boot_completed="" && property:persist.radio.op.name=AT && property:persist.vendor.op.name.last=UN
    setprop persist.vendor.op.name.last "AT"
    setprop sys.powerctl "reboot"

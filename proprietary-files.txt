@@ -1568,29 +1568,21 @@ vendor/lib64/libwvkeyboxext.so
 
 # Display
 vendor/bin/hw/android.hardware.graphics.allocator@4.0-service-mediatek
-vendor/bin/hw/vendor.xiaomi.hardware.displayfeature@1.0-service
-vendor/etc/init/vendor.xiaomi.hardware.displayfeature@1.0-service.rc
 vendor/etc/dsi_panel_k7_38_0c_0a_fhdp_video_mi.xml
 vendor/etc/dsi_panel_k7_44_06_0b_fhdp_video_mi.xml
 vendor/etc/dsi_panel_k7_44_0e_0b_fhdp_video_mi.xml
 vendor/etc/screen_light.xml
-vendor/lib/hw/displayfeature.default.so
 vendor/lib/hw/memtrack.mt6785.so
-vendor/lib/hw/vendor.xiaomi.hardware.displayfeature@1.0-impl.so
 vendor/lib/libgralloc_extra.so
 vendor/lib/libgralloc_metadata.so
 vendor/lib/libgralloctypes_mtk.so
 vendor/lib/libscltm.so
-vendor/lib/vendor.xiaomi.hardware.displayfeature@1.0.so
-vendor/lib64/hw/displayfeature.default.so
 vendor/lib64/hw/hwcomposer.mt6785.so
 vendor/lib64/hw/memtrack.mt6785.so
-vendor/lib64/hw/vendor.xiaomi.hardware.displayfeature@1.0-impl.so
 vendor/lib64/libgralloc_extra.so
 vendor/lib64/libgralloc_metadata.so
 vendor/lib64/libgralloctypes_mtk.so
 vendor/lib64/libscltm.so
-vendor/lib64/vendor.xiaomi.hardware.displayfeature@1.0.so
 
 # Dplanner
 vendor/bin/hw/vendor.mediatek.hardware.dplanner@2.0-service

@@ -22,7 +22,6 @@ dalvik.vm.dex2oat64.enabled=true
 # Display
 persist.vendor.dc_backlight.enable=false
 ro.display.type=oled
-sys.displayfeature_hidl=true
 vendor.hbm.enable=true
 
 # Fingerprint

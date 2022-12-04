@@ -17,6 +17,12 @@ vendor/lib64/libaedv.so
 vendor/lib64/libladder.so
 
 # APU
+system_ext/lib64/libapuwareapusys.mtk.so
+system_ext/lib64/libapuwareutils.mtk.so
+system_ext/lib64/libapuwarexrp.mtk.so
+system_ext/lib64/vendor.mediatek.hardware.apuware.apusys@1.0.so
+system_ext/lib64/vendor.mediatek.hardware.apuware.utils@1.0.so
+system_ext/lib64/vendor.mediatek.hardware.apuware.xrp@1.0.so
 vendor/lib64/APUWareUtilsServer.so
 vendor/lib64/APUWareXrpServer.so
 vendor/lib64/libapu-apuwareutils.mtk.so

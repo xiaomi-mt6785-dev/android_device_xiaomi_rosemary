@@ -2060,6 +2060,11 @@ system_ext/lib/vendor.mediatek.hardware.videotelephony@1.0.so
 system_ext/lib64/vendor.mediatek.hardware.mtkradioex@1.0.so
 system_ext/lib64/vendor.mediatek.hardware.videotelephony@1.0.so
 
+# IR
+vendor/bin/consumerird
+vendor/lib/hw/consumerir.default.so:vendor/lib/hw/consumerir.mt6785.so
+vendor/lib64/hw/consumerir.default.so:vendor/lib64/hw/consumerir.mt6785.so
+
 # Keymaster
 vendor/bin/hw/android.hardware.keymaster@4.0-service.beanpod
 vendor/bin/hw/vendor.mediatek.hardware.keyinstall@1.0-service

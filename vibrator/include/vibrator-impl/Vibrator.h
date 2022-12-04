@@ -24,9 +24,9 @@ namespace hardware {
 namespace vibrator {
 
 // Driver Nodes
-static constexpr char activate_node[] = "/sys/devices/platform/haptic_pwm/activate";
-static constexpr char duration_node[] = "/sys/devices/platform/haptic_pwm/duration";
-static constexpr char index_node[] = "/sys/devices/platform/haptic_pwm/index";
+static constexpr char activate_node[] = "/sys/devices/platform/aw8622/activate";
+static constexpr char duration_node[] = "/sys/devices/platform/aw8622/duration";
+static constexpr char index_node[] = "/sys/devices/platform/aw8622/index";
 
 // Define durations for waveforms
 static constexpr uint32_t WAVEFORM_TICK_EFFECT_MS = 10;

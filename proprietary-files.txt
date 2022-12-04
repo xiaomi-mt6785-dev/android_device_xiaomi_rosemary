@@ -2580,9 +2580,7 @@ vendor/bin/hw/android.hardware.secure_element@1.2-service-mediatek
 vendor/etc/init/android.hardware.secure_element@1.2-service-mediatek.rc
 
 # Sensors
-vendor/bin/hw/android.hardware.sensors@2.0-service.multihal-mediatek
 vendor/bin/sensors_test
-vendor/etc/init/android.hardware.sensors@2.0-service.multihal-mediatek.rc
 vendor/etc/sensors/hals.conf
 vendor/etc/cit_config.xml
 vendor/etc/elliptic_sensor.xml

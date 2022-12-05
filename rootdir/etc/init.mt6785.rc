@@ -103,8 +103,6 @@ on charger
     chmod 0666 /sys/class/power_supply/battery/charge_full_design
     chmod 0666 /sys/class/power_supply/battery/charge_full
     chmod 0666 /sys/class/power_supply/battery/typec_mode
-    mkdir /data/vendor/charge_logger 0775 system system
-    start charge_logger
 
     chown system system /sys/class/leds/lcd-backlight/brightness
     chown system system /sys/class/leds/red/brightness
@@ -214,17 +212,6 @@ on post-fs
     symlink /dev/block/platform/bootdevice/by-name/preloader_b /dev/block/platform/bootdevice/by-name/preloader_emmc_b
     symlink /dev/block/platform/bootdevice/by-name/preloader_a /dev/block/platform/bootdevice/by-name/preloader_ufs_a
     symlink /dev/block/platform/bootdevice/by-name/preloader_b /dev/block/platform/bootdevice/by-name/preloader_ufs_b
-
-# add charge_logger service for dump charge message
-service charge_logger /vendor/bin/charge_logger
-   class last_start
-   user system
-   group system system wakelock
-   disabled
-   oneshot
-
-on property:sys.boot_completed=1
-    start charge_logger
 
 # M306  Add for pd charge batterysecret
 on property:sys.boot_completed=1
@@ -651,8 +638,7 @@ on post-fs-data
     # gz device
     chmod 0660 /dev/gz_kree
     chown system camera /dev/gz_kree
-#Creat charger log
-    mkdir /data/vendor/charge_logger 0775 system system
+
     #Camera
     chmod 0660 /dev/camera-sysram
     chmod 0660 /dev/camera-isp

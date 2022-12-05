@@ -2,6 +2,9 @@
 /data/vendor/cirrus(/.*)?										u:object_r:mtk_audiohal_data_file:s0
 /mnt/vendor/persist/audio(/.*)? 									u:object_r:mtk_audiohal_data_file:s0
 
+# Batterysecret
+/(vendor|system/vendor)/bin/batterysecret 								u:object_r:batterysecret_exec:s0
+
 # Camera
 /mnt/vendor/persist/camera(/.*)?                                                                        u:object_r:persist_camera_data_file:s0
 

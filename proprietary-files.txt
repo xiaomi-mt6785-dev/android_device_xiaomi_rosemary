@@ -1,4 +1,4 @@
-# Unpinned blobs from rosemary-user 11 RP1A.200720.011 V12.5.14.0.RKLMIXM release-keys
+# Unpinned blobs from rosemary-user 11 RP1A.200720.011 V12.5.16.0.RKLMIXM release-keys
 
 # AAL
 vendor/lib/libaal_cust.so
@@ -2046,7 +2046,7 @@ lib64/libmtkavenhancements.so
 lib64/libmtkperf_client.so
 lib64/libvcodec_cap.so
 lib64/libvcodec_capenc.so
--priv-app/ImsService/ImsService.apk|ea80b2f938de56017ac9fca17dddd3b3abff79fe
+-priv-app/ImsService/ImsService.apk|b4a96e5f8ecdf782e66f7d848ce28d4b3b1083ff
 system_ext/lib/vendor.mediatek.hardware.mtkradioex@1.0.so
 system_ext/lib/vendor.mediatek.hardware.videotelephony@1.0.so
 system_ext/lib64/vendor.mediatek.hardware.mtkradioex@1.0.so
@@ -2200,6 +2200,7 @@ vendor/bin/lc_nvram_prinfo
 vendor/bin/nv_routing
 vendor/bin/nvram_daemon
 vendor/etc/init/atcid.rc
+vendor/etc/init/fuelgauged_init.rc
 vendor/etc/init/fuelgauged_nvram_init.rc
 vendor/etc/init/nvram_daemon.rc
 vendor/etc/init/vendor.mediatek.hardware.nvram@1.1-sevice.rc
@@ -2331,7 +2332,6 @@ vendor/etc/init/init.cccifsd.rc
 vendor/etc/init/init.cccimdinit.rc
 vendor/etc/init/init.cccirpcd.rc
 vendor/etc/init/init.md_apps.rc
-vendor/etc/init/init.udc_lib.rc
 vendor/etc/init/init.udc_lib.rc
 vendor/etc/init/init.xcap.rc
 vendor/etc/init/init_connectivity.rc

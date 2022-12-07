@@ -1,0 +1,2 @@
+allow hal_sensors_default nvcfg_file:dir rw_dir_perms;
+allow hal_sensors_default nvcfg_file:file create_file_perms;

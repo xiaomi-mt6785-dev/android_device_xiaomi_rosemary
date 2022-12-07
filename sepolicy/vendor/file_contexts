@@ -23,6 +23,9 @@
 # Lights
 /(vendor|system/vendor)/bin/hw/android\.hardware\.light-service\.rosemary                          	u:object_r:hal_light_default_exec:s0
 
+# Sensors
+/dev/elliptic[0-1] 											u:object_r:sensor_device:s0
+
 # Thermals
 /vendor/bin/mi_thermald       										u:object_r:mi_thermald_exec:s0
 

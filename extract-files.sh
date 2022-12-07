@@ -88,6 +88,10 @@ function blob_fixup {
             xxd -p "${2}" | sed "s/ffc301d1fd7b06a9fd830191e8031f2ae2037db2a94300d14ad03bd54a15/000080d2c0035fd6fd830191e8031f2ae2037db2a94300d14ad03bd54a15/g" | xxd -r -p > "${2}".patched
             mv "${2}".patched "${2}"
             ;;
+        vendor/lib64/hw/fingerprint.fpc.default.so)
+            xxd -p "${2}" | sed "s/5fd600000000ff4301d1fd7b02a9fd830091f51b00f9f44f04a954d03bd5/5fd600000000c0035fd6fd7b02a9fd830091f51b00f9f44f04a954d03bd5/g" | xxd -r -p > "${2}".patched
+            mv "${2}".patched "${2}"
+            ;;
         vendor/bin/hw/android.hardware.keymaster@4.0-service.beanpod)
             "${PATCHELF}" --add-needed "libshim_beanpod.so" "${2}"
             ;;

@@ -84,6 +84,10 @@ function blob_fixup {
         vendor/lib64/libcam.halsensor.so)
             "${PATCHELF}" --add-needed "libshim_utils.so" "${2}"
             ;;
+        vendor/lib64/libgf_hal.so)
+            xxd -p "${2}" | sed "s/ffc301d1fd7b06a9fd830191e8031f2ae2037db2a94300d14ad03bd54a15/000080d2c0035fd6fd830191e8031f2ae2037db2a94300d14ad03bd54a15/g" | xxd -r -p > "${2}".patched
+            mv "${2}".patched "${2}"
+            ;;
         vendor/bin/hw/android.hardware.keymaster@4.0-service.beanpod)
             "${PATCHELF}" --add-needed "libshim_beanpod.so" "${2}"
             ;;

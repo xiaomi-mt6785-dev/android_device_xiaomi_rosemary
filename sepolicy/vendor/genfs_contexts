@@ -24,3 +24,16 @@ genfscon sysfs /touchpanel                            										u:object_r:sysfs
 
 # Vibrator
 genfscon sysfs /devices/platform/aw8622		                                  						u:object_r:sysfs_vibrator:s0
+
+# Wakeup (https://lkml.org/lkml/2019/8/6/1275)
+genfscon sysfs /devices/platform/1000d000.pwrap/1000d000.pwrap:mt6359-pmic/mt6359-rtc/rtc/rtc0/wakeup 				u:object_r:sysfs_wakeup:s0
+genfscon sysfs /devices/platform/1000d000.pwrap/1000d000.pwrap:mt6359-pmic/mt6359-rtc/wakeup 					u:object_r:sysfs_wakeup:s0
+genfscon sysfs /devices/platform/1000d000.pwrap/1000d000.pwrap:mt6359-pmic/mt635x-auxadc/wakeup 				u:object_r:sysfs_wakeup:s0
+genfscon sysfs /devices/platform/10228000.gce/wakeup 										u:object_r:sysfs_wakeup:s0
+genfscon sysfs /devices/platform/11016000.i2c5/i2c-5/5-0034/mt6360_pmu_chg.2.auto/wakeup 					u:object_r:sysfs_wakeup:s0
+genfscon sysfs /devices/platform/11016000.i2c5/i2c-5/5-004e/tcpc/type_c_port0/dual-role-type_c_port0/wakeup 			u:object_r:sysfs_wakeup:s0
+genfscon sysfs /devices/platform/1101a000.i2c7/i2c-7/7-0051/power_supply/ln8000/wakeup 						u:object_r:sysfs_wakeup:s0
+genfscon sysfs /devices/platform/1101a000.i2c7/i2c-7/7-0051/wakeup 								u:object_r:sysfs_wakeup:s0
+genfscon sysfs /devices/platform/battery/power_supply/bms/wakeup 								u:object_r:sysfs_wakeup:s0
+genfscon sysfs /devices/platform/maxim_ds28e16/power_supply/batt_verify/wakeup 							u:object_r:sysfs_wakeup:s0
+genfscon sysfs /devices/platform/mt_charger/power_supply/main/wakeup 								u:object_r:sysfs_wakeup:s0

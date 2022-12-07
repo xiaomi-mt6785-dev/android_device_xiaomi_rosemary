@@ -12,6 +12,7 @@
 
 typedef struct variant_info {
     std::string hwc_value;
+    std::string hwname_value;
     std::string sku_value;
     std::string device;
 

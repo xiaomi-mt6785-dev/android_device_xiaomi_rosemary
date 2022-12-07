@@ -21,3 +21,6 @@ genfscon proc /sys/kernel/sched_stune_task_threshold 										u:object_r:proc_s
 
 # Touchpanel
 genfscon sysfs /touchpanel                            										u:object_r:sysfs_touchpanel:s0
+
+# Vibrator
+genfscon sysfs /devices/platform/aw8622		                                  						u:object_r:sysfs_vibrator:s0

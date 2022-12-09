@@ -1,3 +1,6 @@
+# Extcon
+genfscon sysfs /devices/platform/extcon_usb/extcon/extcon0		               						u:object_r:sysfs_extcon:s0
+
 # Fingerprint
 genfscon sysfs /devices/platform/11012000.spi2/spi_master/spi2/spi2.0/authen_fd                                                 u:object_r:sysfs_fingerprint:s0
 genfscon sysfs /devices/platform/fingerprint                                                                                    u:object_r:sysfs_fingerprint:s0

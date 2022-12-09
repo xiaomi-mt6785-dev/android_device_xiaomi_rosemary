@@ -1,2 +1,17 @@
+binder_call(hal_sensors_default, mtk_hal_audio)
+
+allow hal_sensors_default m_acc_misc_device:chr_file r_file_perms;
+allow hal_sensors_default m_als_misc_device:chr_file r_file_perms;
+allow hal_sensors_default m_baro_misc_device:chr_file r_file_perms;
+allow hal_sensors_default m_fusion_misc_device:chr_file r_file_perms;
+allow hal_sensors_default m_gyro_misc_device:chr_file r_file_perms;
+allow hal_sensors_default m_mag_misc_device:chr_file r_file_perms;
+allow hal_sensors_default m_ps_misc_device:chr_file r_file_perms;
+allow hal_sensors_default m_situ_misc_device:chr_file r_file_perms;
+allow hal_sensors_default m_step_c_misc_device:chr_file r_file_perms;
 allow hal_sensors_default nvcfg_file:dir rw_dir_perms;
 allow hal_sensors_default nvcfg_file:file create_file_perms;
+allow hal_sensors_default sensor_device:chr_file r_file_perms;
+allow hal_sensors_default sensorlist_device:chr_file rw_file_perms;
+allow hal_sensors_default sysfs_sensor:dir r_dir_perms;
+allow hal_sensors_default sysfs_sensor:file rw_file_perms;

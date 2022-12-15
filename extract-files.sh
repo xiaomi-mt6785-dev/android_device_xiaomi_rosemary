@@ -58,6 +58,9 @@ function blob_fixup {
         lib64/libshowlogo.so)
             "${PATCHELF}" --add-needed "libshim_showlogo.so" "${2}"
             ;;
+        vendor/bin/mtk_agpsd)
+           "${PATCHELF}" --replace-needed "libcrypto.so" "libcrypto-v32.so" "${2}"
+            ;;
         vendor/bin/hw/android.hardware.gnss-service.mediatek |\
         vendor/lib64/hw/android.hardware.gnss-impl-mediatek.so)
             "$PATCHELF" --replace-needed "android.hardware.gnss-V1-ndk_platform.so" "android.hardware.gnss-V1-ndk.so" "$2"

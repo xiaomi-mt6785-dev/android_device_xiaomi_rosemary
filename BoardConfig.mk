@@ -11,15 +11,15 @@ AB_OTA_UPDATER := true
 BOARD_USES_RECOVERY_AS_BOOT := true
 BOARD_BUILD_SYSTEM_ROOT_IMAGE := false
 
-AB_OTA_PARTITIONS += \
+AB_OTA_PARTITIONS := \
+    boot \
+    dtbo \
     system \
     product \
     vendor \
-    boot \
     vbmeta \
     vbmeta_system \
-    vbmeta_vendor \
-    dtbo
+    vbmeta_vendor
 
 BUILD_BROKEN_DUP_RULES := true
 BUILD_BROKEN_PREBUILT_ELF_FILES := true

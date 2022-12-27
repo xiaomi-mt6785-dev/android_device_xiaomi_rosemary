@@ -1,3 +1,12 @@
+# Allow access to the HALs
+hal_client_domain(hal_sensors_default, hal_audio)
+
+# Allow binder communication with hal_audio_default
+binder_call(hal_sensors_default, hal_audio_default)
+
+# Allow hal_sensors_default to find hal_audio_hwservice
+allow hal_sensors_default hal_audio_hwservice:hwservice_manager find;
+
 binder_call(hal_sensors_default, mtk_hal_audio)
 
 allow hal_sensors_default m_acc_misc_device:chr_file r_file_perms;

@@ -464,6 +464,9 @@ on post-fs-data
 
     #Fingerprint
     chmod 0666 /dev/goodix_fp
+    mkdir /data/vendor/fpc 0777 system system
+    mkdir /data/vendor/goodix 0777 system system
+
 
     #VideoCodec
     chmod 0660 /dev/vcu
@@ -1011,6 +1014,16 @@ on boot
     # DT2W
     chown system system /sys/touchpanel/double_tap
     chmod 0660 /sys/touchpanel/double_tap
+
+    # Fingerprint
+    chown system system /sys/devices/platform/1100a000.spi0/spi_master/spi0/spi0.0/irq
+    chown system system /sys/devices/platform/1100a000.spi0/spi_master/spi0/spi0.0/wakeup_enable
+    chown system system /sys/devices/platform/1100a000.spi0/spi_master/spi0/spi0.0/modalias
+    chown system system /sys/devices/platform/1100a000.spi0/spi_master/spi0/spi0.0/clk_enable
+    chown system system /sys/devices/platform/1100a000.spi0/spi_master/spi0/spi0.0/authen_fd/performance
+
+    chmod 0644 /dev/goodix_fp
+    chown system system /dev/goodix_fp
 
 # Stop bootprof
 on property:sys.boot_completed=1

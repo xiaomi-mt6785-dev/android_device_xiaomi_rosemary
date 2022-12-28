@@ -1457,7 +1457,7 @@ vendor/lib64/libmtkcam_diputils.so
 vendor/lib64/libmtkcam_dpe.so
 vendor/lib64/libmtkcam_exif.so
 vendor/lib64/libmtkcam_fdvt.so
-vendor/lib64/libmtkcam_featurepolicy.so
+vendor/lib64/libmtkcam_featurepolicy.so|7ad7c178e29c24e802df61572039fed27fad6a9c
 vendor/lib64/libmtkcam_featureutils.so
 vendor/lib64/libmtkcam_fwkutils.so
 vendor/lib64/libmtkcam_grallocutils.so

@@ -26,7 +26,6 @@ static const variant_info_t rosemary_info = {
 };
 
 static const variant_info_t secret_info = {
-    .hwc_value = "Global_PA",
     .hwname_value="secret",
     .sku_value = "",
     .device = "secret",

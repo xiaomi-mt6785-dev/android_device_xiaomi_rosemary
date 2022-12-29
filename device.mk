@@ -312,6 +312,7 @@ PRODUCT_ENFORCE_RRO_EXCLUDED_OVERLAYS += \
 PRODUCT_PACKAGES += \
     CarrierConfigOverlayRosemary \
     FrameworksResOverlayRosemary \
+    SystemUIOverlayRosemary \
     TelephonyOverlayRosemary \
     TetheringConfigOverlayRosemary \
     WifiOverlayRosemary

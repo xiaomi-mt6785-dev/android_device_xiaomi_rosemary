@@ -325,40 +325,6 @@
         <item>455</item>
     </array>
 
-    <!-- Array of hysteresis constraint values for brightening, represented as tenths of a
-         percent. The length of this array is assumed to be one greater than
-         config_screenThresholdLevels. The brightening threshold is calculated as
-         screenBrightness * (1.0f + CONSTRAINT_VALUE). When the new screen brightness is higher
-         than this threshold, it is applied. See the config_screenThresholdLevels description for
-         how the constraint value is chosen. -->
-    <array name="config_screenBrighteningThresholds">
-        <item>@null</item>
-    </array>
-
-   <!-- Array of hysteresis constraint values for darkening, represented as tenths of a
-         percent. The length of this array is assumed to be one greater than
-         config_screenThresholdLevels. The darkening threshold is calculated as
-         screenBrightness * (1.0f - CONSTRAINT_VALUE). When the new screen brightness is lower than
-         this threshold, it is applied. See the config_screenThresholdLevels description for how
-         the constraint value is chosen. -->
-    <array name="config_screenDarkeningThresholds">
-        <item>@null</item>
-    </array>
-
-    <!-- Array of screen brightness threshold values. This is used for determining hysteresis
-         constraint values by calculating the index to use for lookup and then setting the
-         constraint value to the corresponding value of the array. The new brightening hysteresis
-         constraint value is the n-th element of config_screenBrighteningThresholds, and the new
-         darkening hysteresis constraint value is the n-th element of
-         config_screenDarkeningThresholds.
-         The (zero-based) index is calculated as follows: (MAX is the largest index of the array)
-         condition                       calculated index
-         value < level[0]                0
-         level[n] <= value < level[n+1]  n+1
-         level[MAX] <= value             MAX+1 -->
-    <array name="config_screenThresholdLevels">
-    </array>
-
     <!-- Minimum screen brightness setting allowed by power manager.
          The user is forbidden from setting the brightness below this level.
          Equivalent to 1/255. -->
@@ -374,6 +340,16 @@
 
     <!-- Whether the display blanks itself when transitioning from a doze to a non-doze state -->
     <bool name="config_displayBlanksAfterDoze">true</bool>
+
+    <!-- ComponentName of a dream to show whenever the system would otherwise have
+         gone to sleep.  When the PowerManager is asked to go to sleep, it will instead
+         try to start this dream if possible.  The dream should typically call startDozing()
+         to put the display into a low power state and allow the application processor
+         to be suspended.  When the dream ends, the system will go to sleep as usual.
+         Specify the component name or an empty string if none.
+         Note that doze dreams are not subject to the same start conditions as ordinary dreams.
+         Doze dreams will run whenever the power manager is in a dozing state. -->
+    <string name="config_dozeComponent">com.android.systemui/com.android.systemui.doze.DozeService</string>
 
     <!-- Configure mobile tcp buffer sizes in the form:
          rat-name:rmem_min,rmem_def,rmem_max,wmem_min,wmem_def,wmem_max

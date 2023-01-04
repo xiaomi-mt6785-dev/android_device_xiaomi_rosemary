@@ -42,7 +42,6 @@ vendor/lib/hw/audio.primary.mt6785.so
 vendor/lib/hw/audio.r_submix.mt6785.so
 vendor/lib/hw/audio.usb.mt6785.so
 vendor/lib/hw/vendor.mediatek.hardware.bluetooth.audio@2.1-impl.so
-vendor/lib/libalsautils.so:vendor/lib/libalsautils-v30.so
 vendor/lib/lib_bsscore.so
 vendor/lib/lib_iir.so
 vendor/lib/lib_speech_enh.so
@@ -77,7 +76,6 @@ vendor/lib64/hw/audio.primary.mt6785.so
 vendor/lib64/hw/audio.r_submix.mt6785.so
 vendor/lib64/hw/audio.usb.mt6785.so
 vendor/lib64/hw/vendor.mediatek.hardware.bluetooth.audio@2.1-impl.so
-vendor/lib64/libalsautils.so:vendor/lib64/libalsautils-v30.so
 vendor/lib64/libMtkSpeechEnh.so
 vendor/lib64/lib_bsscore.so
 vendor/lib64/lib_iir.so

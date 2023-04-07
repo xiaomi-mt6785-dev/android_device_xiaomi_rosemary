@@ -175,7 +175,7 @@ PRODUCT_COPY_FILES += \
 
 # FM Radio
 PRODUCT_PACKAGES += \
-    MtkFMRadio
+    FMRadio
 
 # Gatekeeper
 PRODUCT_PACKAGES += \

@@ -12,7 +12,6 @@ product                                              /product              ext4 
 
 /dev/block/platform/bootdevice/by-name/md_udc        /metadata             ext4            noatime,nosuid,nodev,discard                                            wait,check,formattable,first_stage_mount
 /dev/block/platform/bootdevice/by-name/userdata      /data                 f2fs            noatime,nosuid,nodev,discard,flush_merge,reserve_root=134217,resgid=1065,alloc_mode=reuse,fsync_mode=nobarrier,inlinecrypt wait,check,formattable,quota,latemount,resize,reservedsize=128m,checkpoint=fs,fileencryption=aes-256-xts:aes-256-cts:v2+inlinecrypt_optimized,keydirectory=/metadata/vold/metadata_encryption,fsverity
-/dev/block/platform/bootdevice/by-name/rescue        /cache                ext4            noatime,nosuid,nodev,noauto_da_alloc,discard                            wait,check,formattable
 /dev/block/platform/bootdevice/by-name/frp           /persistent           emmc            defaults                                                                defaults
 
 /dev/block/platform/bootdevice/by-name/protect1      /mnt/vendor/protect_f ext4            noatime,nosuid,nodev,noauto_da_alloc,commit=1,nodelalloc                wait,check,formattable

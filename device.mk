@@ -21,8 +21,7 @@ PRODUCT_AAPT_PREF_CONFIG := xxhdpi
 PRODUCT_PACKAGES += \
     android.hardware.boot@1.2-service \
     android.hardware.boot@1.2-mtkimpl \
-    android.hardware.boot@1.2-mtkimpl.recovery \
-    mtk_plpath_utils
+    android.hardware.boot@1.2-mtkimpl.recovery
 
 PRODUCT_PACKAGES += \
     update_engine \

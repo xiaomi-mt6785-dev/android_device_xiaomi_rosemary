@@ -130,7 +130,7 @@ on fs
     write /proc/bootprof "INIT:fs"
 
     wait_for_prop hwservicemanager.ready "true"
-    start vendor.boot-hal-1-1
+    start vendor.boot-hal-1-2
     write /proc/bootprof "INIT:Mount_START"
     write /sys/kernel/tracing/trace_marker "B|1|Mount"
     mount_all --early

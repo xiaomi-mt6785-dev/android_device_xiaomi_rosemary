@@ -407,6 +407,7 @@ PRODUCT_PACKAGES += \
 # Rootdir
 PRODUCT_PACKAGES += \
     fstab.mt6785 \
+    fstab.mt6785.ramdisk \
     init.ago.rc \
     init.connectivity.rc \
     init.modem.rc \
@@ -421,9 +422,6 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     init.recovery.mt6785.rc \
     init.recovery.mt6785.sh
-
-PRODUCT_COPY_FILES += \
-    $(LOCAL_PATH)/rootdir/etc/fstab.mt6785:$(TARGET_COPY_OUT_RECOVERY)/root/first_stage_ramdisk/fstab.mt6785
 
 # Sensors
 PRODUCT_PACKAGES += \

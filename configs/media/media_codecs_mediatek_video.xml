@@ -93,6 +93,16 @@ Only the three quirks included above are recognized at this point:
             <Limit name="concurrent-instances" max="16" />
             <Limit name="performance-point-3840x2160" value="30" />
         </MediaCodec>
+        <MediaCodec name="OMX.MTK.VIDEO.DECODER.HEVC.secure" type="video/hevc" >
+            <Limit name="size" min="16x16" max="2048x1088" />
+            <Quirk name="requires-allocate-on-input-ports" />
+            <Quirk name="requires-allocate-on-output-ports" />
+            <Feature name="secure-playback" required="true" />
+            <Feature name="adaptive-playback"/>
+            <Feature name="can-swap-width-height"/>
+            <Limit name="concurrent-instances" max="1" />
+            <Limit name="performance-point-1920x1080" value="30" />
+        </MediaCodec>
         <MediaCodec name="OMX.MTK.VIDEO.DECODER.MPEG4" type="video/mp4v-es" >
             <Limit name="size" min="16x16" max="2048x1088" />
             <Quirk name="requires-allocate-on-input-ports" />
@@ -151,13 +161,6 @@ Only the three quirks included above are recognized at this point:
             <Feature name="adaptive-playback"/>
             <Feature name="can-swap-width-height"/>
             <Limit name="concurrent-instances" max="1" />
-            <Limit name="performance-point-1920x1088" value="30" />
-        </MediaCodec>
-        <MediaCodec name="OMX.MTK.VIDEO.DECODER.XVID" type="video/xvid" >
-            <Limit name="size" min="16x16" max="2048x1088" />
-            <Quirk name="requires-allocate-on-input-ports" />
-            <Quirk name="requires-allocate-on-output-ports" />
-            <Limit name="concurrent-instances" max="16" />
             <Limit name="performance-point-1920x1088" value="30" />
         </MediaCodec>
         <!--20201216 longcheer lilei modify for HMI_M306_A01-13

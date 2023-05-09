@@ -154,8 +154,6 @@
             <kctl name="DMIC1_MUX" value="DMIC_DATA0" />
         </path>
         <path name="builtin_Mic_Mic1" value="turnoff">
-            <kctl name="Mic_Type_Mux_0" value="Idle" />
-            <kctl name="Mic_Type_Mux_2" value="Idle" />
             <kctl name="MISO1_MUX" value="UL1_CH2" />
             <kctl name="ADC_L_Mux" value="Idle" />
             <kctl name="PGA_L_Mux" value="None" />
@@ -171,8 +169,6 @@
             <kctl name="DMIC1_MUX" value="DMIC_DATA1_L_1" />
         </path>
         <path name="builtin_Mic_Mic1_Inverse" value="turnoff">
-            <kctl name="Mic_Type_Mux_0" value="Idle" />
-            <kctl name="Mic_Type_Mux_2" value="Idle" />
             <kctl name="MISO0_MUX" value="UL1_CH1" />
             <kctl name="ADC_R_Mux" value="Idle" />
             <kctl name="PGA_R_Mux" value="None" />
@@ -188,8 +184,6 @@
             <kctl name="DMIC1_MUX" value="DMIC_DATA1_L_1" />
         </path>
         <path name="builtin_Mic_Mic2" value="turnoff">
-            <kctl name="Mic_Type_Mux_0" value="Idle" />
-            <kctl name="Mic_Type_Mux_2" value="Idle" />
             <kctl name="MISO0_MUX" value="UL1_CH1" />
             <kctl name="ADC_R_Mux" value="Idle" />
             <kctl name="PGA_R_Mux" value="None" />
@@ -205,8 +199,6 @@
             <kctl name="DMIC1_MUX" value="DMIC_DATA0" />
         </path>
         <path name="builtin_Mic_Mic2_Inverse" value="turnoff">
-            <kctl name="Mic_Type_Mux_0" value="Idle" />
-            <kctl name="Mic_Type_Mux_2" value="Idle" />
             <kctl name="MISO1_MUX" value="UL1_CH2" />
             <kctl name="ADC_L_Mux" value="Idle" />
             <kctl name="PGA_L_Mux" value="None" />
@@ -222,8 +214,6 @@
             <kctl name="DMIC1_MUX" value="DMIC_DATA1_R" />
         </path>
         <path name="builtin_Mic_Mic3" value="turnoff">
-            <kctl name="Mic_Type_Mux_0" value="Idle" />
-            <kctl name="Mic_Type_Mux_2" value="Idle" />
             <kctl name="MISO0_MUX" value="UL1_CH1" />
             <kctl name="ADC_R_Mux" value="Idle" />
             <kctl name="PGA_R_Mux" value="None" />
@@ -239,8 +229,6 @@
             <kctl name="DMIC1_MUX" value="DMIC_DATA1_R" />
         </path>
         <path name="builtin_Mic_Mic3_Inverse" value="turnoff">
-            <kctl name="Mic_Type_Mux_0" value="Idle" />
-            <kctl name="Mic_Type_Mux_2" value="Idle" />
             <kctl name="MISO0_MUX" value="UL1_CH1" />
             <kctl name="ADC_R_Mux" value="Idle" />
             <kctl name="PGA_R_Mux" value="None" />
@@ -256,8 +244,6 @@
             <kctl name="DMIC1_MUX" value="DMIC_DATA0" />
         </path>
         <path name="builtin_Mic_SingleMic" value="turnoff">
-            <kctl name="Mic_Type_Mux_0" value="Idle" />
-            <kctl name="Mic_Type_Mux_2" value="Idle" />
             <kctl name="MISO1_MUX" value="UL1_CH2" />
             <kctl name="ADC_L_Mux" value="Idle" />
             <kctl name="PGA_L_Mux" value="None" />
@@ -275,8 +261,6 @@
             <kctl name="DMIC1_MUX" value="DMIC_DATA1_L_1" />
         </path>
         <path name="builtin_Mic_DualMic" value="turnoff">
-            <kctl name="Mic_Type_Mux_0" value="Idle" />
-            <kctl name="Mic_Type_Mux_2" value="Idle" />
             <kctl name="ADC_L_Mux" value="Idle" />
             <kctl name="ADC_R_Mux" value="Idle" />
             <kctl name="PGA_L_Mux" value="None" />
@@ -297,8 +281,6 @@
         <path name="builtin_Mic_DualMic_Inverse" value="turnoff">
             <kctl name="MISO0_MUX" value="UL1_CH1" />
             <kctl name="MISO1_MUX" value="UL1_CH2" />
-            <kctl name="Mic_Type_Mux_0" value="Idle" />
-            <kctl name="Mic_Type_Mux_2" value="Idle" />
             <kctl name="ADC_L_Mux" value="Idle" />
             <kctl name="ADC_R_Mux" value="Idle" />
             <kctl name="PGA_L_Mux" value="None" />
@@ -321,8 +303,6 @@
             <kctl name="DMIC2_MUX" value="DMIC_DATA1_R" />
         </path>
         <path name="builtin_Mic_ThreeMic" value="turnoff">
-            <kctl name="Mic_Type_Mux_0" value="Idle" />
-            <kctl name="Mic_Type_Mux_2" value="Idle" />
             <kctl name="ADC_L_Mux" value="Idle" />
             <kctl name="ADC_R_Mux" value="Idle" />
             <kctl name="ADC_3_Mux" value="Idle" />
@@ -349,8 +329,6 @@
         <path name="builtin_Mic_ThreeMic_Inverse" value="turnoff">
             <kctl name="MISO0_MUX" value="UL1_CH1" />
             <kctl name="MISO1_MUX" value="UL1_CH2" />
-            <kctl name="Mic_Type_Mux_0" value="Idle" />
-            <kctl name="Mic_Type_Mux_2" value="Idle" />
             <kctl name="ADC_L_Mux" value="Idle" />
             <kctl name="ADC_R_Mux" value="Idle" />
             <kctl name="ADC_3_Mux" value="Idle" />
@@ -373,8 +351,6 @@
         <path name="builtin_Mic_BackMic" value="turnoff">
             <kctl name="MISO0_MUX" value="UL1_CH1" />
             <kctl name="MISO1_MUX" value="UL1_CH2" />
-            <kctl name="Mic_Type_Mux_0" value="Idle" />
-            <kctl name="Mic_Type_Mux_2" value="Idle" />
             <kctl name="ADC_L_Mux" value="Idle" />
             <kctl name="ADC_R_Mux" value="Idle" />
             <kctl name="PGA_L_Mux" value="None" />
@@ -393,8 +369,6 @@
             <kctl name="DMIC1_MUX" value="DMIC_DATA1_L_1" />
         </path>
         <path name="builtin_Mic_BackMic_Inverse" value="turnoff">
-            <kctl name="Mic_Type_Mux_0" value="Idle" />
-            <kctl name="Mic_Type_Mux_2" value="Idle" />
             <kctl name="ADC_L_Mux" value="Idle" />
             <kctl name="ADC_R_Mux" value="Idle" />
             <kctl name="PGA_L_Mux" value="None" />
@@ -419,8 +393,6 @@
         <path name="builtin_Mic_BackMic_3" value="turnoff">
             <kctl name="MISO0_MUX" value="UL1_CH1" />
             <kctl name="MISO1_MUX" value="UL1_CH2" />
-            <kctl name="Mic_Type_Mux_0" value="Idle" />
-            <kctl name="Mic_Type_Mux_2" value="Idle" />
             <kctl name="ADC_L_Mux" value="Idle" />
             <kctl name="ADC_R_Mux" value="Idle" />
             <kctl name="ADC_3_Mux" value="Idle" />
@@ -445,8 +417,6 @@
             <kctl name="DMIC2_MUX" value="DMIC_DATA1_R" />
         </path>
         <path name="builtin_Mic_BackMic_3_Inverse" value="turnoff">
-            <kctl name="Mic_Type_Mux_0" value="Idle" />
-            <kctl name="Mic_Type_Mux_2" value="Idle" />
             <kctl name="ADC_L_Mux" value="Idle" />
             <kctl name="ADC_R_Mux" value="Idle" />
             <kctl name="ADC_3_Mux" value="Idle" />
@@ -463,7 +433,6 @@
             <kctl name="PGA_L_Mux" value="AIN1" />
         </path>
         <path name="headset_mic_input" value="turnoff">
-            <kctl name="Mic_Type_Mux_1" value="Idle" />
             <kctl name="MISO1_MUX" value="UL1_CH2" />
             <kctl name="ADC_L_Mux" value="Idle" />
             <kctl name="PGA_L_Mux" value="None" />
@@ -476,22 +445,32 @@
             <kctl name="DMIC1_MUX" value="DMIC_DATA1_L_1" />
         </path>
         <path name="builtin_Mic_Vow_Mic" value="turnoff">
-            <kctl name="Mic_Type_Mux_0" value="Idle" />
-            <kctl name="Mic_Type_Mux_2" value="Idle" />
             <kctl name="ADC_L_Mux" value="Idle" />
             <kctl name="PGA_L_Mux" value="None" />
             <kctl name="VOW_UL_SRC_MUX" value="AMIC" />
         </path>
-        <path name="builtin_Mic_Vow_Mic2" value="turnon">
+        <path name="builtin_Mic_Vow_Mic1" value="turnon">
             <kctl name="VOW_AMIC0_MUX" value="ADC_R" />
             <kctl name="ADC_R_Mux" value="Right Preamplifier" />
             <kctl name="PGA_R_Mux" value="AIN2" />
             <kctl name="DMIC0_MUX" value="DMIC_DATA0" />
             <kctl name="DMIC1_MUX" value="DMIC_DATA1_L_1" />
         </path>
+        <path name="builtin_Mic_Vow_Mic1" value="turnoff">
+            <kctl name="ADC_L_Mux" value="Idle" />
+            <kctl name="PGA_L_Mux" value="None" />
+            <kctl name="ADC_R_Mux" value="Idle" />
+            <kctl name="PGA_R_Mux" value="None" />
+            <kctl name="VOW_UL_SRC_MUX" value="AMIC" />
+        </path>
+        <path name="builtin_Mic_Vow_Mic2" value="turnon">
+            <kctl name="VOW_AMIC0_MUX" value="ADC_R" />
+            <kctl name="ADC_R_Mux" value="Right Preamplifier" />
+            <kctl name="PGA_R_Mux" value="AIN3" />
+            <kctl name="DMIC0_MUX" value="DMIC_DATA0" />
+            <kctl name="DMIC1_MUX" value="DMIC_DATA1_L_1" />
+        </path>
         <path name="builtin_Mic_Vow_Mic2" value="turnoff">
-            <kctl name="Mic_Type_Mux_0" value="Idle" />
-            <kctl name="Mic_Type_Mux_2" value="Idle" />
             <kctl name="ADC_L_Mux" value="Idle" />
             <kctl name="PGA_L_Mux" value="None" />
             <kctl name="ADC_R_Mux" value="Idle" />
@@ -509,8 +488,6 @@
             <kctl name="DMIC1_MUX" value="DMIC_DATA1_L_1" />
         </path>
         <path name="builtin_Mic_Vow_DualMic" value="turnoff">
-            <kctl name="Mic_Type_Mux_0" value="Idle" />
-            <kctl name="Mic_Type_Mux_2" value="Idle" />
             <kctl name="ADC_L_Mux" value="Idle" />
             <kctl name="ADC_R_Mux" value="Idle" />
             <kctl name="PGA_L_Mux" value="None" />
@@ -523,118 +500,18 @@
             <kctl name="PGA_L_Mux" value="AIN1" />
         </path>
         <path name="headset_vow_input" value="turnoff">
-            <kctl name="Mic_Type_Mux_1" value="Idle" />
             <kctl name="ADC_L_Mux" value="Idle" />
             <kctl name="PGA_L_Mux" value="None" />
         </path>
         <!--mic1 type setting-->
-        <path name="Mic1TypeVOWACCMode" value="setting">
-            <kctl name="Mic_Type_Mux_0" value="VOW_ACC" />
-        </path>
-        <path name="Mic1TypeVOWDCCMode" value="setting">
-            <kctl name="Mic_Type_Mux_0" value="VOW_DCC" />
-        </path>
-        <path name="Mic1TypeVOWDMICMode" value="setting">
+        <path name="MicTypeVOWDMICMode" value="setting">
             <kctl name="VOW_UL_SRC_MUX" value="DMIC" />
-            <kctl name="Mic_Type_Mux_0" value="VOW_DMIC" />
         </path>
-        <path name="Mic1TypeVOWDMICLPMode" value="setting">
-            <kctl name="VOW_UL_SRC_MUX" value="DMIC" />
-            <kctl name="Mic_Type_Mux_0" value="VOW_DMIC_LP" />
-        </path>
-        <path name="Mic1TypeVOWDCCECMDIFFMode" value="setting">
-            <kctl name="Mic_Type_Mux_0" value="VOW_DCC_ECM_DIFF" />
-        </path>
-        <path name="Mic1TypeVOWDCCECMSINGLEMode" value="setting">
-            <kctl name="Mic_Type_Mux_0" value="VOW_DCC_ECM_SINGLE" />
-        </path>
-        <path name="Mic2TypeVOWACCMode" value="setting">
-            <kctl name="Mic_Type_Mux_1" value="VOW_ACC" />
-        </path>
-        <path name="Mic2TypeVOWDCCMode" value="setting">
-            <kctl name="Mic_Type_Mux_1" value="VOW_DCC" />
-        </path>
-        <path name="Mic2TypeVOWDCCECMDIFFMode" value="setting">
-            <kctl name="Mic_Type_Mux_1" value="VOW_DCC_ECM_DIFF" />
-        </path>
-        <path name="Mic2TypeVOWDCCECMSINGLEMode" value="setting">
-            <kctl name="Mic_Type_Mux_1" value="VOW_DCC_ECM_SINGLE" />
-        </path>
-        <path name="Mic3TypeVOWACCMode" value="setting">
-            <kctl name="Mic_Type_Mux_2" value="VOW_ACC" />
-        </path>
-        <path name="Mic3TypeVOWDCCMode" value="setting">
-            <kctl name="Mic_Type_Mux_2" value="VOW_DCC" />
-        </path>
-        <path name="Mic3TypeVOWDMICMode" value="setting">
-            <kctl name="VOW_UL_SRC_MUX" value="DMIC" />
-            <kctl name="Mic_Type_Mux_2" value="VOW_DMIC" />
-        </path>
-        <path name="Mic3TypeVOWDMICLPMode" value="setting">
-            <kctl name="VOW_UL_SRC_MUX" value="DMIC" />
-            <kctl name="Mic_Type_Mux_2" value="VOW_DMIC_LP" />
-        </path>
-        <path name="Mic3TypeVOWDCCECMDIFFMode" value="setting">
-            <kctl name="Mic_Type_Mux_2" value="VOW_DCC_ECM_DIFF" />
-        </path>
-        <path name="Mic3TypeVOWDCCECMSINGLEMode" value="setting">
-            <kctl name="Mic_Type_Mux_2" value="VOW_DCC_ECM_SINGLE" />
-        </path>
-        <path name="Mic1TypeACCMode" value="setting">
-            <kctl name="Mic_Type_Mux_0" value="ACC" />
-        </path>
-        <path name="Mic1TypeDCCMode" value="setting">
-            <kctl name="Mic_Type_Mux_0" value="DCC" />
-        </path>
-        <path name="Mic1TypeDMICMode" value="setting">
+        <path name="MicTypeDMICMode" value="setting">
             <kctl name="UL_SRC_MUX" value="DMIC" />
             <kctl name="UL2_SRC_MUX" value="DMIC" />
             <kctl name="MTKAIF_DMIC" value="On" />
-            <kctl name="Mic_Type_Mux_0" value="DMIC" />
         </path>
-        <path name="Mic1TypeDCCECMDIFFMode" value="setting">
-            <kctl name="Mic_Type_Mux_0" value="DCC_ECM_DIFF" />
-        </path>
-        <path name="Mic1TypeDCCECMSINGLEMode" value="setting">
-            <kctl name="Mic_Type_Mux_0" value="DCC_ECM_SINGLE" />
-        </path>
-        <path name="Mic2TypeACCMode" value="setting">
-            <kctl name="Mic_Type_Mux_1" value="ACC" />
-        </path>
-        <path name="Mic2TypeDCCMode" value="setting">
-            <kctl name="Mic_Type_Mux_1" value="DCC" />
-        </path>
-        <path name="Mic2TypeDMICMode" value="setting">
-            <kctl name="UL_SRC_MUX" value="DMIC" />
-            <kctl name="UL2_SRC_MUX" value="DMIC" />
-            <kctl name="MTKAIF_DMIC" value="On" />
-            <kctl name="Mic_Type_Mux_1" value="DMIC" />
-        </path>
-        <path name="Mic2TypeDCCECMDIFFMode" value="setting">
-            <kctl name="Mic_Type_Mux_1" value="DCC_ECM_DIFF" />
-        </path>
-        <path name="Mic2TypeDCCECMSINGLEMode" value="setting">
-            <kctl name="Mic_Type_Mux_1" value="DCC_ECM_SINGLE" />
-        </path>
-        <path name="Mic3TypeACCMode" value="setting">
-            <kctl name="Mic_Type_Mux_2" value="ACC" />
-        </path>
-        <path name="Mic3TypeDCCMode" value="setting">
-            <kctl name="Mic_Type_Mux_2" value="DCC" />
-        </path>
-        <path name="Mic3TypeDMICMode" value="setting">
-            <kctl name="UL_SRC_MUX" value="DMIC" />
-            <kctl name="UL2_SRC_MUX" value="DMIC" />
-            <kctl name="MTKAIF_DMIC" value="On" />
-            <kctl name="Mic_Type_Mux_2" value="DMIC" />
-        </path>
-        <path name="Mic3TypeDCCECMDIFFMode" value="setting">
-            <kctl name="Mic_Type_Mux_2" value="DCC_ECM_DIFF" />
-        </path>
-        <path name="Mic3TypeDCCECMSINGLEMode" value="setting">
-            <kctl name="Mic_Type_Mux_2" value="DCC_ECM_SINGLE" />
-        </path>
-
         <path name="sidetone_switch" value="turnon">
             <kctl name="Sidetone Filter Switch" value="1" />
         </path>
@@ -729,6 +606,18 @@
             <kctl name="ADDA_DL_CH4 DL2_CH1" value="0" />
             <!--  ALPS05007528 end -->
         </path>
+        <path name="PLAYBACK2_TO_I2S1_DL_AND_I2S2_UL" value="turnon">
+            <kctl name="ADDA_DL_CH1 DL2_CH1" value="1" />
+            <kctl name="ADDA_DL_CH2 DL2_CH2" value="1" />
+            <kctl name="ADDA_DL_CH3 DL2_CH1" value="1" />
+            <kctl name="ADDA_DL_CH4 DL2_CH2" value="1" />
+        </path>
+        <path name="PLAYBACK2_TO_I2S1_DL_AND_I2S2_UL" value="turnoff">
+            <kctl name="ADDA_DL_CH1 DL2_CH1" value="0" />
+            <kctl name="ADDA_DL_CH2 DL2_CH2" value="0" />
+            <kctl name="ADDA_DL_CH3 DL2_CH1" value="0" />
+            <kctl name="ADDA_DL_CH4 DL2_CH2" value="0" />
+        </path>
         <path name="PLAYBACK2_TO_I2S1" value="turnon">
             <kctl name="I2S1_CH1 DL2_CH1" value="1" />
             <kctl name="I2S1_CH2 DL2_CH2" value="1" />
@@ -768,6 +657,18 @@
             <kctl name="ADDA_DL_CH3 DL12_CH2" value="0" />
             <kctl name="ADDA_DL_CH4 DL12_CH1" value="0" />
             <!--  ALPS05007528 end -->
+        </path>
+        <path name="PLAYBACK12_TO_I2S1_DL_AND_I2S2_UL" value="turnon">
+            <kctl name="ADDA_DL_CH1 DL12_CH1" value="1" />
+            <kctl name="ADDA_DL_CH2 DL12_CH2" value="1" />
+            <kctl name="ADDA_DL_CH3 DL12_CH1" value="1" />
+            <kctl name="ADDA_DL_CH4 DL12_CH2" value="1" />
+        </path>
+        <path name="PLAYBACK12_TO_I2S1_DL_AND_I2S2_UL" value="turnoff">
+            <kctl name="ADDA_DL_CH1 DL12_CH1" value="0" />
+            <kctl name="ADDA_DL_CH2 DL12_CH2" value="0" />
+            <kctl name="ADDA_DL_CH3 DL12_CH1" value="0" />
+            <kctl name="ADDA_DL_CH4 DL12_CH2" value="0" />
         </path>
         <path name="PLAYBACK12_TO_I2S1" value="turnon">
             <kctl name="I2S1_CH1 DL12_CH1" value="1" />
@@ -925,6 +826,30 @@
             <kctl name="I2S3_CH1 DL5_CH1" value="0" />
             <kctl name="I2S3_CH2 DL5_CH2" value="0" />
         </path>
+        <path name="BTSCO_PLAYBACK2_TO_I2S3" value="turnon">
+            <kctl name="I2S3_CH1 DL2_CH1" value="1" />
+            <kctl name="I2S3_CH2 DL2_CH2" value="1" />
+            <kctl name="I2S3_HD_Mux" value="Low_Jitter" />
+            <kctl name="I2S3_Out_Mux" value="Output_Widget" />
+        </path>
+        <path name="BTSCO_PLAYBACK2_TO_I2S3" value="turnoff">
+            <kctl name="I2S3_CH1 DL2_CH1" value="0" />
+            <kctl name="I2S3_CH2 DL2_CH2" value="0" />
+            <kctl name="I2S3_HD_Mux" value="Normal" />
+            <kctl name="I2S3_Out_Mux" value="Normal" />
+        </path>
+        <path name="I2S0_TO_BTSCO_CAPTURE2" value="turnon">
+            <kctl name="UL2_CH1 I2S0_CH1" value="1" />
+            <kctl name="UL2_CH2 I2S0_CH2" value="1" />
+            <kctl name="I2S0_HD_Mux" value="Low_Jitter" />
+            <kctl name="I2S0_In_Mux" value="Input_Widget" />
+        </path>
+        <path name="I2S0_TO_BTSCO_CAPTURE2" value="turnoff">
+            <kctl name="UL2_CH1 I2S0_CH1" value="0" />
+            <kctl name="UL2_CH2 I2S0_CH2" value="0" />
+            <kctl name="I2S0_HD_Mux" value="Normal" />
+            <kctl name="I2S0_In_Mux" value="Normal" />
+        </path>
         <path name="ADDA_TO_HW_GAIN2" value="turnon">
             <kctl name="HW_GAIN2_IN_CH1 ADDA_UL_CH1" value="1" />
             <kctl name="HW_GAIN2_IN_CH2 ADDA_UL_CH2" value="1" />
@@ -1001,6 +926,34 @@
             <kctl name="UL1_CH1 ADDA_UL_CH1" value="0" />
             <kctl name="UL1_CH2 ADDA_UL_CH2" value="0" />
         </path>
+        <path name="I2S2_TO_CAPTURE1" value="turnon">
+            <kctl name="I2S2_HD_Mux" value="Low_Jitter" />
+            <kctl name="I2S2_In_Mux" value="Input_Widget" />
+            <kctl name="UL1_CH1 I2S2_CH1" value="1" />
+            <kctl name="UL1_CH2 I2S2_CH2" value="1" />
+        </path>
+        <path name="I2S2_TO_CAPTURE1" value="turnoff">
+            <kctl name="I2S2_HD_Mux" value="Normal" />
+            <kctl name="I2S2_In_Mux" value="Normal" />
+            <kctl name="UL1_CH1 I2S2_CH1" value="0" />
+            <kctl name="UL1_CH2 I2S2_CH2" value="0" />
+        </path>
+        <path name="I2S2_TO_CAPTURE1_4CH" value="turnon">
+            <kctl name="I2S2_HD_Mux" value="Low_Jitter" />
+            <kctl name="I2S2_In_Mux" value="Input_Widget" />
+            <kctl name="UL1_CH1 I2S2_CH1" value="1" />
+            <kctl name="UL1_CH2 I2S2_CH2" value="1" />
+            <kctl name="UL1_CH3 I2S2_CH3" value="1" />
+            <kctl name="UL1_CH4 I2S2_CH4" value="1" />
+        </path>
+        <path name="I2S2_TO_CAPTURE1_4CH" value="turnoff">
+            <kctl name="I2S2_HD_Mux" value="Normal" />
+            <kctl name="I2S2_In_Mux" value="Normal" />
+            <kctl name="UL1_CH1 I2S2_CH1" value="0" />
+            <kctl name="UL1_CH2 I2S2_CH2" value="0" />
+            <kctl name="UL1_CH3 I2S2_CH3" value="0" />
+            <kctl name="UL1_CH4 I2S2_CH4" value="0" />
+        </path>
         <path name="ADDA_TO_CAPTURE1_4CH" value="turnon">
             <kctl name="UL1_CH1 ADDA_UL_CH3" value="1" />
             <kctl name="UL1_CH2 ADDA_UL_CH4" value="1" />
@@ -1040,6 +993,22 @@
             <kctl name="UL2_CH2 DL3_CH2" value="0" />
             <kctl name="UL2_CH1 DL12_CH1" value="0" />
             <kctl name="UL2_CH2 DL12_CH2" value="0" />
+        </path>
+        <path name="DL_MEMIF_TO_CAPTURE3" value="turnon">
+            <kctl name="UL3_CH1 DL1_CH1" value="1" />
+            <kctl name="UL3_CH2 DL1_CH2" value="1" />
+            <kctl name="UL3_CH1 DL2_CH1" value="1" />
+            <kctl name="UL3_CH2 DL2_CH2" value="1" />
+            <kctl name="UL3_CH1 DL3_CH1" value="1" />
+            <kctl name="UL3_CH2 DL3_CH2" value="1" />
+        </path>
+        <path name="DL_MEMIF_TO_CAPTURE3" value="turnoff">
+            <kctl name="UL3_CH1 DL1_CH1" value="0" />
+            <kctl name="UL3_CH2 DL1_CH2" value="0" />
+            <kctl name="UL3_CH1 DL2_CH1" value="0" />
+            <kctl name="UL3_CH2 DL2_CH2" value="0" />
+            <kctl name="UL3_CH1 DL3_CH1" value="0" />
+            <kctl name="UL3_CH2 DL3_CH2" value="0" />
         </path>
         <path name="DL_MEMIF_TO_CAPTURE2_SPEAKER_HIFI3" value="turnon">
             <kctl name="UL2_CH1 DL4_CH1" value="1" />
@@ -1146,8 +1115,6 @@
         <path name="MRG_TO_ADDA_I2S" value="turnoff">
         </path>
         <path name="MD1_TO_ADDA_DL" value="turnon">
-            <kctl name="PCM_2_PB_CH1 ADDA_UL_CH1" value="1" />
-            <kctl name="PCM_2_PB_CH2 ADDA_UL_CH2" value="1" />
             <kctl name="ADDA_DL_CH1 PCM_2_CAP_CH1" value="1" />
             <kctl name="ADDA_DL_CH2 PCM_2_CAP_CH1" value="1" />
             <kctl name="ADDA_DL_CH3 PCM_2_CAP_CH1" value="1" />
@@ -1162,98 +1129,72 @@
             <kctl name="ADDA_DL_CH4 PCM_2_CAP_CH1" value="0" />
         </path>
         <path name="MD1_TO_I2S1" value="turnon">
-            <kctl name="PCM_2_PB_CH1 ADDA_UL_CH1" value="1" />
-            <kctl name="PCM_2_PB_CH2 ADDA_UL_CH2" value="1" />
             <kctl name="I2S1_CH1 PCM_2_CAP_CH1" value="1" />
             <kctl name="I2S1_CH2 PCM_2_CAP_CH1" value="1" />
         </path>
         <path name="MD1_TO_I2S1" value="turnoff">
-            <kctl name="PCM_2_PB_CH1 ADDA_UL_CH1" value="0" />
-            <kctl name="PCM_2_PB_CH2 ADDA_UL_CH2" value="0" />
+            <kctl name="I2S1_CH1 PCM_2_CAP_CH1" value="0" />
+            <kctl name="I2S1_CH2 PCM_2_CAP_CH1" value="0" />
+        </path>
+        <path name="MD1_TO_I2S1_DL_AND_I2S2_UL" value="turnon">
+            <kctl name="PCM_2_PB_CH1 I2S2_CH1" value="1" />
+            <kctl name="PCM_2_PB_CH2 I2S2_CH2" value="1" />
+            <kctl name="I2S1_CH1 PCM_2_CAP_CH1" value="1" />
+            <kctl name="I2S1_CH2 PCM_2_CAP_CH1" value="1" />
+        </path>
+        <path name="MD1_TO_I2S1_DL_AND_I2S2_UL" value="turnoff">
             <kctl name="I2S1_CH1 PCM_2_CAP_CH1" value="0" />
             <kctl name="I2S1_CH2 PCM_2_CAP_CH1" value="0" />
         </path>
         <path name="MD1_TO_I2S3" value="turnon">
-            <kctl name="PCM_2_PB_CH1 ADDA_UL_CH1" value="1" />
-            <kctl name="PCM_2_PB_CH2 ADDA_UL_CH2" value="1" />
             <kctl name="I2S3_CH1 PCM_2_CAP_CH1" value="1" />
             <kctl name="I2S3_CH2 PCM_2_CAP_CH1" value="1" />
         </path>
         <path name="MD1_TO_I2S3" value="turnoff">
-            <kctl name="PCM_2_PB_CH1 ADDA_UL_CH1" value="0" />
-            <kctl name="PCM_2_PB_CH2 ADDA_UL_CH2" value="0" />
             <kctl name="I2S3_CH1 PCM_2_CAP_CH1" value="0" />
             <kctl name="I2S3_CH2 PCM_2_CAP_CH1" value="0" />
         </path>
         <path name="MD1_TO_I2S5" value="turnon">
-            <kctl name="PCM_2_PB_CH1 ADDA_UL_CH1" value="1" />
-            <kctl name="PCM_2_PB_CH2 ADDA_UL_CH2" value="1" />
             <kctl name="I2S5_CH1 PCM_2_CAP_CH1" value="1" />
             <kctl name="I2S5_CH2 PCM_2_CAP_CH1" value="1" />
         </path>
         <path name="MD1_TO_I2S5" value="turnoff">
-            <kctl name="PCM_2_PB_CH1 ADDA_UL_CH1" value="0" />
-            <kctl name="PCM_2_PB_CH2 ADDA_UL_CH2" value="0" />
             <kctl name="I2S5_CH1 PCM_2_CAP_CH1" value="0" />
             <kctl name="I2S5_CH2 PCM_2_CAP_CH1" value="0" />
         </path>
-        <path name="DL4_TO_MD1" value="turnon">
-            <kctl name="PCM_2_PB_CH1 DL4_CH1" value="1" />
-            <kctl name="PCM_2_PB_CH2 DL4_CH2" value="1" />
-        </path>
-        <path name="DL4_TO_MD1" value="turnoff">
-            <kctl name="PCM_2_PB_CH1 DL4_CH1" value="0" />
-            <kctl name="PCM_2_PB_CH2 DL4_CH2" value="0" />
-        </path>
         <path name="MD2_TO_ADDA_DL" value="turnon">
-            <kctl name="PCM_1_PB_CH1 ADDA_UL_CH1" value="1" />
-            <kctl name="PCM_1_PB_CH2 ADDA_UL_CH2" value="1" />
             <kctl name="ADDA_DL_CH1 PCM_1_CAP_CH1" value="1" />
             <kctl name="ADDA_DL_CH2 PCM_1_CAP_CH1" value="1" />
             <kctl name="ADDA_DL_CH3 PCM_1_CAP_CH1" value="1" />
             <kctl name="ADDA_DL_CH4 PCM_1_CAP_CH1" value="1" />
         </path>
         <path name="MD2_TO_ADDA_DL" value="turnoff">
-            <kctl name="PCM_1_PB_CH1 ADDA_UL_CH1" value="0" />
-            <kctl name="PCM_1_PB_CH2 ADDA_UL_CH2" value="0" />
             <kctl name="ADDA_DL_CH1 PCM_1_CAP_CH1" value="0" />
             <kctl name="ADDA_DL_CH2 PCM_1_CAP_CH1" value="0" />
             <kctl name="ADDA_DL_CH3 PCM_1_CAP_CH1" value="0" />
             <kctl name="ADDA_DL_CH4 PCM_1_CAP_CH1" value="0" />
         </path>
         <path name="MD2_TO_I2S1" value="turnon">
-            <kctl name="PCM_1_PB_CH1 ADDA_UL_CH1" value="1" />
-            <kctl name="PCM_1_PB_CH2 ADDA_UL_CH2" value="1" />
             <kctl name="I2S1_CH1 PCM_1_CAP_CH1" value="1" />
             <kctl name="I2S1_CH2 PCM_1_CAP_CH1" value="1" />
         </path>
         <path name="MD2_TO_I2S1" value="turnoff">
-            <kctl name="PCM_1_PB_CH1 ADDA_UL_CH1" value="0" />
-            <kctl name="PCM_1_PB_CH2 ADDA_UL_CH2" value="0" />
             <kctl name="I2S1_CH1 PCM_1_CAP_CH1" value="0" />
             <kctl name="I2S1_CH2 PCM_1_CAP_CH1" value="0" />
         </path>
         <path name="MD2_TO_I2S3" value="turnon">
-            <kctl name="PCM_1_PB_CH1 ADDA_UL_CH1" value="1" />
-            <kctl name="PCM_1_PB_CH2 ADDA_UL_CH2" value="1" />
             <kctl name="I2S3_CH1 PCM_1_CAP_CH1" value="1" />
             <kctl name="I2S3_CH2 PCM_1_CAP_CH1" value="1" />
         </path>
         <path name="MD2_TO_I2S3" value="turnoff">
-            <kctl name="PCM_1_PB_CH1 ADDA_UL_CH1" value="0" />
-            <kctl name="PCM_1_PB_CH2 ADDA_UL_CH2" value="0" />
             <kctl name="I2S3_CH1 PCM_1_CAP_CH1" value="0" />
             <kctl name="I2S3_CH2 PCM_1_CAP_CH1" value="0" />
         </path>
         <path name="MD2_TO_I2S5" value="turnon">
-            <kctl name="PCM_1_PB_CH1 ADDA_UL_CH1" value="1" />
-            <kctl name="PCM_1_PB_CH2 ADDA_UL_CH2" value="1" />
             <kctl name="I2S5_CH1 PCM_1_CAP_CH1" value="1" />
             <kctl name="I2S5_CH2 PCM_1_CAP_CH1" value="1" />
         </path>
         <path name="MD2_TO_I2S5" value="turnoff">
-            <kctl name="PCM_1_PB_CH1 ADDA_UL_CH1" value="0" />
-            <kctl name="PCM_1_PB_CH2 ADDA_UL_CH2" value="0" />
             <kctl name="I2S5_CH1 PCM_1_CAP_CH1" value="0" />
             <kctl name="I2S5_CH2 PCM_1_CAP_CH1" value="0" />
         </path>
@@ -1293,14 +1234,6 @@
             <kctl name="I2S5_CH1 ADDA_UL_CH1" value="0" />
             <kctl name="I2S5_CH2 ADDA_UL_CH2" value="0" />
         </path>
-        <path name="DL4_TO_MD2" value="turnon">
-            <kctl name="PCM_1_PB_CH1 DL4_CH1" value="1" />
-            <kctl name="PCM_1_PB_CH2 DL4_CH2" value="1" />
-        </path>
-        <path name="DL4_TO_MD2" value="turnoff">
-            <kctl name="PCM_1_PB_CH1 DL4_CH1" value="0" />
-            <kctl name="PCM_1_PB_CH2 DL4_CH2" value="0" />
-        </path>
         <path name="SPK_INIT" value="turnon">
             <kctl name="I2S1_HD_Mux" value="Low_Jitter" />
             <kctl name="I2S1_Out_Mux" value="Output_Widget" />
@@ -1317,19 +1250,19 @@
             <kctl name="I2S5_Out_Mux" value="Normal" />
             <kctl name="I2S5_HD_Mux" value="Normal" />
         </path>
-        <path name="DL1_TO_MD1_ECHO_REF" value="turnon">
+        <path name="PLAYBACK1_TO_MD1_ECHO_REF" value="turnon">
             <kctl name="PCM_2_PB_CH4 DL1_CH1" value="1" />
             <kctl name="PCM_2_PB_CH5 DL1_CH2" value="1" />
         </path>
-        <path name="DL1_MD1_ECHO_REF" value="turnoff">
+        <path name="PLAYBACK1_TO_MD1_ECHO_REF" value="turnoff">
             <kctl name="PCM_2_PB_CH4 DL1_CH1" value="0" />
             <kctl name="PCM_2_PB_CH5 DL1_CH2" value="0" />
         </path>
-        <path name="DL4_TO_MD1_ECHO_REF" value="turnon">
+        <path name="PLAYBACK4_TO_MD1_ECHO_REF" value="turnon">
             <kctl name="PCM_2_PB_CH4 DL4_CH1" value="1" />
             <kctl name="PCM_2_PB_CH5 DL4_CH2" value="1" />
         </path>
-        <path name="DL4_MD1_ECHO_REF" value="turnoff">
+        <path name="PLAYBACK4_TO_MD1_ECHO_REF" value="turnoff">
             <kctl name="PCM_2_PB_CH4 DL4_CH1" value="0" />
             <kctl name="PCM_2_PB_CH5 DL4_CH2" value="0" />
         </path>
@@ -1349,16 +1282,16 @@
             <kctl name="PCM_2_PB_CH4 I2S2_CH1" value="0" />
             <kctl name="PCM_2_PB_CH5 I2S2_CH2" value="0" />
         </path>
-        <path name="DL1_TO_MD2_ECHO_REF" value="turnon">
+        <path name="PLAYBACK1_TO_MD2_ECHO_REF" value="turnon">
             <kctl name="PCM_1_PB_CH4 DL1_CH2" value="1" />
         </path>
-        <path name="DL1_TO_MD2_ECHO_REF" value="turnoff">
+        <path name="PLAYBACK1_TO_MD2_ECHO_REF" value="turnoff">
             <kctl name="PCM_1_PB_CH4 DL1_CH2" value="0" />
         </path>
-        <path name="DL4_TO_MD2_ECHO_REF" value="turnon">
+        <path name="PLAYBACK4_TO_MD2_ECHO_REF" value="turnon">
             <kctl name="PCM_1_PB_CH4 DL4_CH2" value="1" />
         </path>
-        <path name="DL4_TO_MD2_ECHO_REF" value="turnoff">
+        <path name="PLAYBACK4_TO_MD2_ECHO_REF" value="turnoff">
             <kctl name="PCM_1_PB_CH4 DL4_CH2" value="0" />
         </path>
         <path name="MD2_ECHO_REF_I2S0_ON" value="setting">
@@ -1444,9 +1377,6 @@
             <kctl name="MISO2_MUX" value="UL2_CH1" />
             <kctl name="UL_SRC_MUX" value="AMIC" />
             <kctl name="UL2_SRC_MUX" value="AMIC" />
-            <kctl name="Mic_Type_Mux_0" value="Idle" />
-            <kctl name="Mic_Type_Mux_1" value="Idle" />
-            <kctl name="Mic_Type_Mux_2" value="Idle" />
         </path>
         <path name="MD1_TO_CAPTURE2" value="turnon">
             <kctl name="UL2_CH1 PCM_2_CAP_CH1" value="1" />
@@ -1578,7 +1508,7 @@
             <kctl name="UL6_CH1 DL6_CH1" value="0" />
             <kctl name="UL6_CH2 DL6_CH2" value="0" />
         </path>
-        <path name="PLAYBACK4_TO_CAPTURE6" value="turnoff">
+        <path name="PLAYBACK4_TO_CAPTURE6" value="turnon">
             <kctl name="UL6_CH1 DL4_CH1" value="1" />
             <kctl name="UL6_CH2 DL4_CH2" value="1" />
         </path>
@@ -1587,8 +1517,6 @@
             <kctl name="UL6_CH2 DL4_CH2" value="0" />
         </path>
         <path name="MD1_TO_CAPTURE6" value="turnon">
-            <kctl name="PCM_2_PB_CH1 ADDA_UL_CH1" value="1" />
-            <kctl name="PCM_2_PB_CH2 ADDA_UL_CH2" value="1" />
             <kctl name="UL6_CH1 PCM_2_CAP_CH1" value="1" />
             <kctl name="UL6_CH2 PCM_2_CAP_CH1" value="1" />
             <!--  ALPS05007528 begin -->
@@ -1599,8 +1527,6 @@
             <!--  ALPS05007528 end -->
         </path>
         <path name="MD1_TO_CAPTURE6" value="turnoff">
-            <kctl name="PCM_2_PB_CH1 ADDA_UL_CH1" value="0" />
-            <kctl name="PCM_2_PB_CH2 ADDA_UL_CH2" value="0" />
             <kctl name="UL6_CH1 PCM_2_CAP_CH1" value="0" />
             <kctl name="UL6_CH2 PCM_2_CAP_CH1" value="0" />
             <!--  ALPS05007528 begin -->
@@ -1611,8 +1537,6 @@
             <!--  ALPS05007528 end -->
         </path>
         <path name="MD2_TO_CAPTURE6" value="turnon">
-            <kctl name="PCM_1_PB_CH1 ADDA_UL_CH1" value="1" />
-            <kctl name="PCM_1_PB_CH2 ADDA_UL_CH2" value="1" />
             <kctl name="UL6_CH1 PCM_1_CAP_CH1" value="1" />
             <kctl name="UL6_CH2 PCM_1_CAP_CH1" value="1" />
             <!--  ALPS05007528 begin -->
@@ -1623,8 +1547,6 @@
             <!--  ALPS05007528 end -->
         </path>
         <path name="MD2_TO_CAPTURE6" value="turnoff">
-            <kctl name="PCM_1_PB_CH1 ADDA_UL_CH1" value="0" />
-            <kctl name="PCM_1_PB_CH2 ADDA_UL_CH2" value="0" />
             <kctl name="UL6_CH1 PCM_1_CAP_CH1" value="0" />
             <kctl name="UL6_CH2 PCM_1_CAP_CH1" value="0" />
             <!--  ALPS05007528 begin -->
@@ -1686,6 +1608,114 @@
             <kctl name="ADDA_DL_CH1 DL8_CH1" value="0" />
             <kctl name="ADDA_DL_CH2 DL8_CH2" value="0" />
         </path>
+        <!-- smartpa mixer settings -->
+        <path name="smartpa_output" value="turnon">
+            <kctl name="SPK1 AMP PCM Gain" value="17" />
+            <kctl name="SPK2 AMP PCM Gain" value="17" />
+            <kctl name="SPK3 AMP PCM Gain" value="17" />
+            <kctl name="SPK4 AMP PCM Gain" value="17" />
+            <kctl name="SPK1 AMP Enable Switch" value="1" />
+            <kctl name="SPK2 AMP Enable Switch" value="1" />
+            <kctl name="SPK3 AMP Enable Switch" value="1" />
+            <kctl name="SPK4 AMP Enable Switch" value="1" />
+            <kctl name="SPK1 PCM Source" value="DSP" />
+            <kctl name="SPK2 PCM Source" value="DSP" />
+            <kctl name="SPK3 PCM Source" value="DSP" />
+            <kctl name="SPK4 PCM Source" value="DSP" />
+            <kctl name="I2S1_Out_Mux" value="Output_Widget" />
+        </path>
+        <path name="smartpa_output" value="turnoff">
+            <kctl name="SPK1 AMP PCM Gain" value="9" />
+            <kctl name="SPK2 AMP PCM Gain" value="9" />
+            <kctl name="SPK3 AMP PCM Gain" value="9" />
+            <kctl name="SPK4 AMP PCM Gain" value="9" />
+            <kctl name="SPK1 AMP Enable Switch" value="0" />
+            <kctl name="SPK2 AMP Enable Switch" value="0" />
+            <kctl name="SPK3 AMP Enable Switch" value="0" />
+            <kctl name="SPK4 AMP Enable Switch" value="0" />
+            <kctl name="SPK1 PCM Source" value="ASP" />
+            <kctl name="SPK2 PCM Source" value="ASP" />
+            <kctl name="SPK3 PCM Source" value="ASP" />
+            <kctl name="SPK4 PCM Source" value="ASP" />
+            <kctl name="I2S1_Out_Mux" value="Normal" />
+        </path>
+
+        <path name="hsmic_receiver" value="turnon">
+        </path>
+        <path name="hsmic_receiver" value="turnoff">
+        </path>
+        <path name="hsmic_speaker" value="turnon">
+        </path>
+        <path name="hsmic_speaker" value="turnoff">
+        </path>
+        <path name="hsmic_leftspeaker" value="turnon">
+        </path>
+        <path name="hsmic_leftspeaker" value="turnoff">
+        </path>
+        <path name="hsmic_rightspeaker" value="turnon">
+        </path>
+        <path name="hsmic_rightspeaker" value="turnoff">
+        </path>
+        <path name="hsmic_prileftspeaker" value="turnon">
+        </path>
+        <path name="hsmic_prileftspeaker" value="turnoff">
+        </path>
+        <path name="hsmic_prirightspeaker" value="turnon">
+        </path>
+        <path name="hsmic_prirightspeaker" value="turnoff">
+        </path>
+        <path name="hsmic_secleftspeaker" value="turnon">
+        </path>
+        <path name="hsmic_secleftspeaker" value="turnoff">
+        </path>
+        <path name="hsmic_secrightspeaker" value="turnon">
+        </path>
+        <path name="hsmic_secrightspeaker" value="turnoff">
+        </path>
+        <path name="submic_prileftspeaker" value="turnon">
+            <kctl name="I2S1_CH1 ADDA_UL_CH1" value="1" />
+            <kctl name="I2S1_CH2 ADDA_UL_CH2" value="1" />
+        </path>
+        <path name="submic_prileftspeaker" value="turnoff">
+            <kctl name="I2S1_CH1 ADDA_UL_CH1" value="0" />
+            <kctl name="I2S1_CH2 ADDA_UL_CH2" value="0" />
+        </path>
+        <path name="submic_prirightspeaker" value="turnon">
+            <kctl name="I2S1_CH1 ADDA_UL_CH1" value="1" />
+            <kctl name="I2S1_CH2 ADDA_UL_CH2" value="1" />
+        </path>
+        <path name="submic_prirightspeaker" value="turnoff">
+            <kctl name="I2S1_CH1 ADDA_UL_CH1" value="0" />
+            <kctl name="I2S1_CH2 ADDA_UL_CH2" value="0" />
+        </path>
+        <path name="mainmic_secleftspeaker" value="turnon">
+            <kctl name="I2S1_CH1 ADDA_UL_CH1" value="1" />
+            <kctl name="I2S1_CH2 ADDA_UL_CH2" value="1" />
+        </path>
+        <path name="mainmic_secleftspeaker" value="turnoff">
+            <kctl name="I2S1_CH1 ADDA_UL_CH1" value="0" />
+            <kctl name="I2S1_CH2 ADDA_UL_CH2" value="0" />
+        </path>
+        <path name="mainmic_secrightspeaker" value="turnon">
+            <kctl name="I2S1_CH1 ADDA_UL_CH1" value="1" />
+            <kctl name="I2S1_CH2 ADDA_UL_CH2" value="1" />
+        </path>
+        <path name="mainmic_secrightspeaker" value="turnoff">
+            <kctl name="I2S1_CH1 ADDA_UL_CH1" value="0" />
+            <kctl name="I2S1_CH2 ADDA_UL_CH2" value="0" />
+        </path>
+        <path name="hsmic_headphone" value="turnon">
+        </path>
+        <path name="hsmic_headphone" value="turnoff">
+        </path>
+        <path name="mainmic_headphone" value="turnon">
+        </path>
+        <path name="mainmic_headphone" value="turnoff">
+        </path>
+        <path name="submic_headphone" value="turnon">
+        </path>
+        <path name="submic_headphone" value="turnoff">
+	</path>
         <path name="PLAYBACK7_TO_ADDA_DL" value="turnon">
             <kctl name="ADDA_DL_CH1 DL7_CH1" value="1" />
             <kctl name="ADDA_DL_CH2 DL7_CH2" value="1" />
@@ -1704,19 +1734,53 @@
         </path>
         <path name="ultrasound-proximity" value="turnon">
             <kctl name="Ultrasound Mode" value="910" />
-	    <kctl name="Ultrasound Log Level" value="3" />
+            <kctl name="Ultrasound Custom Setting 4" value="1"  />
+            <kctl name="Ultrasound Log Level" value="3" />
         </path>
         <path name="ultrasound-proximity" value="turnoff">
             <kctl name="Ultrasound Mode" value="0"  />
-	    <kctl name="Ultrasound Log Level" value="3" />
+            <kctl name="Ultrasound Log Level" value="3" />
         </path>
         <path name="ultrasound-proximity-speaker" value="turnon">
             <kctl name="Ultrasound Mode" value="911" />
-	    <kctl name="Ultrasound Log Level" value="3" />
+            <kctl name="Ultrasound Custom Setting 4" value="1"  />
+            <kctl name="Ultrasound Log Level" value="3" />
         </path>
         <path name="ultrasound-proximity-speaker" value="turnoff">
             <kctl name="Ultrasound Mode" value="0"  />
-	    <kctl name="Ultrasound Log Level" value="3" />
+            <kctl name="Ultrasound Log Level" value="3" />
+        </path>
+        <path name="PLAYBACK7_TO_ADDA_DL" value="turnon">
+            <kctl name="ADDA_DL_CH1 DL7_CH1" value="1" />
+            <kctl name="ADDA_DL_CH2 DL7_CH2" value="1" />
+        </path>
+        <path name="PLAYBACK7_TO_ADDA_DL" value="turnoff">
+            <kctl name="ADDA_DL_CH1 DL7_CH1" value="0" />
+            <kctl name="ADDA_DL_CH2 DL7_CH2" value="0" />
+        </path>
+        <path name="PLAYBACK7_TO_I2S3" value="turnon">
+            <kctl name="I2S3_CH1 DL7_CH1" value="1" />
+            <kctl name="I2S3_CH2 DL7_CH2" value="1" />
+        </path>
+        <path name="PLAYBACK7_TO_I2S3" value="turnoff">
+            <kctl name="I2S3_CH1 DL7_CH1" value="0" />
+            <kctl name="I2S3_CH2 DL7_CH2" value="0" />
+        </path>
+        <path name="ADDA_TO_CAPTURE5" value="turnon">
+            <kctl name="UL5_CH1 ADDA_UL_CH1" value="1" />
+            <kctl name="UL5_CH2 ADDA_UL_CH2" value="1" />
+        </path>
+        <path name="ADDA_TO_CAPTURE5" value="turnoff">
+            <kctl name="UL5_CH1 ADDA_UL_CH1" value="0" />
+            <kctl name="UL5_CH2 ADDA_UL_CH2" value="0" />
+        </path>
+        <path name="ultrasound-proximity" value="turnon">
+        </path>
+        <path name="ultrasound-proximity" value="turnoff">
+        </path>
+        <path name="ultrasound-proximity-speaker" value="turnon">
+        </path>
+        <path name="ultrasound-proximity-speaker" value="turnoff">
         </path>
     </mixercontrol>
 </root>

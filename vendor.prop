@@ -10,14 +10,17 @@ ro.vendor.have_aeev_feature=1
 
 # APU
 debug.mtk_tflite.target_nnapi=29
-ro.vendor.mtk_nn.option=A,B,C,D,E,F,G,Z
+ro.vendor.mtk_nn.option=D,E,F,Z
 ro.vendor.mtk_nn_quant_preferred=1
 ro.vendor.mtk_nn_support=1
+ro.vendor.mtk_nn_baseline_support=1
 
 # Audio
+ro.audio.monitorRotation=true
 ro.vendor.mtk_audio_alac_support=1
 ro.vendor.mtk_audio_tuning_tool_ver=V2.2
 ro.vendor.mtk_audio_ape_support=1
+ro.vendor.audio.us.proximity=true
 
 # Bluetooth
 bluetooth.device.class_of_device=90,2,12
@@ -77,9 +80,40 @@ ro.crypto.volume.filenames_mode=aes-256-cts
 persist.sys.mcd_config_file=/system/etc/mcd_default.conf
 ro.opengles.version=196610
 ro.hardware.egl=meow
+ro.vendor.composer_version=2.2
+ro.vendor.mtk_dre30_support=1
+ro.vendor.mtk_pq_color_mode=1
+ro.vendor.mtk_prefer_64bit_proc=0
 ro.vendor.mtk_dre30_support=1
 ro.vendor.mtk_pq_support=2
-ro.vendor.mtk_pq_color_mode=1
+ro.vendor.pq.mtk_pq_video_whitelist_support=0
+ro.vendor.pq.mtk_video_transition=0
+ro.vendor.pq.mtk_scltm_support=1
+ro.vendor.mml.mtk_mml_support=0
+ro.vendor.pq.mtk_ai_scence_pq_support=0
+ro.vendor.pq.mtk_hdr10_plus_recording_support=0
+ro.vendor.pq.mtk_ai_sdr_to_hdr_support=0
+ro.vendor.pq.mtk_ultra_resolution_support=1
+ro.vendor.pq.mtk_dc_support=1
+ro.vendor.pq.mtk_ds_support=1
+ro.vendor.pq.mtk_hfg_support=0
+ro.vendor.pq.mtk_caltm_support=1
+ro.vendor.pq.mtk_clearzoom_support=1
+ro.vendor.pq.mtk_mdp_ccorr_support=1
+ro.vendor.pq.mtk_pq_interface_support=0
+ro.vendor.pq.mtk_disp_c3d_support=0
+ro.vendor.pq.mtk_disp_tdshp_support=0
+ro.vendor.pq.mtk_disp_color_support=1
+ro.vendor.pq.mtk_disp_ccorr_support=1
+ro.vendor.pq.mtk_disp_gamma_support=1
+ro.vendor.pq.mtk_aal_support=1
+ro.vendor.mtk_aal_support=1
+ro.vendor.pq.mtk_dre30_support=1
+ro.vendor.pq.mtk_disp_game_pq_support=1
+ro.vendor.pq.mtk_backlight_smooth_support=1
+ro.vendor.pq.mtk_ultra_dimming_support=1
+ro.vendor.mtk_ultra_dimming_support=1
+ro.vendor.pq.mtk_blulight_def_support=1
 ro.vendor.mtk_aal_support=1
 ro.vendor.mtk_hdr_video_support=1
 ro.vendor.mtk_ultra_dimming_support=1
@@ -111,8 +145,10 @@ persist.vendor.vilte_support=1
 persist.vendor.viwifi_support=1
 
 # LMK
-ro.lmk.psi_complete_stall_ms=150
 ro.lmk.swap_free_low_percentage=20
+ro.lmk.thrashing_limit=30
+ro.lmk.thrashing_limit_decay=50
+ro.lmk.swap_util_max=90
 ro.lmk.kill_timeout_ms=100
 
 # MIUI
@@ -120,6 +156,7 @@ persist.miui.extm.enable=1
 
 # Media
 media.stagefright.thumbnail.prefer_hw_codecs=true
+media.c2.dmabuf.padding=3072
 ro.vendor.mtk_config_max_dram_size=0x800000000
 ro.vendor.smvr.p2batch.vga=16
 ro.vendor.smvr.p2batch.hd=8
@@ -127,16 +164,19 @@ ro.vendor.smvr.p2batch.fhd=4
 ro.vendor.jpeg_decode_sw_opt=1
 vendor.mtk.vdec.waitkeyframeforplay=9
 ro.vendor.pref_scale_enable_cfg=1
+ro.vendor.mtk_hdr_video_support=1
 
 # MediaTek
-ro.vendor.mediatek.version.branch=alps-mp-r0.mp1.tc8sp3-mt6785
-ro.vendor.mediatek.version.release=alps-mp-r0.mp1.tc8sp3-mt6785-V1.10_lcsh.xm.r0mp1.k69v1.64_P60
+ro.vendor.mediatek.version.branch=alps-mp-s0.mp1.tc8sp-mt6785
+ro.vendor.mediatek.version.release=alps-mp-s0.mp1.tc8sp-mt6785-V1.12_xiaomi.s0mp1.k85v1.64_P11
 ro.vendor.mediatek.platform=MT6785
+persist.vendor.factory.GB2312=yes
+ro.vendor.mtk.sensor.support=yes
+ro.vendor.mtk_ovl_bringup=0
 
 # NFC
 ro.vendor.mtk_nfc_addon_support=1
 ro.vendor.mtk_uicc_clf=1
-ro.vendor.mtk_exchange_support=1
 
 # Radio
 persist.radio.multisim.config=dsds
@@ -175,22 +215,22 @@ ro.vendor.sim_me_lock_mode=3
 ro.vendor.ap_info_monitor=0
 ro.vendor.mtk_single_bin_modem_support=1
 persist.vendor.radio.smart.data.switch=1
-ro.telephony.iwlan_operation_mode=default
 persist.vendor.radio.mtk_dsbp_support=2
 persist.vendor.mtk_ct_volte_support=3
 persist.vendor.radio.mtk_ps2_rat=L/W/G
 persist.vendor.radio.mtk_ps3_rat=G
 persist.vendor.log.tel_log_ctrl=1
+persist.vendor.anr.enhancement=0
 ro.vendor.mtk_data_config=1
 ro.vendor.mtk_embms_support=1
 persist.vendor.mtk_sim_switch_policy=2
 persist.vendor.md_c2k_cap_dep_check=0
-ro.vendor.md_log_memdump_wait=15
 ro.vendor.mtk_modem_monitor_support=1
+ro.vendor.mtk_dmc_support=1
+ro.vendor.mtk_mapi_support=1
 import /vendor/build_${ro.boot.radio.multisim.config}_vendor.prop
 
 # Shutdown
-ro.vendor.mtk_shutdown_support=0
 init.userspace_reboot.is_supported=true
 
 # SurfaceFlinger
@@ -213,6 +253,7 @@ debug.sf.disable_client_composition_cache=1
 debug.sf.enable_transaction_tracing=false
 debug.sf.enable_gl_backpressure=1
 debug.sf.predict_hwc_composition_strategy=0
+debug.sf.enable_hwc_vds=0
 
 # TEE
 ro.vendor.mtk_tee_gp_support=1
@@ -224,7 +265,8 @@ ro.mtk_key_manager_support=1
 # WiFi
 ro.vendor.wifi.sap.interface=ap0
 wifi.concurrent.interface=ap0
-ro.vendor.wfd.dummy.enable=1
+ro.vendor.wifi.sap.concurrent.iface=ap1
+ro.vendor.wfd.dummy.enable=0
 ro.vendor.wfd.iframesize.level=0
 persist.vendor.connsys.chipid=-1
 persist.vendor.connsys.patch.version=-1
@@ -232,7 +274,9 @@ persist.vendor.connsys.dynamic.dump=0
 vendor.connsys.driver.ready=no
 ro.vendor.mtk_wfd_support=1
 ro.vendor.wlan.gen=gen4m
+ro.vendor.wfd.iframesize.level=0
 ro.vendor.connsys.dedicated.log=1
+ro.vendor.connsys.dedicated.log.port=bt,wifi,gps,mcu
 
 # Zygote
 zygote.critical_window.minute=10

@@ -36,10 +36,10 @@ on post-fs-data
     mkdir /mnt/vendor/persist/camera/ 0777 system camera
     mkdir /data/vendor/camera/ 0777 system camera
 # for intsense bokeh use
-    mkdir /data/vendor/camera/model 0776 system camera
-    mkdir /data/vendor/camera/model/dof_model 0776 system camera
-    mkdir /data/vendor/camera/model/rt_model 0776 system camera
-
+    mkdir /data/vendor/camera/model 0777 system camera
+    mkdir /data/vendor/camera/model/dof_model 0777 system camera
+    mkdir /data/vendor/camera/model/rt_model 0777 system camera
+ 
     copy /vendor/etc/camera/model/dof_model/capture_cache /data/vendor/camera/model/dof_model/capture_cache
     copy /vendor/etc/camera/model/dof_model/capture_model /data/vendor/camera/model/dof_model/capture_model
     copy /vendor/etc/camera/model/dof_model/capture_policy /data/vendor/camera/model/dof_model/capture_policy

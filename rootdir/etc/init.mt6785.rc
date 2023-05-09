@@ -163,6 +163,12 @@ on late-fs
 on post-fs
     write /proc/bootprof "INIT:post-fs"
 
+# rosemary  Add persist in 20211020 start
+    chown system system /mnt/vendor/persist
+    chmod 0771 /mnt/vendor/persist
+    restorecon_recursive /mnt/vendor/persist
+# rosemary  Add persist in 20211020 end
+
     # boot perf. tune
     write /proc/perfmgr/boost_ctrl/eas_ctrl/boot_boost "0 100"
     write /proc/perfmgr/boost_ctrl/eas_ctrl/boot_boost "1 100"
@@ -212,6 +218,14 @@ on post-fs
     symlink /dev/block/platform/bootdevice/by-name/preloader_b /dev/block/platform/bootdevice/by-name/preloader_emmc_b
     symlink /dev/block/platform/bootdevice/by-name/preloader_a /dev/block/platform/bootdevice/by-name/preloader_ufs_a
     symlink /dev/block/platform/bootdevice/by-name/preloader_b /dev/block/platform/bootdevice/by-name/preloader_ufs_b
+
+    symlink /dev/block/mapper/pl_a /dev/block/by-name/preloader_raw_a
+    symlink /dev/block/mapper/pl_b /dev/block/by-name/preloader_raw_b
+    symlink /dev/block/mapper/pl_a /dev/block/platform/bootdevice/by-name/preloader_raw_a
+    symlink /dev/block/mapper/pl_b /dev/block/platform/bootdevice/by-name/preloader_raw_b
+
+    # allow ccci_mdinit access ccci_dump
+    chown root system /proc/ccci_dump
 
 # M306  Add for pd charge batterysecret
 on property:sys.boot_completed=1
@@ -805,6 +819,7 @@ on zygote-start
 
 on early-boot
     write /proc/bootprof "INIT:early-boot"
+    verity_update_state
 
 on boot
     write /proc/bootprof "INIT:boot"
@@ -1137,12 +1152,21 @@ on property:persist.vendor.mediatek.fg.log.enable=1
 
 # add meta_tst for ATM
 service meta_tst /vendor/bin/meta_tst
-    class main
-    user system
+    class core
+    user root
     group radio gps system wifi audio bluetooth media
     capabilities NET_RAW NET_ADMIN
+    socket meta-atci stream 660 radio system
     disabled
     oneshot
+
+service factory_no_image /vendor/bin/factory
+    user root
+    group radio system wifi media gps audio bluetooth wakelock nfc
+    capabilities BLOCK_SUSPEND NET_RAW NET_ADMIN SYS_ADMIN SYS_BOOT
+    socket factory-atci stream 660 radio system
+    disabled
+    oneshot	
 
 # start meta_tst for ATM
 on property:sys.boot_completed=1 && property:ro.boot.atm=enable

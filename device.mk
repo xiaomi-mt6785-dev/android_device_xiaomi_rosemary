@@ -50,8 +50,8 @@ PRODUCT_PACKAGES += \
 # Audio
 PRODUCT_PACKAGES += \
     android.hardware.audio.service.mediatek \
-    android.hardware.audio@6.0-impl \
-    android.hardware.audio.effect@6.0-impl \
+    android.hardware.audio@7.0-impl \
+    android.hardware.audio.effect@7.0-impl \
     android.hardware.bluetooth.audio-impl \
     android.hardware.soundtrigger@2.3-impl
 
@@ -61,12 +61,8 @@ PRODUCT_PACKAGES += \
     audio.usb.default
 
 PRODUCT_PACKAGES += \
-    libshim_audio
-
-PRODUCT_PACKAGES += \
-    libalsautils_legacy \
     libtinycompress \
-    libtinyxml \
+    libaudiofoundation.vendor \
     tinymix
 
 PRODUCT_PACKAGES += \
@@ -82,9 +78,9 @@ PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/configs/audio/usb_audio_accessory_only_policy_configuration.xml:$(TARGET_COPY_OUT_VENDOR)/etc/usb_audio_accessory_only_policy_configuration.xml
 
 PRODUCT_COPY_FILES += \
-    frameworks/av/services/audiopolicy/config/a2dp_audio_policy_configuration.xml:$(TARGET_COPY_OUT_VENDOR)/etc/a2dp_audio_policy_configuration.xml \
-    frameworks/av/services/audiopolicy/config/a2dp_in_audio_policy_configuration.xml:$(TARGET_COPY_OUT_VENDOR)/etc/a2dp_in_audio_policy_configuration.xml \
-    frameworks/av/services/audiopolicy/config/bluetooth_audio_policy_configuration.xml:$(TARGET_COPY_OUT_VENDOR)/etc/bluetooth_audio_policy_configuration.xml \
+    frameworks/av/services/audiopolicy/config/a2dp_audio_policy_configuration_7_0.xml:$(TARGET_COPY_OUT_VENDOR)/etc/a2dp_audio_policy_configuration.xml \
+    frameworks/av/services/audiopolicy/config/a2dp_in_audio_policy_configuration_7_0.xml:$(TARGET_COPY_OUT_VENDOR)/etc/a2dp_in_audio_policy_configuration.xml \
+    frameworks/av/services/audiopolicy/config/bluetooth_audio_policy_configuration_7_0.xml:$(TARGET_COPY_OUT_VENDOR)/etc/bluetooth_audio_policy_configuration.xml \
     frameworks/av/services/audiopolicy/config/r_submix_audio_policy_configuration.xml:$(TARGET_COPY_OUT_VENDOR)/etc/r_submix_audio_policy_configuration.xml \
     frameworks/av/services/audiopolicy/config/usb_audio_policy_configuration.xml:$(TARGET_COPY_OUT_VENDOR)/etc/usb_audio_policy_configuration.xml \
     frameworks/av/services/audiopolicy/config/default_volume_tables.xml:$(TARGET_COPY_OUT_VENDOR)/etc/default_volume_tables.xml
@@ -109,15 +105,9 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     libdng_sdk.vendor
 
-PRODUCT_PACKAGES += \
-    libshim_utils
-
 # Charger
 PRODUCT_PACKAGES += \
     libsuspend
-
-PRODUCT_PACKAGES += \
-    libshim_showlogo
 
 # Display
 TARGET_SCREEN_DENSITY := 440
@@ -143,7 +133,7 @@ PRODUCT_PACKAGES += \
 
 # Display
 PRODUCT_PACKAGES += \
-    android.hardware.graphics.composer@2.1-service
+    android.hardware.graphics.composer@2.2-service
 
 PRODUCT_PACKAGES += \
     android.hardware.memtrack-service.mediatek-mali
@@ -154,6 +144,7 @@ PRODUCT_PACKAGES += \
     android.hardware.graphics.allocator@4.0.vendor
 
 PRODUCT_PACKAGES += \
+    libdrm \
     libdrm.vendor
 
 # Dynamic Partitions
@@ -188,7 +179,8 @@ PRODUCT_PACKAGES += \
     android.hardware.gnss@2.1.vendor \
     android.hardware.gnss.measurement_corrections@1.0.vendor \
     android.hardware.gnss.measurement_corrections@1.1.vendor \
-    android.hardware.gnss.visibility_control@1.0.vendor
+    android.hardware.gnss.visibility_control@1.0.vendor \
+    android.hardware.gnss-V1-ndk_platform.vendor
 
 # Health
 PRODUCT_PACKAGES += \
@@ -225,9 +217,6 @@ PRODUCT_BOOT_JARS += \
     mediatek-telephony-base \
     mediatek-telephony-common
 
-PRODUCT_PACKAGES += \
-    libshim_vtservice
-
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/configs/permissions/privapp-permissions-com.mediatek.ims.xml:$(TARGET_COPY_OUT_SYSTEM)/etc/permissions/privapp-permissions-com.mediatek.ims.xml
 
@@ -238,16 +227,10 @@ PRODUCT_PACKAGES += \
 
 # Keymaster
 PRODUCT_PACKAGES += \
-    android.hardware.keymaster@4.0.vendor
-
-PRODUCT_PACKAGES += \
-    libkeymaster4.vendor \
-    libkeymaster4support.vendor \
+    libkeymaster41.vendor \
+    libkeymaster4_1support.vendor \
     libpuresoftkeymasterdevice.vendor \
     libsoft_attestation_cert.vendor
-
-PRODUCT_PACKAGES += \
-    libshim_beanpod
 
 # Lights
 PRODUCT_PACKAGES += \
@@ -258,6 +241,14 @@ PRODUCT_PACKAGES += \
     vendor.lineage.health-service.default
 
 # Media
+PRODUCT_PACKAGES += \
+    libcodec2_hidl@1.1.vendor \
+    libcodec2_hidl@1.2.vendor \
+    libavservices_minijail_vendor \
+    libstagefright_softomx_plugin.vendor \
+    libsfplugin_ccodec_utils.vendor \
+    libcodec2_soft_common.vendor
+
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/configs/media/media_codecs.xml:$(TARGET_COPY_OUT_VENDOR)/etc/media_codecs.xml \
     $(LOCAL_PATH)/configs/media/media_codecs_c2.xml:$(TARGET_COPY_OUT_VENDOR)/etc/media_codecs_c2.xml \
@@ -378,6 +369,7 @@ PRODUCT_COPY_FILES += \
     frameworks/native/data/etc/android.hardware.location.gps.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/android.hardware.location.gps.xml \
     frameworks/native/data/etc/android.hardware.opengles.aep.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/android.hardware.opengles.aep.xml \
     frameworks/native/data/etc/android.hardware.sensor.accelerometer.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/android.hardware.sensor.accelerometer.xml \
+    frameworks/native/data/etc/android.hardware.sensor.barometer.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/android.hardware.sensor.barometer.xml \
     frameworks/native/data/etc/android.hardware.sensor.compass.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/android.hardware.sensor.compass.xml \
     frameworks/native/data/etc/android.hardware.sensor.gyroscope.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/android.hardware.sensor.gyroscope.xml \
     frameworks/native/data/etc/android.hardware.sensor.light.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/android.hardware.sensor.light.xml \
@@ -402,6 +394,7 @@ PRODUCT_COPY_FILES += \
     frameworks/native/data/etc/android.software.ipsec_tunnels.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/android.software.ipsec_tunnels.xml \
     frameworks/native/data/etc/android.software.midi.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/android.software.midi.xml \
     frameworks/native/data/etc/android.software.verified_boot.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/android.software.verified_boot.xml \
+    frameworks/native/data/etc/android.software.opengles.deqp.level-2020-03-01.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/android.software.opengles.deqp.level.xml \
     frameworks/native/data/etc/android.software.vulkan.deqp.level-2020-03-01.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/android.software.vulkan.deqp.level.xml \
     frameworks/native/data/etc/handheld_core_hardware.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/handheld_core_hardware.xml
 
@@ -413,11 +406,11 @@ PRODUCT_PACKAGES += \
     android.hardware.radio@1.3.vendor \
     android.hardware.radio@1.4.vendor \
     android.hardware.radio@1.5.vendor \
+    android.hardware.radio@1.6.vendor \
     android.hardware.radio.config@1.0.vendor \
     android.hardware.radio.config@1.1.vendor \
     android.hardware.radio.config@1.2.vendor \
-    android.hardware.radio.deprecated@1.0.vendor \
-    android.hardware.radio-V1.4-java
+    android.hardware.radio.config@1.3.vendor
 
 # Rootdir
 PRODUCT_PACKAGES += \
@@ -443,6 +436,7 @@ PRODUCT_PACKAGES += \
     android.hardware.sensors@2.1-service.multihal \
     android.hardware.sensors@1.0.vendor \
     android.hardware.sensors@2.0.vendor \
+    android.hardware.sensors@2.1.vendor \
     android.hardware.sensors@2.0-ScopedWakelock.vendor \
     android.frameworks.sensorservice@1.0
 
@@ -469,7 +463,12 @@ PRODUCT_PACKAGES += \
 
 # USB
 PRODUCT_PACKAGES += \
-    android.hardware.usb@1.1-service.rosemary
+    android.hardware.usb@1.0.vendor \
+    android.hardware.usb@1.1.vendor \
+    android.hardware.usb@1.2.vendor \
+    android.hardware.usb@1.3.vendor \
+    android.hardware.usb.gadget@1.0.vendor \
+    android.hardware.usb.gadget@1.1.vendor
 
 # Vibrator
 PRODUCT_PACKAGES += \
@@ -478,8 +477,6 @@ PRODUCT_PACKAGES += \
 # VNDK
 PRODUCT_PACKAGES += \
     libutils-v32 \
-    libhidlbase-v32 \
-    libui-v32
 
 # Wi-Fi
 PRODUCT_PACKAGES += \
@@ -487,9 +484,14 @@ PRODUCT_PACKAGES += \
     android.hardware.wifi.supplicant@1.1.vendor \
     android.hardware.wifi.supplicant@1.2.vendor \
     android.hardware.wifi.supplicant@1.3.vendor \
+    android.hardware.wifi.supplicant@1.4.vendor \
     android.hardware.wifi.hostapd@1.0.vendor \
     android.hardware.wifi.hostapd@1.1.vendor \
-    android.hardware.wifi.hostapd@1.2.vendor
+    android.hardware.wifi.hostapd@1.2.vendor \
+    android.hardware.wifi.hostapd@1.3.vendor \
+    android.hardware.tetheroffload.config@1.0.vendor \
+    android.hardware.tetheroffload.control@1.0.vendor \
+    android.hardware.tetheroffload.control@1.1.vendor
 
 PRODUCT_PACKAGES += \
     android.hardware.wifi@1.0-service-lazy.rosemary

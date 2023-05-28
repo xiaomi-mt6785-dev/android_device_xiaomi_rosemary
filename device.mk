@@ -109,6 +109,9 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     libsuspend
 
+PRODUCT_PACKAGES += \
+    libshim_showlogo
+
 # Display
 TARGET_SCREEN_DENSITY := 440
 TARGET_SCREEN_HEIGHT := 2400

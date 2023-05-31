@@ -81,6 +81,7 @@ ro.vendor.mtk_dre30_support=1
 ro.vendor.mtk_pq_support=2
 ro.vendor.mtk_pq_color_mode=1
 ro.vendor.mtk_aal_support=1
+ro.vendor.mtk_hdr_video_support=1
 ro.vendor.mtk_ultra_dimming_support=1
 persist.vendor.max.brightness=500
 ro.vendor.colorpick_adjust=true

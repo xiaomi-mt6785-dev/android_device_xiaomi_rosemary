@@ -2047,7 +2047,7 @@ lib64/libmtk_vt_wrapper.so
 lib64/libmtkavenhancements.so
 lib64/libvcodec_cap.so
 lib64/libvcodec_capenc.so
--priv-app/ImsService/ImsService.apk|b4a96e5f8ecdf782e66f7d848ce28d4b3b1083ff
+-priv-app/ImsService/ImsService.apk|4fcfd977593eb2d7a368c9c65d2737d53e75bbaa
 system_ext/lib/vendor.mediatek.hardware.mtkradioex@1.0.so
 system_ext/lib/vendor.mediatek.hardware.videotelephony@1.0.so
 system_ext/lib64/vendor.mediatek.hardware.mtkradioex@1.0.so

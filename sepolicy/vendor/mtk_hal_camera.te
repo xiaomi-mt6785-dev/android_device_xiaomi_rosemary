@@ -5,3 +5,6 @@ allow mtk_hal_camera persist_camera_data_file:file create_file_perms;
 
 allow mtk_hal_camera vendor_data_file:dir rw_dir_perms;
 allow mtk_hal_camera vendor_data_file:file create_file_perms;
+
+set_prop(mtk_hal_camera, system_camera_prop)
+get_prop(mtk_hal_camera, system_camera_prop)

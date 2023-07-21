@@ -2556,7 +2556,6 @@ vendor/etc/init/android.hardware.secure_element@1.2-service-mediatek.rc
 
 # Sensors
 vendor/bin/sensors_test
-vendor/etc/sensors/hals.conf
 vendor/etc/cit_config.xml
 vendor/etc/elliptic_sensor.xml
 vendor/lib/libakm.so

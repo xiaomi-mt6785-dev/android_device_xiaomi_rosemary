@@ -1884,7 +1884,7 @@ lib64/libmtk_vt_wrapper.so
 lib64/libmtk_vt_wrapper.so
 lib64/libmtkavenhancements.so
 lib64/libsignal.so
-lib64/libsink.so
+lib64/libsink.so|39b1be64f613b83cdd460740de04da814565c414
 lib64/libsource.so
 lib64/libvcodec_cap.so
 lib64/libvcodec_capenc.so

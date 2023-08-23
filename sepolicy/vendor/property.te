@@ -1,4 +1,1 @@
 vendor_restricted_prop(vendor_fingerprint_prop);
-
-# IR
-vendor_restricted_prop(vendor_lirc_prop);

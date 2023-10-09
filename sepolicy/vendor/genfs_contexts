@@ -23,8 +23,8 @@ genfscon sysfs /devices/platform/battery/power_supply/battery                   
 genfscon sysfs /devices/platform/battery/power_supply/bms     	       	       	       	       	       	       	       	       	u:object_r:vendor_sysfs_bms_supply:s0
 genfscon sysfs /devices/platform/11004000.i2c7/i2c-7/7-0055/power_supply/parallel                                               u:object_r:vendor_sysfs_parallel_supply:s0
 genfscon sysfs /devices/platform/1101a000.i2c7/i2c-7/7-0051/power_supply							u:object_r:sysfs_batteryinfo:s0
-genfscon sysfs /devices/platform/soc/soc:maxim_ds28e16/power_supply/batt_verify    						u:object_r:vendor_sysfs_battery_supply:s0
-genfscon sysfs /devices/platform/soc/soc:maxim_ds28e16/power_supply/batt_verify/type   						u:object_r:vendor_sysfs_battery_supply:s0
+genfscon sysfs /devices/platform/maxim_ds28e16/power_supply/batt_verify								u:object_r:vendor_sysfs_battery_supply:s0
+genfscon sysfs /devices/platform/maxim_ds28e16/power_supply/batt_verify/type							u:object_r:vendor_sysfs_battery_supply:s0
 
 # Leds
 genfscon sysfs /devices/platform/11016000.i2c5/i2c-5/5-0034/mt6360_pmu_rgbled.4.auto/leds 					u:object_r:sysfs_leds:s0

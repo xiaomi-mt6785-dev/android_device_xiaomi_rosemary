@@ -1948,15 +1948,6 @@ vendor/lib64/vendor.mediatek.hardware.videotelephony@1.0.so
 # IMS-System
 bin/vtservice
 etc/init/init.vtservice.rc
--framework/mediatek-common.jar
--framework/mediatek-framework.jar
--framework/mediatek-ims-base.jar
--framework/mediatek-ims-common.jar
--framework/mediatek-ims-extension-plugin.jar
--framework/mediatek-ims-legacy.jar
--framework/mediatek-telecom-common.jar
--framework/mediatek-telephony-base.jar
--framework/mediatek-telephony-common.jar
 lib/libmtk_vt_wrapper.so
 lib/libmtkavenhancements.so
 lib/libvcodec_cap.so
@@ -1965,11 +1956,21 @@ lib64/libmtk_vt_wrapper.so
 lib64/libmtkavenhancements.so
 lib64/libvcodec_cap.so
 lib64/libvcodec_capenc.so
--priv-app/ImsService/ImsService.apk
 system_ext/lib/vendor.mediatek.hardware.mtkradioex@3.0.so
 system_ext/lib/vendor.mediatek.hardware.videotelephony@1.0.so
 system_ext/lib64/vendor.mediatek.hardware.mtkradioex@3.0.so
 system_ext/lib64/vendor.mediatek.hardware.videotelephony@1.0.so
+
+# IMS-System - from rosemary-user 12 SP1A.210812.016 V14.0.7.0.TKLMIXM release-keys
+-framework/mediatek-common.jar|65cb5b86acb0eb42bb3ec2987e1d80a88ea0756a
+-framework/mediatek-framework.jar|e1820712befe75673d4efc6f4a64b86ada611084
+-framework/mediatek-ims-base.jar|8e58bc3840adef5c23322267520d677b492eebc2
+-framework/mediatek-ims-common.jar|c2631df71d268a1dc2af03a188c83bc2c9f41eee
+-framework/mediatek-ims-extension-plugin.jar|fbadb06fbf2762b181e15c88cbd7ae299a89be71
+-framework/mediatek-telecom-common.jar|b80be86b779269c7078670d573626f0f860427d4
+-framework/mediatek-telephony-base.jar|357c2986f3c17adf8eb70f3b3318949a2f48f2cf
+-framework/mediatek-telephony-common.jar|c5ffd7f5a53becbc5ca0b82b1c1d7ab1b281ca99
+-priv-app/ImsService/ImsService.apk|bf300f97f783fc7ec2d261308df93d5155481454
 
 # IR
 vendor/bin/consumerird

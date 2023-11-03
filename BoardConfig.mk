@@ -100,7 +100,7 @@ BOARD_KERNEL_IMAGE_NAME := Image.gz
 TARGET_HEALTH_CHARGING_CONTROL_SUPPORTS_BYPASS := false
 
 # OTA assert
-TARGET_OTA_ASSERT_DEVICE := rosemary,secret,maltose
+TARGET_OTA_ASSERT_DEVICE := rosemary,rosemary_p,secret,secretr,maltose
 
 # Partitions
 BOARD_FLASH_BLOCK_SIZE := 131072                   # 2048      * 64   (pagesize)

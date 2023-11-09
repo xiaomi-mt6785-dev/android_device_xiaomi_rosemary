@@ -1968,9 +1968,9 @@ system_ext/lib64/vendor.mediatek.hardware.videotelephony@1.0.so
 -framework/mediatek-ims-common.jar|c2631df71d268a1dc2af03a188c83bc2c9f41eee
 -framework/mediatek-ims-extension-plugin.jar|fbadb06fbf2762b181e15c88cbd7ae299a89be71
 -framework/mediatek-telecom-common.jar|b80be86b779269c7078670d573626f0f860427d4
--framework/mediatek-telephony-base.jar|357c2986f3c17adf8eb70f3b3318949a2f48f2cf
+-framework/mediatek-telephony-base.jar|3dbcab999df648d76fce90b5b0ed9d03dddbcffb
 -framework/mediatek-telephony-common.jar|c5ffd7f5a53becbc5ca0b82b1c1d7ab1b281ca99
--priv-app/ImsService/ImsService.apk|bf300f97f783fc7ec2d261308df93d5155481454
+-priv-app/ImsService/ImsService.apk|17583dd8b06e52d793bb886636199592d9dd4b06
 
 # IR
 vendor/bin/consumerird

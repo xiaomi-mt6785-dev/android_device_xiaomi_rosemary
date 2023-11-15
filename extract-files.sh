@@ -60,6 +60,7 @@ function blob_fixup {
             ;;
         vendor/bin/mtk_agpsd)
            "${PATCHELF}" --replace-needed "libcrypto.so" "libcrypto-v32.so" "${2}"
+           "${PATCHELF}" --replace-needed "libssl.so" "libssl-v32.so" "${2}"           
             ;;
         vendor/bin/hw/android.hardware.gnss-service.mediatek |\
         vendor/lib64/hw/android.hardware.gnss-impl-mediatek.so)

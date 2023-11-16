@@ -194,7 +194,7 @@
             <Limit name="concurrent-instances" max="32" />
             <Limit name="performance-point-1920x1088" value="30" />
         </MediaCodec>
-        <MediaCodec name="c2.android.mpeg4.decoder" type="video/mp4v-es">
+        <MediaCodec name="c2.android.mpeg4.decoder" type="video/mp4v-es" update="true" enabled="false">
             <Alias name="OMX.google.mpeg4.decoder" />
             <!-- profiles and levels:  ProfileSimple : Level3 -->
             <Limit name="size" min="2x2" max="352x288" />

@@ -2088,10 +2088,6 @@ vendor/lib64/libvpu.so
 vendor/lib64/libvpu5.so
 
 # Media (Codec2)
-vendor/bin/hw/android.hardware.media.c2@1.2-mediatek
-vendor/bin/hw/android.hardware.media.c2@1.2-mediatek-64b
-vendor/etc/init/android.hardware.media.c2@1.2-mediatek.rc
--vendor/etc/vintf/manifest/manifest_media_c2_V1_2_default.xml
 vendor/lib/libcodec2_mtk_c2store.so
 vendor/lib/libcodec2_mtk_vdec.so
 vendor/lib/libcodec2_mtk_venc.so
@@ -2114,6 +2110,12 @@ vendor/lib64/libcodec2_soft_mtk_msadpcmdec.so
 vendor/lib64/libcodec2_vpp_qt_plugin.so
 vendor/lib64/libcodec2_vpp_rs_plugin.so
 vendor/lib64/libformatter.so
+
+# Media (Codec2) - from rosemary-user 12 SP1A.210812.016 V13.0.13.0.SKLMIXM release-keys
+vendor/bin/hw/android.hardware.media.c2@1.2-mediatek|9316c45c49590be6ee872f16d31a13901cc99f73
+vendor/bin/hw/android.hardware.media.c2@1.2-mediatek-64b|1d84563b223518bfefd6d8b126a0768c5bcab972
+vendor/etc/init/android.hardware.media.c2@1.2-mediatek.rc|9fd0ee16d79ed8c7403c187ea8708c5b350e03ca
+-vendor/etc/vintf/manifest/manifest_media_c2_V1_1_default.xml|9d6aa618b44ce23d3040f1f994692692458a9b7c
 
 # MTD
 vendor/bin/mtd@1.2

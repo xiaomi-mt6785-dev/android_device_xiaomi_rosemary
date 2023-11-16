@@ -159,6 +159,8 @@ Only the three quirks included above are recognized at this point:
         <!-- Google codec -->
         <MediaCodec name="c2.android.mpeg4.decoder" type="video/mp4v-es" update="true">
             <Limit name="measured-frame-rate-176x144" range="359-790" />
+            <Limit name="measured-frame-rate-480x360" range="51-113" />
+            <Limit name="measured-frame-rate-1280x720" range="9-21" />
         </MediaCodec>
         <MediaCodec name="c2.android.h263.decoder" type="video/3gpp" update="true">
             <Limit name="measured-frame-rate-176x144" range="313-688" />

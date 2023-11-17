@@ -1726,10 +1726,12 @@ vendor/firmware/mt6631_fm_v1_coeff.bin
 vendor/firmware/mt6631_fm_v1_patch.bin
 vendor/firmware/remoteproc_scp
 vendor/firmware/soc1_0_patch_mcu_2a_1_hdr.bin
-vendor/firmware/soc1_0_ram_bt_2a_1_hdr.bin
 vendor/firmware/soc1_0_ram_mcu_2a_1_hdr.bin
 vendor/firmware/soc1_0_ram_wifi_2a_1_hdr.bin
 vendor/firmware/st21nfc_fw7.bin
+
+# Firmware (Connectivity) - from A145PXXU1AWA3
+vendor/firmware/soc1_0_ram_bt_1a_1_hdr.bin:vendor/firmware/soc1_0_ram_bt_2a_1_hdr.bin|9cd0d79cde76a59ddd8545b1621af1176c5f9605
 
 # FM Radio
 -system_ext/lib64/libfmjni.so:system/lib64/libfmjni.so

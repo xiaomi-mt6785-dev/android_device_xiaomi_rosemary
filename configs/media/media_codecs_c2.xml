@@ -95,10 +95,6 @@
             <Alias name="OMX.MTK.AUDIO.DECODER.ADPCM.DVI" />
             <Limit name="channel-count" max="8" />
         </MediaCodec>
-        <MediaCodec name="c2.mtk.ape.decoder" type="audio/ape">
-            <Alias name="OMX.MTK.AUDIO.DECODER.APE" />
-            <Limit name="channel-count" max="2" />
-        </MediaCodec>
         <MediaCodec name="c2.mtk.alac.decoder" type="audio/alac">
             <Alias name="OMX.MTK.AUDIO.DECODER.ALAC" />
             <Limit name="channel-count" max="8" />

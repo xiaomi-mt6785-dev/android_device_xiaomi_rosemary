@@ -104,13 +104,6 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     libdng_sdk.vendor
 
-# Charger
-PRODUCT_PACKAGES += \
-    libsuspend
-
-PRODUCT_PACKAGES += \
-    libshim_showlogo
-
 # Cgroup
 PRODUCT_COPY_FILES += \
     system/core/libprocessgroup/profiles/cgroups_30.json:$(TARGET_COPY_OUT_VENDOR)/etc/cgroups.json \

@@ -156,7 +156,8 @@ on post-fs-data
     chown system system /sys/class/sensor/m_situ_misc/situdelay
     chown system system /sys/class/sensor/m_situ_misc/situbatch
     chown system system /sys/class/sensor/m_situ_misc/situflush
-	chown system system /sys/class/sensor/m_situ_misc/lightsecondaryCali
+    chmod 0660 /sys/class/sensor/m_situ_misc/lightsecondaryCali
+    chown system system /sys/class/sensor/m_situ_misc/lightsecondaryCali
 
     chmod 0660 /sys/class/sensor/m_act_misc/actactive
     chmod 0660 /sys/class/sensor/m_act_misc/actdelay

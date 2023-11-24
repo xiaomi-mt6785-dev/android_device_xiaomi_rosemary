@@ -54,6 +54,8 @@ on post-fs-data
     chmod 0666 /data/vendor/camera/model/rt_model/preview_model
     chmod 0666 /data/vendor/camera/model/rt_model/preview_policy
 
+    chown system system /sys/class/touch/touch_dev/palm_sensor
+
 # for mibokeh use
     mkdir /data/vendor/camera/mibokeh 0776 system camera
 
@@ -84,8 +86,30 @@ on  property:vendor.camera.boost.en=1
 on  property:vendor.camera.boost.en=0
     write /sys/class/thermal/thermal_message/sconfig 17
 
+# 20220922 ODM-RT yingjun add RPMB and cpuid for selinux
+on property:sys.boot_completed=1 && property:vendor.sys.rpmb_state=*
+    setprop ro.vendor.ril.oem.rpmb_state ${vendor.sys.rpmb_state}
+
+on property:sys.boot_completed=1 && property:ro.boot.cpuid=*
+    setprop ro.vendor.ril.oem.cpuid ${ro.boot.cpuid}
+
 service fuse_usbotg /system/bin/sdcard -u 1023 -g 1023 -w 1023 -d /mnt/media_rw/usbotg /storage/usbotg
     class late_start
     disabled
 
+# TouchPad settings
+on property:sys.tp.grip_enable=0
+    write /proc/tp_grip_area 0
+
+on property:sys.tp.grip_enable=1
+    write /proc/tp_grip_area 1
+
+on property:sys.tp.grip_enable=90
+    write /proc/tp_grip_area 90
+
+on property:sys.tp.grip_enable=180
+    write /proc/tp_grip_area 180
+
+on property:sys.tp.grip_enable=270
+    write /proc/tp_grip_area 270
 

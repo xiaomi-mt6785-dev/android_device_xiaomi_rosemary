@@ -55,9 +55,6 @@ fi
 
 function blob_fixup {
     case "$1" in
-        lib64/libshowlogo.so)
-            "${PATCHELF}" --add-needed "libshim_showlogo.so" "${2}"
-            ;;
         vendor/bin/mnld)
             "${PATCHELF}" --replace-needed "libsensorndkbridge.so" "libsensorndkbridge-hidl.so" "$2"
             ;;

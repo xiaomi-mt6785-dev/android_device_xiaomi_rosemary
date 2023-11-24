@@ -1,4 +1,4 @@
-# Unpinned blobs from rosemary-user 12 SP1A.210812.016 V13.0.6.0.SKLMIXM release-keys
+# Unpinned blobs from rosemary-user 12 SP1A.210812.016 V14.0.7.0.TKLMIXM release-keys
 
 # AAL
 vendor/lib/libaal_cust.so
@@ -113,6 +113,10 @@ vendor/etc/audio_param/AudioParamOptions.xml
 vendor/etc/audio_param/AudioParamOptions_vext.xml
 vendor/etc/audio_param/BtInfo_AudioParam.xml
 vendor/etc/audio_param/BtInfo_ParamUnitDesc.xml
+vendor/etc/audio_param/CRSVolUI_AudioParam.xml
+vendor/etc/audio_param/CRSVolUI_ParamUnitDesc.xml
+vendor/etc/audio_param/CRSVol_AudioParam.xml
+vendor/etc/audio_param/CRSVol_ParamUnitDesc.xml
 vendor/etc/audio_param/HpImpedance_AudioParam.xml
 vendor/etc/audio_param/HpImpedance_ParamUnitDesc.xml
 vendor/etc/audio_param/MicInfo_AudioParam.xml
@@ -1566,14 +1570,9 @@ vendor/lib64/vendor.mediatek.hardware.camera.isphal@1.0.so
 vendor/lib64/vendor.mediatek.hardware.camera.lomoeffect@1.0.so
 vendor/lib64/vendor.mediatek.hardware.camera.postproc@1.0.so
 vendor/lib64/vendor.mediatek.hardware.camera.security@1.0.so
-vendor/xbin/cameratest
 vendor/xbin/dc_cal
 
 # Charger
-bin/kpoc_charger
-etc/init/kpoc_charger.rc
-lib/libsysenv_system.so
-lib64/libshowlogo.so
 vendor/bin/batterysecret
 
 # DMC
@@ -1872,7 +1871,6 @@ system_ext/framework/com.android.hotwordenrollment.common.util.jar
 
 # IMS
 lib/libmtk_vt_wrapper.so
-lib/libmtkavenhancements.so
 lib/libvcodec_cap.so
 lib/libvcodec_cap.so
 lib/libvsim-adaptor-client.so
@@ -1884,9 +1882,8 @@ lib64/libimsma_socketwrapper.so
 lib64/libmtk_vt_service.so
 lib64/libmtk_vt_wrapper.so
 lib64/libmtk_vt_wrapper.so
-lib64/libmtkavenhancements.so
 lib64/libsignal.so
-lib64/libsink.so|39b1be64f613b83cdd460740de04da814565c414
+lib64/libsink.so
 lib64/libsource.so
 lib64/libvcodec_cap.so
 lib64/libvcodec_capenc.so
@@ -1950,29 +1947,25 @@ vendor/lib64/vendor.mediatek.hardware.videotelephony@1.0.so
 # IMS-System
 bin/vtservice
 etc/init/init.vtservice.rc
+-framework/mediatek-common.jar
+-framework/mediatek-framework.jar
+-framework/mediatek-ims-base.jar
+-framework/mediatek-ims-common.jar
+-framework/mediatek-ims-extension-plugin.jar
+-framework/mediatek-telecom-common.jar
+-framework/mediatek-telephony-base.jar|3dbcab999df648d76fce90b5b0ed9d03dddbcffb
+-framework/mediatek-telephony-common.jar
+-priv-app/ImsService/ImsService.apk|17583dd8b06e52d793bb886636199592d9dd4b06
 lib/libmtk_vt_wrapper.so
-lib/libmtkavenhancements.so
 lib/libvcodec_cap.so
 lib/libvcodec_capenc.so
 lib64/libmtk_vt_wrapper.so
-lib64/libmtkavenhancements.so
 lib64/libvcodec_cap.so
 lib64/libvcodec_capenc.so
 system_ext/lib/vendor.mediatek.hardware.mtkradioex@3.0.so
 system_ext/lib/vendor.mediatek.hardware.videotelephony@1.0.so
 system_ext/lib64/vendor.mediatek.hardware.mtkradioex@3.0.so
 system_ext/lib64/vendor.mediatek.hardware.videotelephony@1.0.so
-
-# IMS-System - from rosemary-user 12 SP1A.210812.016 V14.0.7.0.TKLMIXM release-keys
--framework/mediatek-common.jar|65cb5b86acb0eb42bb3ec2987e1d80a88ea0756a
--framework/mediatek-framework.jar|e1820712befe75673d4efc6f4a64b86ada611084
--framework/mediatek-ims-base.jar|8e58bc3840adef5c23322267520d677b492eebc2
--framework/mediatek-ims-common.jar|c2631df71d268a1dc2af03a188c83bc2c9f41eee
--framework/mediatek-ims-extension-plugin.jar|fbadb06fbf2762b181e15c88cbd7ae299a89be71
--framework/mediatek-telecom-common.jar|b80be86b779269c7078670d573626f0f860427d4
--framework/mediatek-telephony-base.jar|3dbcab999df648d76fce90b5b0ed9d03dddbcffb
--framework/mediatek-telephony-common.jar|c5ffd7f5a53becbc5ca0b82b1c1d7ab1b281ca99
--priv-app/ImsService/ImsService.apk|17583dd8b06e52d793bb886636199592d9dd4b06
 
 # IR
 vendor/bin/consumerird
@@ -2080,7 +2073,6 @@ vendor/lib64/libimageio_plat_drv.so
 vendor/lib64/libimageio_plat_pipe.so
 vendor/lib64/libjpeg-alpha-oal_vendor.so
 vendor/lib64/libjpeg-alpha_vendor.so
-vendor/lib64/libmcv_runtime.mtk.so
 vendor/lib64/libstagefrighthw.so
 vendor/lib64/libthha.so
 vendor/lib64/libvcodec_oal.so
@@ -2090,6 +2082,10 @@ vendor/lib64/libvpu.so
 vendor/lib64/libvpu5.so
 
 # Media (Codec2)
+vendor/bin/hw/android.hardware.media.c2@1.2-mediatek
+vendor/bin/hw/android.hardware.media.c2@1.2-mediatek-64b
+vendor/etc/init/android.hardware.media.c2@1.2-mediatek.rc
+-vendor/etc/vintf/manifest/manifest_media_c2_V1_1_default.xml
 vendor/lib/libcodec2_mtk_c2store.so
 vendor/lib/libcodec2_mtk_vdec.so
 vendor/lib/libcodec2_mtk_venc.so
@@ -2113,12 +2109,6 @@ vendor/lib64/libcodec2_vpp_qt_plugin.so
 vendor/lib64/libcodec2_vpp_rs_plugin.so
 vendor/lib64/libformatter.so
 
-# Media (Codec2) - from rosemary-user 12 SP1A.210812.016 V13.0.13.0.SKLMIXM release-keys
-vendor/bin/hw/android.hardware.media.c2@1.2-mediatek|9316c45c49590be6ee872f16d31a13901cc99f73
-vendor/bin/hw/android.hardware.media.c2@1.2-mediatek-64b|1d84563b223518bfefd6d8b126a0768c5bcab972
-vendor/etc/init/android.hardware.media.c2@1.2-mediatek.rc|9fd0ee16d79ed8c7403c187ea8708c5b350e03ca
--vendor/etc/vintf/manifest/manifest_media_c2_V1_1_default.xml|9d6aa618b44ce23d3040f1f994692692458a9b7c
-
 # MTD
 vendor/bin/mtd@1.2
 vendor/lib64/libmt.so
@@ -2126,7 +2116,6 @@ vendor/lib64/libmt@1.2.so
 vendor/lib64/libmtcloader.so
 
 # NFC
-etc/nfcee_access.xml
 vendor/bin/hw/android.hardware.nfc@1.2-service-st
 vendor/bin/STFlashTool
 vendor/bin/nfcstackp-vendor
@@ -2284,8 +2273,8 @@ vendor/bin/meta_tst
 vendor/bin/mnld
 vendor/bin/netdagent
 vendor/bin/xcap
-vendor/etc/apdb/APDB_MT6785_S01__W2205
-vendor/etc/apdb/APDB_MT6785_S01__W2205_ENUM
+vendor/etc/apdb/APDB_MT6785_S01__W2236
+vendor/etc/apdb/APDB_MT6785_S01__W2236_ENUM
 vendor/etc/init/em_hidl_user.rc
 vendor/etc/init/gsm0710muxd.rc
 vendor/etc/init/init.cccimdinit.rc

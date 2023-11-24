@@ -110,6 +110,10 @@ on charger
     chmod 0664 /sys/class/power_supply/usb/pd_authentication
     chmod 0664 /sys/class/power_supply/bms/authentic	
 
+    # Turn backlight on and switch to backlight trigger
+    write /sys/class/leds/lcd-backlight/brightness "1000"
+    write /sys/class/leds/lcd-backlight/trigger "backlight"
+
     # Stop bootprof
     write /proc/bootprof "0"
 

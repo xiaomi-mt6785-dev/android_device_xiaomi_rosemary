@@ -2552,7 +2552,6 @@ vendor/etc/elliptic_sensor.xml
 vendor/lib/libakm.so
 vendor/lib/libhwm.so
 vendor/lib/librgbwlightsensor.so
-vendor/lib/libsensorndkbridge.so:vendor/lib/libsensorndkbridge-hidl.so
 vendor/lib64/hw/android.hardware.sensors@2.X-subhal-mediatek.so
 vendor/lib64/hw/sensors.elliptic.so
 vendor/lib64/hw/sensors.mt6785.so
@@ -2560,7 +2559,6 @@ vendor/lib64/libakm.so
 vendor/lib64/libhwm.so
 vendor/lib64/libksensor.so
 vendor/lib64/librgbwlightsensor.so
-vendor/lib64/libsensorndkbridge.so:vendor/lib64/libsensorndkbridge-hidl.so
 vendor/lib64/libsensor_custom.so
 
 # Soter

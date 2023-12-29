@@ -55,9 +55,6 @@ fi
 
 function blob_fixup {
     case "$1" in
-        vendor/bin/mnld)
-            "${PATCHELF}" --replace-needed "libsensorndkbridge.so" "libsensorndkbridge-hidl.so" "$2"
-            ;;
         vendor/bin/mtk_agpsd)
            "${PATCHELF}" --replace-needed "libcrypto.so" "libcrypto-v32.so" "${2}"
            "${PATCHELF}" --replace-needed "libssl.so" "libssl-v32.so" "${2}"           
@@ -87,17 +84,8 @@ function blob_fixup {
             "${PATCHELF_0_8}" --remove-needed "libhidlbase.so" "${2}"
             sed -i "s/libhidltransport.so/libhidlbase-v32.so\x00/" "${2}"
             ;;
-        vendor/lib*/libaalservice.so)
-            "${PATCHELF}" --replace-needed "libsensorndkbridge.so" "libsensorndkbridge-hidl.so" "$2"
-            ;;
-        vendor/lib*/libcam.utils.sensorprovider.so)
-            "${PATCHELF}" --replace-needed "libsensorndkbridge.so" "libsensorndkbridge-hidl.so" "$2"
-            ;;
         vendor/lib64/libgf_hal.so)
             sed -i 's/\xff\xc3\x01\xd1\xfd\x7b\x06\xa9/\x00\x00\x80\xd2\xc0\x03\x5f\xd6/g' "${2}"
-            ;;
-        vendor/lib*/librgbwlightsensor.so)
-            "${PATCHELF}" --replace-needed "libsensorndkbridge.so" "libsensorndkbridge-hidl.so" "$2"
             ;;
         vendor/lib64/hw/fingerprint.fpc.default.so)
             sed -i 's/\xff\x43\x01\xd1\xfd\x7b\x02\xa9/\xc0\x03\x5f\xd6\xfd\x7b\x02\xa9/g' "${2}"

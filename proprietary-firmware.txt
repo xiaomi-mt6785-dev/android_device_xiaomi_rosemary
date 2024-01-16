@@ -1,0 +1,14 @@
+# Firmware - from rosemary-user 12 SP1A.210812.016 V14.0.7.0.TKLMIXM release-keys
+
+audio_dsp.img;AB
+cam_vpu1.img;AB
+cam_vpu2.img;AB
+cam_vpu3.img;AB
+gz.img;AB
+lk.img;AB
+logo.bin:logo.img;AB
+md1img.img;AB
+scp.img;AB
+spmfw.img;AB
+sspm.img;AB
+tee.img;AB

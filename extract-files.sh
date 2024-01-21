@@ -96,7 +96,7 @@ function blob_fixup {
         vendor/lib64/hw/fingerprint.fpc.default.so)
             sed -i 's/\xff\x43\x01\xd1\xfd\x7b\x02\xa9/\xc0\x03\x5f\xd6\xfd\x7b\x02\xa9/g' "${2}"
             ;;
-        lib64/libsink.so)
+        system_ext/lib64/libsink.so)
             "${PATCHELF}" --add-needed "libshim_sink.so" "$2"
             ;;
     esac

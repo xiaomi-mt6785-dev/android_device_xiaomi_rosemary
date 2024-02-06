@@ -94,10 +94,6 @@ function blob_fixup {
         vendor/lib*/hw/vendor.mediatek.hardware.pq@2.13-impl.so)
             "${PATCHELF}" --replace-needed "libutils.so" "libutils-v32.so" "${2}"
             ;;
-        vendor/lib64/libvendor.goodix.hardware.biometrics.fingerprint@2.1.so)
-            "${PATCHELF_0_8}" --remove-needed "libhidlbase.so" "${2}"
-            sed -i "s/libhidltransport.so/libhidlbase-v32.so\x00/" "${2}"
-            ;;
         vendor/lib64/libgf_hal.so)
             sed -i 's/\xff\xc3\x01\xd1\xfd\x7b\x06\xa9/\x00\x00\x80\xd2\xc0\x03\x5f\xd6/g' "${2}"
             ;;

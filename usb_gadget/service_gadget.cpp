@@ -14,7 +14,7 @@
  * limitations under the License.
  */
 
-#define LOG_TAG "android.hardware.usb.gadget-service.gs101"
+#define LOG_TAG "android.hardware.usb.gadget-service.rosemary"
 
 #include <android-base/logging.h>
 #include <android/binder_manager.h>

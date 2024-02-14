@@ -19,7 +19,6 @@
 #include <android-base/file.h>
 #include <android-base/properties.h>
 #include <android-base/unique_fd.h>
-#include <android-base/parseint.h>
 #include <android-base/strings.h>
 #include <aidl/android/hardware/usb/gadget/BnUsbGadget.h>
 #include <aidl/android/hardware/usb/gadget/BnUsbGadgetCallback.h>
@@ -50,14 +49,12 @@ using ::aidl::android::hardware::usb::gadget::Status;
 using ::aidl::android::hardware::usb::gadget::UsbSpeed;
 using ::android::base::GetProperty;
 using ::android::base::SetProperty;
-using ::android::base::ParseUint;
 using ::android::base::unique_fd;
 using ::android::base::ReadFileToString;
 using ::android::base::Trim;
 using ::android::base::WriteStringToFile;
 using ::android::hardware::google::pixel::usb::addAdb;
 using ::android::hardware::google::pixel::usb::addEpollFd;
-using ::android::hardware::google::pixel::usb::getVendorFunctions;
 using ::android::hardware::google::pixel::usb::kDebug;
 using ::android::hardware::google::pixel::usb::kDisconnectWaitUs;
 using ::android::hardware::google::pixel::usb::linkFunction;
@@ -69,33 +66,21 @@ using ::ndk::ScopedAStatus;
 using ::std::shared_ptr;
 using ::std::string;
 
-constexpr char kGadgetName[] = "11110000.dwc3";
-constexpr char kProcInterruptsPath[] = "/proc/interrupts";
-constexpr char kProcIrqPath[] = "/proc/irq/";
-constexpr char kSmpAffinityList[] = "/smp_affinity_list";
+constexpr char kGadgetName[] = "musb-hdrc";
 #ifndef UDC_PATH
-#define UDC_PATH "/sys/class/udc/11110000.dwc3/"
+#define UDC_PATH "/sys/class/udc/musb-hdrc/"
 #endif
 static MonitorFfs monitorFfs(kGadgetName);
 
+#define DEVICE "device/"
 #define SPEED_PATH UDC_PATH "current_speed"
-
-#define BIG_CORE "6"
-#define MEDIUM_CORE "4"
-
-#define POWER_SUPPLY_PATH	"/sys/class/power_supply/usb/"
-#define USB_PORT0_PATH		"/sys/class/typec/port0/"
-
-#define CURRENT_MAX_PATH			POWER_SUPPLY_PATH	"current_max"
-#define CURRENT_USB_TYPE_PATH			POWER_SUPPLY_PATH	"usb_type"
-#define CURRENT_USB_POWER_OPERATION_MODE_PATH	USB_PORT0_PATH		"power_operation_mode"
+#define SAVING_PATH UDC_PATH DEVICE "saving"
 
 struct UsbGadget : public BnUsbGadget {
     UsbGadget();
 
     // Makes sure that only one request is processed at a time.
     std::mutex mLockSetCurrentFunction;
-    std::string mGadgetIrqPath;
     long mCurrentUsbFunctions;
     bool mCurrentUsbFunctionsApplied;
     UsbSpeed mUsbSpeed;
@@ -115,13 +100,8 @@ struct UsbGadget : public BnUsbGadget {
 
     ScopedAStatus setVidPid(const char *vid,const char *pid);
 
-    // Indicates to the kernel that the gadget service is ready and the kernel can
-    // set SDP timeout to a lower value.
-    void updateSdpEnumTimeout();
-
   private:
     Status tearDownGadget();
-    Status getUsbGadgetIrqPath();
     Status setupFunctions(long functions, const shared_ptr<IUsbGadgetCallback> &callback,
             uint64_t timeout, int64_t in_transactionId);
 };

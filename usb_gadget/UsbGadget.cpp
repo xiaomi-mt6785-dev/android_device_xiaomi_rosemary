@@ -229,11 +229,9 @@ static Status validateAndSetVidPid(int64_t functions) {
     }
     if (!saving.empty()) {
         if (!WriteStringToFile(saving, SAVING_PATH)) {
-            ALOGE("Failed to update saving state");
-            ret = Status::ERROR;
+            ALOGW("Failed to update saving state");
         }
     }
-
 error:
     return ret;
 }
@@ -343,10 +341,8 @@ ScopedAStatus UsbGadget::setCurrentUsbFunctions(long functions,
 
     if (functions == GadgetFunction::NONE) {
         // Make sure we reset saving state if there are no functions enabled.
-        if (!WriteStringToFile("0", SAVING_PATH)) {
-            ALOGE("Failed to reset saving state");
-            status = Status::ERROR;
-        }
+        if (!WriteStringToFile("0", SAVING_PATH))
+            ALOGW("Failed to reset saving state");
         if (callback == NULL)
             return ScopedAStatus::fromServiceSpecificErrorWithMessage(
                 -1, "callback == NULL");

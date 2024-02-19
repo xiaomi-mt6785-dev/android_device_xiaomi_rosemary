@@ -7,7 +7,7 @@ cam_vpu3.img;AB
 gz.img;AB
 lk.img;AB
 logo.bin:logo.img;AB
-md1img.img;AB
+md1img.img;AB|a5bc030b2d6d110da1dd72b586d4e171559fcb05
 scp.img;AB
 spmfw.img;AB
 sspm.img;AB

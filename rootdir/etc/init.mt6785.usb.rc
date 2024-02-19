@@ -35,6 +35,7 @@ on post-fs
     mkdir /dev/usb-ffs/ptp 0770 mtp mtp
     mount functionfs mtp /dev/usb-ffs/mtp rmode=0770,fmode=0660,uid=1024,gid=1024,no_disconnect=1
     mount functionfs ptp /dev/usb-ffs/ptp rmode=0770,fmode=0660,uid=1024,gid=1024,no_disconnect=1
+    setprop sys.usb.mtp.device_type 3
 
     # ncm function
     mkdir /config/usb_gadget/g1/functions/ncm.gs9

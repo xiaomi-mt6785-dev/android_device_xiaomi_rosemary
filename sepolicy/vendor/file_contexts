@@ -30,6 +30,9 @@
 # Thermals
 /vendor/bin/mi_thermald       										u:object_r:mi_thermald_exec:s0
 
+# USB
+/(vendor|system/vendor)/bin/hw/android\.hardware\.usb\.gadget-service\.rosemary                        u:object_r:mtk_hal_usb_exec:s0
+
 # Vibrator
 /vendor/bin/hw/android\.hardware\.vibrator-service\.rosemary					        u:object_r:hal_vibrator_default_exec:s0
 

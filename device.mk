@@ -23,6 +23,10 @@ PRODUCT_PACKAGES += \
     android.hardware.boot-service.default_recovery
 
 PRODUCT_PACKAGES += \
+    create_pl_dev \
+    create_pl_dev.recovery
+
+PRODUCT_PACKAGES += \
     update_engine \
     update_engine_sideload \
     update_verifier

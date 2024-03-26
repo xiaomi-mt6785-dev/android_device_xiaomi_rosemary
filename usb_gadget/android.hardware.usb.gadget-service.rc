@@ -1,4 +1,0 @@
-service vendor.usb-gadget-hal /vendor/bin/hw/android.hardware.usb.gadget-service.rosemary
-    class hal
-    user system
-    group system shell mtp

@@ -98,6 +98,7 @@ ro.vendor.mtk_prefer_64bit_proc=0
 ro.vendor.mtk_dre30_support=1
 ro.vendor.mtk_pq_support=2
 ro.vendor.pq.mtk_pq_video_whitelist_support=0
+ro.vendor.pq.mtk_mdp_lite_pq_support=0
 ro.vendor.pq.mtk_video_transition=0
 ro.vendor.pq.mtk_scltm_support=1
 ro.vendor.mml.mtk_mml_support=0
@@ -124,6 +125,7 @@ ro.vendor.pq.mtk_disp_game_pq_support=1
 ro.vendor.pq.mtk_backlight_smooth_support=1
 ro.vendor.pq.mtk_ultra_dimming_support=1
 ro.vendor.mtk_ultra_dimming_support=1
+ro.vendor.mtk_backlight_hwc_support=0
 ro.vendor.pq.mtk_blulight_def_support=1
 ro.vendor.mtk_aal_support=1
 ro.vendor.mtk_hdr_video_support=1
@@ -179,8 +181,8 @@ ro.vendor.pref_scale_enable_cfg=1
 ro.vendor.mtk_hdr_video_support=1
 
 # MediaTek
-ro.vendor.mediatek.version.branch=alps-mp-s0.mp1.tc8sp-mt6785
-ro.vendor.mediatek.version.release=alps-mp-s0.mp1.tc8sp-mt6785-V1.12_xiaomi.s0mp1.k85v1.64_P11
+ro.vendor.mediatek.version.branch=alps-mp-s0.mp1.tc8sp-cs2
+ro.vendor.mediatek.version.release=alps-mp-s0.mp1.tc8sp-cs2-V1.31
 ro.vendor.mediatek.platform=MT6785
 persist.vendor.factory.GB2312=yes
 ro.vendor.mtk.sensor.support=yes

@@ -1,4 +1,4 @@
-# Firmware - from rosemary-user 12 SP1A.210812.016 V14.0.7.0.TKLMIXM release-keys
+# Firmware - from rosemary-user 12 SP1A.210812.016 V14.0.17.0.TFFMIXM release-keys
 
 audio_dsp.img;AB
 cam_vpu1.img;AB

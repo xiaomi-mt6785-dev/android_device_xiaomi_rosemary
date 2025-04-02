@@ -61,13 +61,13 @@ blob_fixups: blob_fixups_user_type = {
         .replace_needed('libutils.so', 'libutils-v32.so'),
     ('vendor/bin/mnld', 'vendor/lib64/libaalservice.so', 'vendor/lib64/libcam.utils.sensorprovider.so', 'vendor/lib64/librgbwlightsensor.so'): blob_fixup()
         .replace_needed('libsensorndkbridge.so', 'android.hardware.sensors@1.0-convert-shared.so'),
-    'vendor/lib64/hw/vendor.mediatek.hardware.pq@2.13-impl.so': blob_fixup()
+    'vendor/lib64/hw/vendor.mediatek.hardware.pq@2.15-impl.so': blob_fixup()
         .replace_needed('libutils.so', 'libutils-v32.so'),
     'vendor/lib64/libgf_hal.so': blob_fixup()
         .binary_regex_replace(b'\xFF\xC3\x01\xD1\xFD\x7B\x06\xA9', b'\x00\x00\x80\xD2\xC0\x03\x5F\xD6'),
     'vendor/lib64/hw/fingerprint.fpc.default.so': blob_fixup()
         .binary_regex_replace(b'\xFF\x43\x01\xD1\xFD\x7B\x02\xA9', b'\xC0\x03\x5F\xD6\xFD\x7B\x02\xA9'),
-    ('vendor/lib64/libteei_daemon_vfs.so', 'vendor/lib64/lib3a.flash.so', 'vendor/lib64/libSQLiteModule_VER_ALL.so'): blob_fixup()
+    ('vendor/lib64/libteei_daemon_vfs.so', 'vendor/lib64/lib3a.flash.so'): blob_fixup()
          .add_needed('liblog.so'),
      'vendor/lib64/libmnl.so' : blob_fixup()
          .add_needed('libcutils.so'),

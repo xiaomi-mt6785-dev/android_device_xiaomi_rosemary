@@ -1,4 +1,4 @@
-# Unpinned blobs from rosemary-user 12 SP1A.210812.016 V14.0.7.0.TKLMIXM release-keys
+# Unpinned blobs from rosemary-user 12 SP1A.210812.016 V14.0.17.0.TFFMIXM release-keys
 
 # AAL
 vendor/lib64/libaal_cust.so
@@ -811,6 +811,7 @@ vendor/lib64/libmialgo_sd.so
 vendor/lib64/libmialgo_utils.so
 vendor/lib64/libmialgoengine.so
 vendor/lib64/libmibokeh_mt6873.so
+vendor/lib64/libMiVideoFilter.so
 vendor/lib64/libmpbase.so
 vendor/lib64/libmsnr.so
 vendor/lib64/libmtkcam.atmseventmgr.so
@@ -920,16 +921,27 @@ vendor/lib64/vendor.mediatek.hardware.camera.security@1.0.so
 vendor/xbin/dc_cal
 
 # Camera (Firmware)
-vendor/bin/libccu_gc02m1bsunny_mipi_mono.ddr
-vendor/bin/libccu_gc02m1ofilm_mipi_raw.ddr
-vendor/bin/libccu_gc02m1sunny_mipi_raw.ddr
-vendor/bin/libccu_imx355ofilm_mipi_raw.ddr
-vendor/bin/libccu_imx355sunny_mipi_raw.ddr
-vendor/bin/libccu_ov02b1bofilm_mipi_raw.ddr
-vendor/bin/libccu_ov13b10ofilm_mipi_raw.ddr
-vendor/bin/libccu_ov13b10sunny_mipi_raw.ddr
-vendor/bin/libccu_ov64b40ofilm_mipi_raw.ddr
-vendor/bin/libccu_ov64b40semco_mipi_raw.ddr
+vendor/firmware/lib3a.ccu
+vendor/firmware/libccu_gc02m1bsunny_mipi_mono1
+vendor/firmware/libccu_gc02m1bsunny_mipi_mono2
+vendor/firmware/libccu_gc02m1ofilm_mipi_raw1
+vendor/firmware/libccu_gc02m1ofilm_mipi_raw2
+vendor/firmware/libccu_gc02m1sunny_mipi_raw1
+vendor/firmware/libccu_gc02m1sunny_mipi_raw2
+vendor/firmware/libccu_imx355ofilm_mipi_raw1
+vendor/firmware/libccu_imx355ofilm_mipi_raw2
+vendor/firmware/libccu_imx355sunny_mipi_raw1
+vendor/firmware/libccu_imx355sunny_mipi_raw2
+vendor/firmware/libccu_ov02b1bofilm_mipi_raw1
+vendor/firmware/libccu_ov02b1bofilm_mipi_raw2
+vendor/firmware/libccu_ov13b10ofilm_mipi_raw1
+vendor/firmware/libccu_ov13b10ofilm_mipi_raw2
+vendor/firmware/libccu_ov13b10sunny_mipi_raw1
+vendor/firmware/libccu_ov13b10sunny_mipi_raw2
+vendor/firmware/libccu_ov64b40ofilm_mipi_raw1
+vendor/firmware/libccu_ov64b40ofilm_mipi_raw2
+vendor/firmware/libccu_ov64b40semco_mipi_raw1
+vendor/firmware/libccu_ov64b40semco_mipi_raw2
 
 # Charger
 vendor/bin/batterysecret
@@ -1293,7 +1305,6 @@ vendor/lib64/AVCSecureVdecCA.so
 vendor/lib64/VP9SecureVdecCA.so
 vendor/lib64/libJpgEncPipe.so
 vendor/lib64/libadpcmdec_mtk.so
-vendor/lib64/libalacdec_mtk.so
 vendor/lib64/libbwc.so
 vendor/lib64/libcapctrl.so
 vendor/lib64/libhdrvideo.so
@@ -1429,7 +1440,7 @@ vendor/lib64/vendor.mediatek.hardware.power@2.0.so
 # PQ
 vendor/bin/hw/vendor.mediatek.hardware.pq@2.2-service
 vendor/etc/init/vendor.mediatek.hardware.pq@2.2-service.rc
-vendor/lib64/hw/vendor.mediatek.hardware.pq@2.13-impl.so
+vendor/lib64/hw/vendor.mediatek.hardware.pq@2.15-impl.so
 vendor/lib64/libpq_cust_base.so
 vendor/lib64/mt6785/libpq_prot.so;SYMLINK=vendor/lib64/libpq_prot.so
 vendor/lib64/vendor.mediatek.hardware.pq@2.0.so
@@ -1438,6 +1449,8 @@ vendor/lib64/vendor.mediatek.hardware.pq@2.10.so
 vendor/lib64/vendor.mediatek.hardware.pq@2.11.so
 vendor/lib64/vendor.mediatek.hardware.pq@2.12.so
 vendor/lib64/vendor.mediatek.hardware.pq@2.13.so
+vendor/lib64/vendor.mediatek.hardware.pq@2.14.so
+vendor/lib64/vendor.mediatek.hardware.pq@2.15.so
 vendor/lib64/vendor.mediatek.hardware.pq@2.2.so
 vendor/lib64/vendor.mediatek.hardware.pq@2.3.so
 vendor/lib64/vendor.mediatek.hardware.pq@2.4.so
@@ -1456,8 +1469,8 @@ vendor/bin/hw/mtkfusionrild
 vendor/bin/meta_tst
 vendor/bin/mnld
 vendor/bin/xcap
-vendor/etc/apdb/APDB_MT6785_S01__W2236
-vendor/etc/apdb/APDB_MT6785_S01__W2236_ENUM
+vendor/etc/apdb/APDB_MT6785_S01__W2332
+vendor/etc/apdb/APDB_MT6785_S01__W2332_ENUM
 vendor/etc/ecc_list.xml
 vendor/etc/ecc_list_OP01.xml
 vendor/etc/ecc_list_OP02.xml

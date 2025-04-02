@@ -26,8 +26,8 @@ PRODUCT_SYSTEM_DEVICE := rosemary
 PRODUCT_GMS_CLIENTID_BASE := android-xiaomi
 
 PRODUCT_BUILD_PROP_OVERRIDES += \
-    BuildDesc="rosemary-user 12 SP1A.210812.016 V14.0.7.0.TKLMIXM release-keys" \
-    BuildFingerprint=Redmi/rosemary_global/rosemary:12/SP1A.210812.016/V14.0.7.0.TKLMIXM:user/release-keys \
+    BuildDesc="rosemary-user 12 SP1A.210812.016 V14.0.17.0.TFFMIXM release-keys" \
+    BuildFingerprint=Redmi/rosemary_global/rosemary:12/SP1A.210812.016/V14.0.17.0.TFFMIXM:user/release-keys \
     SystemModel=$(PRODUCT_SYSTEM_DEVICE) \
     SystemName=$(PRODUCT_SYSTEM_NAME) \
     ProductModel=$(PRODUCT_SYSTEM_DEVICE) \

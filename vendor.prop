@@ -136,7 +136,7 @@ ro.vendor.cabc.enable=true
 persist.vendor.connsys.fm_chipid=mt6631
 
 # FRP
-ro.frp.pst=/dev/block/platform/bootdevice/by-name/frp
+ro.frp.pst=/dev/block/by-name/frp
 
 # GNSS
 ro.vendor.mtk_wappush_support=1

@@ -48,6 +48,10 @@ blob_fixups: blob_fixups_user_type = {
         .add_needed('libutils-v32.so'),
     'vendor/bin/hw/vendor.mediatek.hardware.mtkpower@1.0-service': blob_fixup()
         .replace_needed('android.hardware.power-V2-ndk_platform.so', 'android.hardware.power-V2-ndk.so'),
+    'vendor/etc/init/android.hardware.media.c2@1.2-mediatek.rc': blob_fixup()
+        .add_line_if_missing('    interface android.hardware.media.c2@1.0::IComponentStore default')
+        .add_line_if_missing('    interface android.hardware.media.c2@1.1::IComponentStore default')
+        .add_line_if_missing('    interface android.hardware.media.c2@1.2::IComponentStore default'),
     'vendor/lib64/libmtkcam_featurepolicy.so': blob_fixup()
         .binary_regex_replace(b'\x34\xE8\x87\x40\xB9', b'\x34\x28\x02\x80\x52'),
     'vendor/lib/hw/audio.primary.mt6785.so' : blob_fixup()

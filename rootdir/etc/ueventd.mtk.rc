@@ -79,6 +79,9 @@
 /dev/elliptic0            0644   system     system
 /dev/elliptic1            0644   system     system
 
+# Raw HID devices
+/dev/hidraw*              0660   system     system
+
 # add the read write right of ttyUSB*
 /dev/bus/usb/*     	  0660   root       usb
 /dev/ttyUSB0              0660   radio      radio

@@ -1227,15 +1227,15 @@ system_ext/lib64/vendor.mediatek.hardware.videotelephony-V1-ndk.so|8b13966bdf703
 system_ext/lib64/vendor.mediatek.hardware.videotelephony@1.0.so|01b68c7597d585ec39441628f66b02b3b091db99
 
 # IMS (System) - from plato-user 14 UP1A.230620.001 V816.0.12.0.ULQMIXM release-keys
-system_ext/framework/mediatek-common.jar:system/framework/mediatek-common.jar|3982a7d7f51217ce23754864f6571ea6da28bf07
-system_ext/framework/mediatek-framework.jar:system/framework/mediatek-framework.jar|82f3c03fa36e9f3c26985b004674788d8115e9f1
-system_ext/framework/mediatek-ims-base.jar:system/framework/mediatek-ims-base.jar|bcc65d4fd5e7534f2a0aa122908454df00591cfa
-system_ext/framework/mediatek-ims-common.jar:system/framework/mediatek-ims-common.jar|c760dcced520d0185de7312636ed2fee79bee2b4
-system_ext/framework/mediatek-ims-extension-plugin.jar:system/framework/mediatek-ims-extension-plugin.jar|b91e54270047b6d91f606136b7203255198952aa
-system_ext/framework/mediatek-telecom-common.jar:system/framework/mediatek-telecom-common.jar|8843bbf44ce1d005bee88e659177055d4babb137
-system_ext/framework/mediatek-telephony-base.jar:system/framework/mediatek-telephony-base.jar|79cf518b2e9e528937e969ab244c31ce17b9e7dd
-system_ext/framework/mediatek-telephony-common.jar:system/framework/mediatek-telephony-common.jar|63e3c96ca44f5e57e5aacbcab644352b0e6d37f8
-system_ext/priv-app/ImsService/ImsService.apk:system/priv-app/ImsService/ImsService.apk|e4bc27e84c86a03f1db24d206f7f153697f9b7f2|959ff0c93ea8ce70ff2ef28495254fe4cb08b155
+system_ext/framework/mediatek-common.jar:system/framework/mediatek-common.jar|895c6819d00deb385675cc7b90f073d0b6fbd29d
+system_ext/framework/mediatek-framework.jar:system/framework/mediatek-framework.jar|2dc20e795af8e16161b9281d0f636c63c6869a7d
+system_ext/framework/mediatek-ims-base.jar:system/framework/mediatek-ims-base.jar|a6f7ae937de5b9c25e41af8c15db2717a31a6e97
+system_ext/framework/mediatek-ims-common.jar:system/framework/mediatek-ims-common.jar|90e4bb7a6b8264f71dbcf4b4ec53a88d9e842ba2
+system_ext/framework/mediatek-ims-extension-plugin.jar:system/framework/mediatek-ims-extension-plugin.jar|4562720d65136b189d661f248fd3170a749cada3
+system_ext/framework/mediatek-telecom-common.jar:system/framework/mediatek-telecom-common.jar|686eaf0a472f44194116a0861944483cd9b09a38
+system_ext/framework/mediatek-telephony-base.jar:system/framework/mediatek-telephony-base.jar|6248b5b3fcf935ef59ab3c20b0c11a104e8fbe79
+system_ext/framework/mediatek-telephony-common.jar:system/framework/mediatek-telephony-common.jar|cee3f9c3dad9da1a98a5231fb2a942c41de62676
+system_ext/priv-app/ImsService/ImsService.apk:system/priv-app/ImsService/ImsService.apk|e4bc27e84c86a03f1db24d206f7f153697f9b7f2|23bb3f31643907546c423df277aca87a74f81775
 
 # IR
 vendor/bin/consumerird

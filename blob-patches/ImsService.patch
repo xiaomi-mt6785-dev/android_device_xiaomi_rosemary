@@ -1,3 +1,31 @@
+diff --git a/AndroidManifest.xml b/AndroidManifest.xml
+index d81ae85..4bd0c3e 100644
+--- a/AndroidManifest.xml
++++ b/AndroidManifest.xml
+@@ -51,6 +51,13 @@
+     <application android:allowBackup="false" android:appComponentFactory="androidx.core.app.CoreComponentFactory" android:directBootAware="true" android:extractNativeLibs="false" android:label="ImsApp" android:name="com.mediatek.ims.ImsApp" android:usesNonSdkApi="true">
+         <uses-library android:name="com.mediatek.ims.oemplugin" android:required="false"/>
+         <uses-library android:name="com.mediatek.ims.plugin" android:required="false"/>
++        <uses-library android:name="mediatek-common" android:required="true"/>
++        <uses-library android:name="mediatek-framework" android:required="true"/>
++        <uses-library android:name="mediatek-ims-base" android:required="true"/>
++        <uses-library android:name="mediatek-ims-common" android:required="true"/>
++        <uses-library android:name="mediatek-telecom-common" android:required="true"/>
++        <uses-library android:name="mediatek-telephony-base" android:required="true"/>
++        <uses-library android:name="mediatek-telephony-common" android:required="true"/>
+         <service android:exported="true" android:name="com.mediatek.ims.MtkDynamicImsService" android:permission="android.permission.BIND_IMS_SERVICE">
+             <meta-data android:name="android.telephony.ims.RCS_FEATURE" android:value="true"/>
+             <meta-data android:name="android.telephony.ims.MMTEL_FEATURE" android:value="true"/>
+@@ -59,7 +66,7 @@
+                 <action android:name="android.telephony.ims.ImsService"/>
+             </intent-filter>
+         </service>
+-        <receiver android:exported="false" android:name="com.mediatek.ims.ImsKeeperReceiver" androidprv:textAppearanceAutoCorrectionSuggestion="true">
++        <receiver android:exported="false" android:name="com.mediatek.ims.ImsKeeperReceiver">
+             <intent-filter>
+                 <action android:name="android.telephony.action.CARRIER_CONFIG_CHANGED"/>
+             </intent-filter>
+
 diff --git a/smali/com/mediatek/ims/ImsConfigManager.smali b/smali/com/mediatek/ims/ImsConfigManager.smali
 index f5c9321..d1e39c0 100644
 --- a/smali/com/mediatek/ims/ImsConfigManager.smali

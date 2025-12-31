@@ -76,7 +76,14 @@ blob_fixups: blob_fixups_user_type = {
     'vendor/lib64/hw/hwcomposer.mt6785.so' : blob_fixup()
          .add_needed('libprocessgroup_shim.so'),
     'vendor/lib64/libgoodixhwfingerprint.so': blob_fixup()
-        .replace_needed('libvendor.goodix.hardware.biometrics.fingerprint@2.1.so', 'vendor.goodix.hardware.biometrics.fingerprint@2.1.so')
+        .replace_needed('libvendor.goodix.hardware.biometrics.fingerprint@2.1.so', 'vendor.goodix.hardware.biometrics.fingerprint@2.1.so'),
+    ('vendor/lib64/libMiVideoFilter.so'): blob_fixup()
+        .clear_symbol_version('AHardwareBuffer_allocate')
+        .clear_symbol_version('AHardwareBuffer_describe')
+        .clear_symbol_version('AHardwareBuffer_lock')
+        .clear_symbol_version('AHardwareBuffer_lockPlanes')
+        .clear_symbol_version('AHardwareBuffer_release')
+        .clear_symbol_version('AHardwareBuffer_unlock'),
 }  # fmt: skip
 
 module = ExtractUtilsModule(

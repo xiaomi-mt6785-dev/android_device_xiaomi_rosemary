@@ -1,5 +1,5 @@
 # eBPF
-ro.bpf.kver_override=5.4.186
+ro.bpf.kver_override=5.10.239
 
 # FM Radio
 ro.fm.chip=0x6631

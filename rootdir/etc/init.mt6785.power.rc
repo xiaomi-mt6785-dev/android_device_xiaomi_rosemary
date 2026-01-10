@@ -1,0 +1,65 @@
+on init
+
+ # Create energy-aware scheduler tuning nodes
+    mkdir /dev/stune/foreground
+    mkdir /dev/stune/background
+    mkdir /dev/stune/top-app
+    mkdir /dev/stune/rt
+    chown system system /dev/stune
+    chown system system /dev/stune/foreground
+    chown system system /dev/stune/background
+    chown system system /dev/stune/top-app
+    chown system system /dev/stune/rt
+    chown system system /dev/stune/tasks
+    chown system system /dev/stune/foreground/tasks
+    chown system system /dev/stune/background/tasks
+    chown system system /dev/stune/top-app/tasks
+    chown system system /dev/stune/rt/tasks
+    chmod 0664 /dev/stune/tasks
+    chmod 0664 /dev/stune/foreground/tasks
+    chmod 0664 /dev/stune/background/tasks
+    chmod 0664 /dev/stune/top-app/tasks
+    chmod 0664 /dev/stune/rt/tasks
+
+    # Reset stune group setting for NNAPI HAL processes
+    write /dev/stune/nnapi-hal/schedtune.boost 0
+    write /dev/stune/nnapi-hal/schedtune.prefer_idle 0
+
+    # create an stune group for camera-specific processes
+    mkdir /dev/stune/camera-daemon
+    write /dev/stune/camera-daemon/schedtune.prefer_idle 0
+    write /dev/stune/camera-daemon/schedtune.boost 0
+    chown system system /dev/stune/camera-daemon
+    chown system system /dev/stune/camera-daemon/tasks
+    chmod 0664 /dev/stune/camera-daemon/tasks
+
+    # create io boost group
+    mkdir /dev/stune/io
+    chown system system /dev/stune/io
+    chown system system /dev/stune/io/tasks
+    chmod 0666 /dev/stune/io/tasks
+
+    # update cpus for cpuset cgroup
+    write /dev/cpuset/foreground/cpus 0-2,4-7
+    write /dev/cpuset/foreground/boost/cpus 0-7
+    write /dev/cpuset/background/cpus 0-2
+    write /dev/cpuset/system-background/cpus 0-3
+    write /dev/cpuset/top-app/cpus 0-7
+
+on enable-low-power
+
+    write /sys/devices/system/cpu/eas/enable 2
+    write /proc/cpufreq/cpufreq_sched_disable 0
+
+    chown system system /dev/stune/foreground/schedtune.prefer_idle
+    chown system system /dev/stune/top-app/schedtune.prefer_idle
+    chown system system /dev/stune/rt/schedtune.prefer_idle
+    write /dev/stune/foreground/schedtune.prefer_idle 0
+    write /dev/stune/top-app/schedtune.prefer_idle 0
+    write /dev/stune/rt/schedtune.prefer_idle 0
+    write /proc/sys/kernel/sched_migration_cost_ns 200000
+    # Enable PowerHAL hint processing
+    setprop vendor.powerhal.init 1
+
+on property:sys.boot_completed=1
+    trigger enable-low-power

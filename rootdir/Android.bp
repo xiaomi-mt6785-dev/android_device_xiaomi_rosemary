@@ -39,6 +39,13 @@ prebuilt_etc {
 }
 
 prebuilt_etc {
+    name: "init.mt6785.power.rc",
+    src: "etc/init.mt6785.power.rc",
+    sub_dir: "init/hw",
+    vendor: true,
+}
+
+prebuilt_etc {
     name: "init.mt6785.usb.rc",
     src: "etc/init.mt6785.usb.rc",
     sub_dir: "init/hw",

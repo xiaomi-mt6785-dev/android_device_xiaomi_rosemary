@@ -231,11 +231,11 @@ PRODUCT_PACKAGES += \
     NcmTetheringOverlay
 
 # Power
-TARGET_TAP_TO_WAKE_NODE := /sys/touchpanel/double_tap
-$(call soong_config_set,mediatek_power,double_tap_to_wake_node,$(TARGET_TAP_TO_WAKE_NODE))
-
 PRODUCT_PACKAGES += \
-    android.hardware.power-service-mediatek
+    android.hardware.power-service.lineage-libperfmgr \
+    vendor.mediatek.hardware.mtkpower@1.2-service.stub \
+    libmtkperf_client_vendor \
+    libmtkperf_client
 
 # PowerOffAlarm
 PRODUCT_PACKAGES += \
@@ -296,6 +296,7 @@ PRODUCT_PACKAGES += \
     init.connectivity.rc \
     init.modem.rc \
     init.mt6785.rc \
+    init.mt6785.power.rc \
     init.mt6785.usb.rc \
     init.project.rc \
     init.sensor_1_0.rc \
@@ -325,7 +326,9 @@ PRODUCT_SOONG_NAMESPACES += \
     $(LOCAL_PATH) \
     hardware/google/interfaces \
     hardware/google/pixel \
+    hardware/lineage/interfaces/power-libperfmgr \
     hardware/mediatek \
+    hardware/mediatek/libmtkperf_client \
     hardware/xiaomi
 
 # Thermal

@@ -1,0 +1,264 @@
+{
+  "Nodes": [
+    {
+      "Name": "CPULittleClusterMaxFreq",
+      "Path": "/sys/devices/system/cpu/cpufreq/policy0/scaling_max_freq",
+      "Values": [
+        "9999999",
+        "2000000",
+        "1933000",
+        "1866000",
+        "1800000",
+        "1733000",
+        "1666000",
+        "1618000",
+        "1500000",
+        "1375000",
+        "1275000",
+        "1175000",
+        "1075000",
+        "975000",
+        "875000",
+        "774000",
+        "500000"
+      ],
+      "DefaultIndex": 0,
+      "ResetOnInit": true
+    },
+    {
+      "Name": "CPULittleClusterMinFreq",
+      "Path": "/sys/devices/system/cpu/cpufreq/policy0/scaling_min_freq",
+      "Values": [
+        "9999999",
+        "2000000",
+        "1933000",
+        "1866000",
+        "1800000",
+        "1733000",
+        "1666000",
+        "1618000",
+        "1500000",
+        "1375000",
+        "1275000",
+        "1175000",
+        "1075000",
+        "975000",
+        "875000",
+        "774000",
+        "500000"
+      ],
+      "ResetOnInit": true
+    },
+    {
+      "Name": "CPUBigClusterMaxFreq",
+      "Path": "/sys/devices/system/cpu/cpufreq/policy6/scaling_max_freq",
+      "Values": [
+        "9999999",
+        "2050000",
+        "1986000",
+        "1923000",
+        "1860000",
+        "1796000",
+        "1733000",
+        "1670000",
+        "1530000",
+        "1419000",
+        "1308000",
+        "1169000",
+        "1085000",
+        "1002000",
+        "919000",
+        "835000",
+        "774000"
+      ],
+      "DefaultIndex": 0,
+      "ResetOnInit": true
+    },
+    {
+      "Name": "CPUBigClusterMinFreq",
+      "Path": "/sys/devices/system/cpu/cpufreq/policy6/scaling_min_freq",
+      "Values": [
+        "9999999",
+        "2050000",
+        "1986000",
+        "1923000",
+        "1860000",
+        "1796000",
+        "1733000",
+        "1670000",
+        "1530000",
+        "1419000",
+        "1308000",
+        "1169000",
+        "1085000",
+        "1002000",
+        "919000",
+        "835000",
+        "774000"
+      ],
+      "ResetOnInit": true
+    },
+    {
+      "Name": "GPUSchedMode",
+      "Path": "/sys/devices/platform/13040000.mali/js_ctx_scheduling_mode",
+      "Values": [
+        "0",
+        "1"
+      ],
+      "DefaultIndex": 0,
+      "ResetOnInit": true
+    },
+    {
+      "Name": "GPUSchedPeriod",
+      "Path": "/sys/devices/platform/13040000.mali/js_scheduling_period",
+      "Values": [
+        "100",
+        "75",
+        "50",
+        "0"
+      ],
+      "DefaultIndex": 0,
+      "ResetOnInit": true
+    },
+    {
+      "Name": "GPUDVFSInterval",
+      "Path": "/sys/devices/platform/13040000.mali/dvfs_period",
+      "Values": [
+        "100",
+        "75",
+        "50"
+      ],
+      "ResetOnInit": true
+    },
+    {
+      "Name": "UclampFGMin",
+      "Path": "/dev/cpuctl/foreground/cpu.uclamp.min",
+      "Values": [
+        "100",
+        "30",
+        "15",
+        "0"
+      ],
+      "ResetOnInit": true
+    },
+    {
+      "Name": "UclampTAMin",
+      "Path": "/dev/cpuctl/top-app/cpu.uclamp.min",
+      "Values": [
+        "100",
+        "30",
+        "15",
+        "0"
+      ],
+      "ResetOnInit": true
+    },
+    {
+      "Name": "DRAMOppMin",
+      "Path": "/proc/perfmgr/boost_ctrl/dram_ctrl/ddr",
+      "Values": [
+        "1",
+        "-1"
+      ],
+      "ResetOnInit": true
+    },
+    {
+      "Name": "DoubleTapToWakeEnable",
+      "Path": "/sys/touchpanel/double_tap",
+      "Values": [
+        "1",
+        "0"
+      ]
+    },
+    {
+      "Name": "PowerHALRenderingState",
+      "Path": "vendor.powerhal.rendering",
+      "Values": ["EXPENSIVE_RENDERING", ""],
+      "Type": "Property"
+    }
+  ],
+  "Actions": [
+    {
+      "PowerHint": "INTERACTION",
+      "Node": "CPULittleClusterMinFreq",
+      "Duration": 58,
+      "Value": "1275000"
+    },
+    {
+      "PowerHint": "INTERACTION",
+      "Node": "UclampFGMin",
+      "Duration": 58,
+      "Value": "15"
+    },
+    {
+      "PowerHint": "INTERACTION",
+      "Node": "UclampTAMin",
+      "Duration": 58,
+      "Value": "15"
+    },
+    {
+      "PowerHint": "LAUNCH",
+      "Node": "CPUBigClusterMinFreq",
+      "Duration": 1500,
+      "Value": "2050000"
+    },
+    {
+      "PowerHint": "LAUNCH",
+      "Node": "CPULittleClusterMinFreq",
+      "Duration": 1500,
+      "Value": "1275000"
+    },
+    {
+      "PowerHint": "LAUNCH",
+      "Node": "DRAMOppMin",
+      "Duration": 1500,
+      "Value": "1"
+    },
+    {
+      "PowerHint": "EXPENSIVE_RENDERING",
+      "Node": "PowerHALRenderingState",
+      "Duration": 0,
+      "Value": "EXPENSIVE_RENDERING"
+    },
+    {
+      "PowerHint": "EXPENSIVE_RENDERING",
+      "Node": "GPUSchedPeriod",
+      "Duration": 0,
+      "Value": "100"
+    },
+    {
+      "PowerHint": "EXPENSIVE_RENDERING",
+      "Node": "GPUDVFSInterval",
+      "Duration": 0,
+      "Value": "75"
+    },
+    {
+      "PowerHint": "EXPENSIVE_RENDERING",
+      "Node": "GPUSchedMode",
+      "Duration": 0,
+      "Value": "1"
+    },
+    {
+      "PowerHint": "EXPENSIVE_RENDERING",
+      "Node": "UclampFGMin",
+      "Duration": 0,
+      "Value": "30"
+    },
+    {
+      "PowerHint": "EXPENSIVE_RENDERING",
+      "Node": "UclampTAMin",
+      "Duration": 0,
+      "Value": "30"
+    },
+    {
+      "PowerHint": "EXPENSIVE_RENDERING",
+      "Type": "EndHint",
+      "Value": "INTERACTION"
+    },
+    {
+      "PowerHint": "DOUBLE_TAP_TO_WAKE",
+      "Node": "DoubleTapToWakeEnable",
+      "Duration": 0,
+      "Value": "1"
+    }
+  ]
+}

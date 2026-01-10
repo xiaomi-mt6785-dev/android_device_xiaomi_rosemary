@@ -11,9 +11,6 @@ genfscon sysfs /devices/platform/11012000.spi2/spi_master/spi2/spi2.0/authen_fd 
 genfscon sysfs /devices/platform/11012000.spi2/spi_master/spi2/spi2.0/authen_fd/performance                                     u:object_r:sysfs_fingerprint:s0
 genfscon sysfs /devices/platform/fingerprint                                                                                    u:object_r:sysfs_fingerprint:s0
 
-# Graphics
-genfscon sysfs /devices/platform/13040000.mali                                                                                  u:object_r:sysfs_gpu:s0
-
 # Health
 genfscon sysfs /devices/platform/11004000.i2c7/i2c-7/7-0055/power_supply/parallel                                               u:object_r:sysfs_batteryinfo:s0
 genfscon sysfs /devices/platform/1101a000.i2c7/i2c-7/7-0051/power_supply							u:object_r:sysfs_batteryinfo:s0

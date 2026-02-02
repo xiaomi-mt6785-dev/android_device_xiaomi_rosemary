@@ -14,6 +14,9 @@ PRODUCT_AAPT_PREF_CONFIG := xxhdpi
 # Project ID Quota
 $(call inherit-product, $(SRC_TARGET_DIR)/product/emulated_storage.mk)
 
+# Dolby
+$(call inherit-product-if-exists, hardware/dolby/dolby.mk)
+
 # A/B
 PRODUCT_PACKAGES += \
     com.android.hardware.boot \

@@ -5,6 +5,8 @@
 #
 
 from extract_utils.fixups_blob import (
+    BlobFixupCtx,
+    File,
     blob_fixup,
     blob_fixups_user_type,
 )
@@ -18,6 +20,14 @@ from extract_utils.main import (
     ExtractUtilsModule,
 )
 
+from extract_utils.tools import (
+    llvm_objdump_path,
+)
+
+from extract_utils.utils import (
+    run_cmd,
+)
+
 namespace_imports = [
     'hardware/mediatek',
     'hardware/mediatek/libmtkperf_client',
@@ -25,6 +35,29 @@ namespace_imports = [
     'vendor/xiaomi/rosemary'
 ]
 
+def blob_fixup_graphic_buffer_size(
+    ctx: BlobFixupCtx,
+    file: File,
+    file_path: str,
+    *args,
+    **kwargs,
+):
+    for line in run_cmd(
+        [
+            llvm_objdump_path,
+            '--disassemble-all',
+            file_path,
+        ]
+    ).splitlines():
+        line = line.split(maxsplit=5)
+        if len(line) != 6:
+            continue
+        # The size of GraphicBuffer changed from 0x100 to 0xd30
+        offset, _, instruction, register, value, _ = line
+        if instruction == 'mov' and register[:-1] == 'w0' and value == '#0x100':
+            with open(file_path, 'rb+') as f:
+                f.seek(int(offset[:-1], 16))
+                f.write(b'\x00\xa6\x81\x52')  # AArch64 mov w0, #0xd30
 
 def lib_fixup_vendor_suffix(lib: str, partition: str, *args, **kwargs):
     return f'{lib}_{partition}' if partition == 'vendor' else None
@@ -137,6 +170,11 @@ blob_fixups: blob_fixups_user_type = {
         'vendor/lib64/hw/vendor.mediatek.hardware.pq@2.15-impl.so',
     ): blob_fixup()
         .replace_needed('libtinyxml2.so', 'libtinyxml2-v34.so'),
+    (
+        'vendor/lib64/libcam.hal3a.v3.so',
+        'vendor/lib64/libmtkcam_3rdparty.customer.so',
+    ): blob_fixup()
+        .call(blob_fixup_graphic_buffer_size),
 }  # fmt: skip
 
 module = ExtractUtilsModule(

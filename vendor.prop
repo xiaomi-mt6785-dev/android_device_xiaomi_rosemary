@@ -278,6 +278,9 @@ ro.hardware.gatekeeper=beanpod
 ro.vendor.mtk_microtrust_tee_support=1
 ro.mtk_key_manager_support=1
 
+# USB
+vendor.usb.controller=usb0
+
 # WiFi
 ro.vendor.wifi.sap.interface=ap0
 wifi.concurrent.interface=ap0

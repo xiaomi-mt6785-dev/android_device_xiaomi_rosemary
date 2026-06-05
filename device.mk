@@ -302,7 +302,6 @@ PRODUCT_PACKAGES += \
     init.modem.rc \
     init.mt6785.rc \
     init.mt6785.power.rc \
-    init.mt6785.usb.rc \
     init.project.rc \
     init.sensor_1_0.rc \
     init.stnfc.rc \
@@ -346,7 +345,8 @@ PRODUCT_COPY_FILES += \
 # USB
 PRODUCT_PACKAGES += \
     android.hardware.usb-service.mediatek \
-    android.hardware.usb.gadget-service.mediatek
+    android.hardware.usb.gadget-service.mediatek \
+    init.mt6785.usb.rc
 
 # Vendor init
 $(call soong_config_set,libinit,vendor_init_lib,//$(LOCAL_PATH):init_rosemary)

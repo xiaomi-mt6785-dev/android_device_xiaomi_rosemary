@@ -1402,12 +1402,10 @@ vendor/lib64/mt6785/libneuron_runtime.5.so;SYMLINK=vendor/lib64/libneuron_runtim
 vendor/lib64/mt6785/libneuron_runtime.so;SYMLINK=vendor/lib64/libneuron_runtime.so
 
 # Misc
-vendor/bin/chipinfo
 vendor/etc/AbnormalDisplayLog_dynamic.xml
 vendor/etc/AudioLog_dynamic.xml
 vendor/etc/MNL_Config.xml
 vendor/etc/VideoLog_dynamic.xml
-vendor/etc/init/chipinfo_init.rc
 vendor/etc/mpe.conf
 vendor/etc/nhw
 vendor/etc/wfd_source_capability.csv

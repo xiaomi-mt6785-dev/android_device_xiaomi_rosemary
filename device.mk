@@ -357,6 +357,8 @@ PRODUCT_PACKAGES += \
     android.hardware.vibrator-service.rosemary
 
 # Wi-Fi
+$(call soong_config_set_bool,mediatek_wifi_hal,use_pre_u_qpr2_struct,true)
+
 PRODUCT_PACKAGES += \
     wpa_supplicant \
     hostapd \

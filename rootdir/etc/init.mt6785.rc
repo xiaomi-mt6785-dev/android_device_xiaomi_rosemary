@@ -194,16 +194,6 @@ on post-fs
     # allow ccci_mdinit access ccci_dump
     chown root system /proc/ccci_dump
 
-service vendor.charger /system/bin/charger
-    class charger
-    user system
-    group system graphics wakelock input
-    capabilities SYS_BOOT
-    file /dev/kmsg w
-    file /sys/fs/pstore/console-ramoops-0 r
-    file /sys/fs/pstore/console-ramoops r
-    file /proc/last_kmsg r
-
 # M306  Add for pd charge batterysecret
 on property:sys.boot_completed=1
     chmod 0664 /sys/class/Charging_Adapter/pd_adapter/usbpd_verifed

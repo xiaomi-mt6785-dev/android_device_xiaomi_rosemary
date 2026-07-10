@@ -134,7 +134,6 @@ TARGET_COPY_OUT_SYSTEM_EXT := system_ext
 BOARD_USES_METADATA_PARTITION := true
 
 # Platform
-TARGET_BOARD_PLATFORM := mt6785
 BOARD_HAS_MTK_HARDWARE := true
 
 # Properties
@@ -145,9 +144,6 @@ TARGET_VENDOR_PROP += $(DEVICE_PATH)/vendor.prop
 # Recovery
 TARGET_RECOVERY_FSTAB := $(DEVICE_PATH)/rootdir/etc/fstab.mt6785
 TARGET_RECOVERY_PIXEL_FORMAT := RGBX_8888
-
-# RIL
-ENABLE_VENDOR_RIL_SERVICE := true
 
 # Sepolicy
 include device/mediatek/sepolicy_vndr/SEPolicy.mk

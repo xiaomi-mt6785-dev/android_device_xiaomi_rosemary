@@ -1233,8 +1233,6 @@ system_ext/priv-app/ImsService/ImsService.apk:system/priv-app/ImsService/ImsServ
 system_ext/priv-app/MtkGbaService/MtkGbaService.apk:system/priv-app/MtkGbaService/MtkGbaService.apk|adad27985f2cccb17f7c7e02b5661ac3850451f4
 
 # IR
-vendor/bin/consumerird
-vendor/lib/hw/consumerir.default.so:vendor/lib/hw/consumerir.mt6785.so;FIX_SONAME
 vendor/lib64/hw/consumerir.default.so:vendor/lib64/hw/consumerir.mt6785.so;FIX_SONAME
 
 # Keymaster

@@ -1,6 +1,7 @@
 typeattribute vendor_init data_between_core_and_vendor_violators;
 
 get_prop(vendor_init, vts_status_prop)
+set_prop(vendor_init, vendor_fingerprint_prop)
 
 allow vendor_init fingerprint_data_file:dir { rw_dir_perms relabelto setattr };
 allow vendor_init vendor_fingerprint_data_file:dir { rw_dir_perms relabelto setattr };

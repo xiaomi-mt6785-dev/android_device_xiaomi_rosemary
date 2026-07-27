@@ -134,6 +134,10 @@ persist.vendor.max.brightness=500
 ro.vendor.colorpick_adjust=true
 ro.vendor.cabc.enable=true
 
+# Fingerprint
+persist.vendor.fingerprint.type=side
+persist.vendor.fingerprint.sensor_location=1080|910|100|local:0
+
 # FM Radio
 persist.vendor.connsys.fm_chipid=mt6631
 

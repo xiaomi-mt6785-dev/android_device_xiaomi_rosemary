@@ -16,8 +16,5 @@ persist.vendor.fingerprint.                             u:object_r:vendor_finger
 persist.vendor.sys.fp.                                  u:object_r:vendor_fingerprint_prop:s0
 vendor.fps_hal.                                         u:object_r:vendor_fingerprint_prop:s0
 
-# Sensors
-vendor.dynamic_sensor.                                  u:object_r:vendor_dynamic_sensor_prop:s0
-
 # Thermal
 vendor.sys.thermal.     				u:object_r:vendor_thermal_engine_prop:s0

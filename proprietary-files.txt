@@ -6,12 +6,6 @@ vendor/lib64/libaal_key.so
 vendor/lib64/libaal_mtk.so
 vendor/lib64/libaalservice.so
 
-# AEE
-vendor/lib/libaedv.so
-vendor/lib/libladder.so
-vendor/lib64/libaedv.so
-vendor/lib64/libladder.so
-
 # APU
 vendor/lib/libapu_mdw.so
 vendor/lib/libapusys.so

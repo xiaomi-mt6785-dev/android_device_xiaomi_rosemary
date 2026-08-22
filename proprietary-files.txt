@@ -1762,12 +1762,10 @@ vendor/lib64/libmtcloader.so
 vendor/lib64/libudf.so
 
 # WiFi
-vendor/bin/wlan_assistant
 vendor/bin/wmt_launcher
 vendor/bin/wmt_loader
 vendor/etc/init/init.wlan_drv.rc
 vendor/etc/init/init.wmt_drv.rc
-vendor/etc/init/wlan_assistant.rc
 vendor/lib/libapmonitor_vendor.so
 vendor/lib/meta_wifi_data.so
 vendor/lib/vendor.mediatek.hardware.apmonitor@2.0.so

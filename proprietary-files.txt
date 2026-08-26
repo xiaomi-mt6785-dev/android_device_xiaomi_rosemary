@@ -193,7 +193,6 @@ vendor/bin/hw/camerahalserver
 vendor/bin/lib3a.ccu.ddr
 vendor/bin/lib3a.ccu.dm
 vendor/bin/lib3a.ccu.pm
-vendor/bin/rttv
 vendor/etc/camera/CFR_para_48M.bin
 vendor/etc/camera/CFR_para_M.bin
 vendor/etc/camera/CFR_para_T.bin

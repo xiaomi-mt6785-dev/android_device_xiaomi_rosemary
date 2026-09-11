@@ -1623,7 +1623,7 @@ vendor/lib64/libdecrypt.so
 vendor/lib64/libgwsd-ril.so
 vendor/lib64/libmipc.so
 vendor/lib64/libmnetlink_v104.so
-vendor/lib64/libmnl.so
+vendor/lib64/libmnl.so:vendor/lib64/libmnl_mtk.so;FIX_SONAME
 vendor/lib64/libmsbc_mtk.so
 vendor/lib64/libmtk-fusion-ril-prop-vsim.so
 vendor/lib64/libmtk-ril.so

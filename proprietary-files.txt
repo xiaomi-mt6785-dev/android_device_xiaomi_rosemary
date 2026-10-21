@@ -1102,7 +1102,6 @@ vendor/lib64/libcharon-ss.so
 vendor/lib64/libhydra.so
 vendor/lib64/librpc.so
 vendor/lib64/libviagpsrpc.so
-vendor/lib64/vendor.mediatek.hardware.lbs@1.0.so
 
 # GNSS (Configs)
 vendor/etc/gnss/agps_profiles_conf2.xml
@@ -1648,8 +1647,6 @@ vendor/lib64/libsysenv.so
 vendor/lib64/libverno.so
 vendor/lib64/libvia-ril.so
 vendor/lib64/libviamipc-ril.so
-vendor/lib64/vendor.mediatek.hardware.mtkradioex@2.0.so
-vendor/lib64/vendor.mediatek.hardware.mtkradioex@3.0.so
 
 # Rootdir
 vendor/lib64/libfft_vendor.so
@@ -1684,7 +1681,6 @@ vendor/etc/init/netdagent.rc
 vendor/etc/init/tetheroffloadservice.rc
 vendor/lib64/libforkexecwrap.so
 vendor/lib64/libifcutils_mtk.so
-vendor/lib64/vendor.mediatek.hardware.netdagent@1.0.so
 
 # TEE
 vendor/bin/teei_daemon

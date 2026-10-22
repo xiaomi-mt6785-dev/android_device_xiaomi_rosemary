@@ -1162,17 +1162,21 @@ system_ext/framework/com.android.hotwordenrollment.common.util.jar
 # IMS
 vendor/bin/hw/vendor.mediatek.hardware.mmagent@1.1-service
 vendor/bin/hw/vtservice_hidl
+vendor/bin/epdg_wod
 vendor/bin/volte_imcb
 vendor/bin/volte_imsm_93
 vendor/bin/volte_md_status
 vendor/bin/volte_stack
 vendor/bin/volte_ua
+vendor/bin/wfca
 vendor/etc/init/init.volte_imcb.rc
 vendor/etc/init/init.volte_imsm_93.rc
 vendor/etc/init/init.volte_md_status.rc
 vendor/etc/init/init.volte_stack.rc
 vendor/etc/init/init.volte_ua.rc
 vendor/etc/init/init.vtservice_hidl.rc
+vendor/etc/init/init.wfca.rc
+vendor/etc/init/init.wod.rc
 vendor/etc/init/vendor.mediatek.hardware.mmagent@1.1-service.rc
 vendor/lib/libipsec_ims_shr.so
 vendor/lib/librcs_interface.so
@@ -1180,11 +1184,13 @@ vendor/lib/libvolte_core_shr.so;DISABLE_CHECKELF
 vendor/lib/libvolte_xdmc_shr.so
 vendor/lib/libvt_custom.so
 vendor/lib/libwapi.so
+vendor/lib/libwo.so
 vendor/lib64/hw/vendor.mediatek.hardware.videotelephony@1.0-impl.so
 vendor/lib64/libipsec_ims_shr.so
 vendor/lib64/libmmagent.so
 vendor/lib64/libmtknetcap.so
 vendor/lib64/libwapi.so
+vendor/lib64/libwo.so
 vendor/lib64/vendor.mediatek.hardware.mmagent@1.0.so
 vendor/lib64/vendor.mediatek.hardware.mmagent@1.1.so
 vendor/lib64/vendor.mediatek.hardware.videotelephony@1.0.so;MODULE_SUFFIX=_vendor
